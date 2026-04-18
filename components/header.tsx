@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 import { signOut, useSession } from 'next-auth/react'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
+    { name: 'Houses', href: '#link' },
+    { name: 'Prediction', href: '#link' },
     { name: 'Pricing', href: '#link' },
     { name: 'About', href: '#link' },
 ]
