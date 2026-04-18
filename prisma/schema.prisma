@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid()) // Changed from Int to String
+  firstName     String
+  middleName    String?
+  lastName      String
+  gender        String
+  birthdate     DateTime
+  username      String    @unique
+  password      String 
+  utype         String    @default("user")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relationship link
+  predictions   Prediction[]
+
+  @@map("users") 
+}
+
+model Prediction {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  
+  // This must match the User.id type
+  userId          String   @map("user_id") 
+  user            User     @relation(fields: [userId], references: [id])
+  
+  location        String
+  propertyType    String   @map("property_type")
+  lotArea         Decimal? @map("lot_area") @db.Decimal
+  floorArea       Decimal  @map("floor_area") @db.Decimal
+  bedrooms        Int?
+  bathrooms       Int?
+  hasGarage       Boolean? @default(false) @map("has_garage")
+  predictedPrice  Decimal  @map("predicted_price") @db.Decimal
+
+  @@map("predictions")
+}

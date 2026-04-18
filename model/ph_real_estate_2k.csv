@@ -1,0 +1,2001 @@
+Location,PropertyType,LotArea,FloorArea,Bedrooms,Bathrooms,Kitchens,Garages,Price_PHP
+Iloilo,Apartment/Rowhouse,310,449,12,9,2,0,18436000.0
+Iloilo,House & Lot,127,118,3,2,1,2,6975000.0
+Cebu City,Apartment/Rowhouse,333,166,4,3,2,0,17072000.0
+Batangas,House & Lot,98,99,2,1,1,2,4732000.0
+Davao City,House & Lot,283,359,10,8,2,2,27169000.0
+Batangas,House & Lot,128,224,6,4,1,1,7791000.0
+Cebu City,Townhouse,303,165,4,3,1,1,16489000.0
+Cavite,House & Lot,93,112,3,2,1,1,5204000.0
+Cebu City,Apartment/Rowhouse,201,203,5,4,2,1,14644000.0
+Iloilo,Townhouse,229,211,6,4,1,0,12248000.0
+Bacolod,Condominium,0,84,2,1,1,0,3251000.0
+Metro Manila,House & Lot,48,72,2,1,1,2,10839000.0
+Metro Manila,Apartment/Rowhouse,328,422,12,9,1,1,41701000.0
+Iloilo,Apartment/Rowhouse,307,285,8,6,1,2,13658000.0
+Davao City,Townhouse,253,418,11,8,1,0,27101000.0
+Davao City,Apartment/Rowhouse,257,207,5,4,2,1,13902000.0
+Bacolod,House & Lot,218,117,3,2,1,2,6108000.0
+Cavite,Condominium,0,47,1,1,1,1,2911000.0
+Cavite,Condominium,0,95,2,1,1,0,4876000.0
+Cebu City,Townhouse,101,133,3,2,2,1,10017000.0
+Cavite,Apartment/Rowhouse,370,341,9,7,2,2,14089000.0
+Metro Manila,House & Lot,322,339,9,7,2,0,44530000.0
+Baguio,Townhouse,357,281,8,6,1,2,22325000.0
+Pampanga,House & Lot,272,278,7,5,2,1,14465000.0
+Iloilo,House & Lot,152,105,3,2,1,0,6745000.0
+Cebu City,Townhouse,93,50,1,1,1,0,5533000.0
+Cebu City,Townhouse,257,457,13,10,2,2,34903000.0
+Metro Manila,Apartment/Rowhouse,319,354,10,8,2,1,40192000.0
+Metro Manila,House & Lot,226,167,4,3,2,0,26360000.0
+Cavite,House & Lot,186,177,5,4,1,2,10030000.0
+Iloilo,Condominium,0,25,1,1,1,1,2016000.0
+Cebu City,Condominium,0,118,3,2,1,1,11379000.0
+Bacolod,Condominium,0,84,2,1,1,0,3850000.0
+Laguna,Condominium,0,33,1,1,1,0,2112000.0
+Davao City,Apartment/Rowhouse,93,140,4,3,2,2,8489000.0
+Baguio,Townhouse,266,261,7,5,2,0,17959000.0
+Cebu City,House & Lot,202,272,7,5,1,0,21143000.0
+Laguna,House & Lot,174,250,7,5,2,0,12690000.0
+Pampanga,House & Lot,277,350,10,8,1,1,16809000.0
+Cebu City,House & Lot,136,169,4,3,1,0,15574000.0
+Davao City,Townhouse,231,309,8,6,2,0,19272000.0
+Laguna,Apartment/Rowhouse,272,473,13,10,2,0,18976000.0
+Davao City,Condominium,0,87,2,1,1,0,6705000.0
+Metro Manila,House & Lot,167,164,4,3,2,1,25697000.0
+Baguio,House & Lot,153,198,5,4,1,1,15167000.0
+Bacolod,Apartment/Rowhouse,312,500,14,11,2,0,12658000.0
+Bacolod,Apartment/Rowhouse,394,328,9,7,1,0,9514000.0
+Cavite,Apartment/Rowhouse,360,213,6,4,2,1,11865000.0
+Iloilo,House & Lot,393,244,6,4,2,2,16968000.0
+Bacolod,Townhouse,164,260,7,5,1,1,7358000.0
+Pampanga,House & Lot,140,165,4,3,1,0,8083000.0
+Iloilo,House & Lot,389,467,13,10,1,2,24819000.0
+Cebu City,Townhouse,197,109,3,2,1,2,11758000.0
+Bacolod,House & Lot,268,198,5,4,2,1,9037000.0
+Laguna,House & Lot,161,113,3,2,1,1,6899000.0
+Pampanga,Apartment/Rowhouse,276,238,6,4,2,0,9453000.0
+Pampanga,Apartment/Rowhouse,115,142,4,3,2,2,4967000.0
+Laguna,House & Lot,133,214,6,4,2,0,9781000.0
+Laguna,House & Lot,328,362,10,8,1,0,19788000.0
+Laguna,Apartment/Rowhouse,219,216,6,4,2,1,9769000.0
+Baguio,Townhouse,43,55,1,1,1,2,4883000.0
+Cavite,Townhouse,217,270,7,5,2,0,11700000.0
+Laguna,Townhouse,104,181,5,4,1,1,7642000.0
+Cebu City,House & Lot,281,390,11,8,2,0,32594000.0
+Bacolod,House & Lot,154,133,3,2,2,1,5863000.0
+Baguio,Apartment/Rowhouse,316,555,15,12,2,1,31794000.0
+Davao City,Condominium,0,60,1,1,1,0,5234000.0
+Baguio,Apartment/Rowhouse,263,424,12,9,2,0,25531000.0
+Davao City,House & Lot,312,372,10,8,1,0,29099000.0
+Metro Manila,House & Lot,272,435,12,9,1,0,62411000.0
+Cavite,Townhouse,183,198,5,4,2,2,9501000.0
+Laguna,Apartment/Rowhouse,190,287,8,6,1,2,11413000.0
+Iloilo,Condominium,0,29,1,1,1,1,2197000.0
+Cebu City,Condominium,0,33,1,1,1,1,3703000.0
+Pampanga,House & Lot,180,142,4,3,2,0,7564000.0
+Laguna,Townhouse,378,474,13,10,1,0,23091000.0
+Iloilo,Condominium,0,28,1,1,1,0,1942000.0
+Davao City,Apartment/Rowhouse,221,313,8,6,2,1,15731000.0
+Davao City,House & Lot,281,311,8,6,2,1,24599000.0
+Batangas,Apartment/Rowhouse,387,677,19,15,2,2,17940000.0
+Metro Manila,House & Lot,173,266,7,5,2,0,32247000.0
+Laguna,House & Lot,252,451,12,9,1,0,22477000.0
+Batangas,Townhouse,272,212,6,4,2,2,9626000.0
+Pampanga,House & Lot,51,89,2,1,1,1,3927000.0
+Laguna,House & Lot,387,518,14,11,1,1,25379000.0
+Laguna,Condominium,0,88,2,1,1,0,4757000.0
+Batangas,House & Lot,251,322,9,7,1,0,11695000.0
+Pampanga,Condominium,0,93,2,1,1,1,4873000.0
+Baguio,Apartment/Rowhouse,290,162,4,3,2,2,15269000.0
+Cebu City,Condominium,0,73,2,1,1,0,7693000.0
+Batangas,Condominium,0,51,1,1,1,0,2186000.0
+Batangas,House & Lot,350,568,16,12,2,0,22526000.0
+Davao City,Townhouse,92,158,4,3,1,1,9136000.0
+Batangas,House & Lot,90,77,2,1,1,1,4028000.0
+Baguio,Townhouse,387,328,9,7,2,2,26859000.0
+Pampanga,Apartment/Rowhouse,345,554,15,12,2,1,16351000.0
+Batangas,Townhouse,294,158,4,3,2,2,8487000.0
+Davao City,Condominium,0,88,2,1,1,0,7012000.0
+Cebu City,Townhouse,374,399,11,8,2,2,33310000.0
+Metro Manila,Apartment/Rowhouse,69,90,2,1,1,2,10536000.0
+Cavite,House & Lot,369,553,15,12,2,0,25397000.0
+Davao City,Townhouse,190,126,3,2,2,2,11036000.0
+Cavite,House & Lot,223,230,6,4,2,2,13378000.0
+Bacolod,House & Lot,316,227,6,4,1,1,9088000.0
+Metro Manila,Townhouse,51,39,1,1,1,1,5544000.0
+Bacolod,Townhouse,112,69,1,1,1,2,3490000.0
+Baguio,Apartment/Rowhouse,358,354,10,8,1,0,25029000.0
+Metro Manila,Townhouse,219,169,4,3,2,2,23671000.0
+Iloilo,Townhouse,193,105,3,2,1,2,7941000.0
+Iloilo,Townhouse,278,150,4,3,2,1,10544000.0
+Batangas,Apartment/Rowhouse,67,35,1,1,1,0,1756000.0
+Pampanga,House & Lot,339,272,7,5,2,0,14149000.0
+Davao City,Townhouse,185,113,3,2,1,2,10265000.0
+Baguio,Townhouse,275,183,5,4,1,0,17321000.0
+Cebu City,House & Lot,354,630,18,14,2,0,46149000.0
+Laguna,House & Lot,151,107,3,2,1,2,6543000.0
+Baguio,Apartment/Rowhouse,286,162,4,3,2,2,15763000.0
+Pampanga,House & Lot,259,438,12,9,2,2,17686000.0
+Baguio,Apartment/Rowhouse,101,172,4,3,2,2,10322000.0
+Laguna,House & Lot,157,223,6,4,2,0,11438000.0
+Metro Manila,Townhouse,359,220,6,4,1,1,34952000.0
+Davao City,House & Lot,217,236,6,4,1,0,19288000.0
+Baguio,Apartment/Rowhouse,360,244,6,4,2,0,19495000.0
+Baguio,Townhouse,133,84,2,1,1,0,8129000.0
+Cebu City,House & Lot,176,134,3,2,1,2,14832000.0
+Pampanga,House & Lot,388,264,7,5,2,0,14892000.0
+Davao City,House & Lot,44,35,1,1,1,1,3231000.0
+Cavite,House & Lot,81,81,2,1,1,2,4914000.0
+Davao City,Townhouse,392,576,16,12,2,2,34619000.0
+Iloilo,Townhouse,348,584,16,12,2,2,27023000.0
+Davao City,Townhouse,81,55,1,1,1,2,5251000.0
+Metro Manila,Townhouse,270,336,9,7,1,0,39883000.0
+Laguna,Apartment/Rowhouse,328,178,5,4,2,1,10422000.0
+Bacolod,House & Lot,333,398,11,8,2,2,13940000.0
+Baguio,Townhouse,175,121,3,2,2,2,11706000.0
+Davao City,Townhouse,331,473,13,10,1,2,27613000.0
+Bacolod,House & Lot,173,176,5,4,1,2,7404000.0
+Bacolod,Townhouse,249,322,9,7,2,2,10990000.0
+Cavite,Condominium,0,29,1,1,1,1,1995000.0
+Bacolod,Apartment/Rowhouse,326,420,12,9,1,1,10876000.0
+Batangas,Condominium,0,47,1,1,1,0,2098000.0
+Bacolod,Apartment/Rowhouse,221,351,10,8,2,0,9258000.0
+Baguio,Townhouse,348,325,9,7,1,0,24225000.0
+Cavite,Townhouse,114,193,5,4,1,2,8559000.0
+Metro Manila,Townhouse,290,198,5,4,2,0,29573000.0
+Baguio,House & Lot,324,406,11,8,1,1,30650000.0
+Metro Manila,House & Lot,123,134,3,2,2,1,19918000.0
+Baguio,Townhouse,296,267,7,5,2,1,19955000.0
+Davao City,House & Lot,197,147,4,3,1,0,13140000.0
+Davao City,House & Lot,117,167,4,3,2,1,11859000.0
+Cebu City,House & Lot,358,226,6,4,1,0,25771000.0
+Bacolod,House & Lot,201,207,5,4,2,2,9043000.0
+Iloilo,Townhouse,360,438,12,9,1,2,23058000.0
+Baguio,House & Lot,278,344,9,7,2,2,26591000.0
+Cebu City,Apartment/Rowhouse,127,182,5,4,2,1,11994000.0
+Laguna,House & Lot,262,241,6,4,1,1,12702000.0
+Iloilo,Apartment/Rowhouse,151,111,3,2,1,0,5811000.0
+Cebu City,Condominium,0,93,2,1,1,0,8859000.0
+Cebu City,House & Lot,158,134,3,2,1,0,13838000.0
+Batangas,House & Lot,394,682,19,15,2,1,23682000.0
+Baguio,Condominium,0,111,3,2,1,1,10185000.0
+Davao City,Townhouse,48,57,1,1,1,0,3716000.0
+Batangas,House & Lot,274,287,8,6,2,1,11543000.0
+Iloilo,Townhouse,365,616,17,13,2,0,28324000.0
+Cebu City,Townhouse,192,220,6,4,1,2,16723000.0
+Batangas,House & Lot,258,329,9,7,2,0,12322000.0
+Metro Manila,House & Lot,229,268,7,5,1,1,40030000.0
+Davao City,House & Lot,321,188,5,4,1,2,17227000.0
+Metro Manila,Apartment/Rowhouse,271,335,9,7,1,1,39660000.0
+Pampanga,Apartment/Rowhouse,328,279,7,5,1,2,11593000.0
+Metro Manila,House & Lot,240,360,10,8,1,0,46609000.0
+Metro Manila,House & Lot,143,152,4,3,1,2,20693000.0
+Davao City,House & Lot,393,249,7,5,1,0,23884000.0
+Metro Manila,Condominium,0,79,2,1,1,0,11506000.0
+Baguio,Apartment/Rowhouse,188,279,7,5,2,0,17600000.0
+Batangas,Condominium,0,36,1,1,1,0,1888000.0
+Bacolod,House & Lot,305,385,11,8,1,0,13997000.0
+Bacolod,House & Lot,374,526,15,12,1,0,16932000.0
+Iloilo,Apartment/Rowhouse,262,424,12,9,2,2,17664000.0
+Iloilo,House & Lot,198,192,5,4,1,0,11980000.0
+Baguio,House & Lot,78,70,2,1,1,0,6278000.0
+Pampanga,House & Lot,249,292,8,6,2,0,12449000.0
+Iloilo,House & Lot,73,38,1,1,1,2,3228000.0
+Cebu City,Condominium,0,63,1,1,1,0,5770000.0
+Metro Manila,House & Lot,284,319,9,7,1,2,42278000.0
+Iloilo,Townhouse,104,84,2,1,1,2,5321000.0
+Baguio,House & Lot,363,519,14,11,1,0,36109000.0
+Batangas,House & Lot,383,253,7,5,2,2,13638000.0
+Pampanga,Condominium,0,87,2,1,1,1,4626000.0
+Cebu City,House & Lot,91,53,1,1,1,0,6193000.0
+Laguna,Apartment/Rowhouse,369,207,5,4,1,0,10786000.0
+Davao City,Apartment/Rowhouse,44,25,1,1,1,2,2365000.0
+Batangas,Condominium,0,85,2,1,1,0,3937000.0
+Cebu City,Townhouse,255,425,12,9,1,2,29453000.0
+Batangas,Townhouse,396,245,7,5,1,0,10598000.0
+Batangas,House & Lot,265,429,12,9,1,0,17560000.0
+Cebu City,House & Lot,77,64,1,1,1,0,5813000.0
+Cebu City,House & Lot,355,228,6,4,2,0,22462000.0
+Davao City,Apartment/Rowhouse,95,129,3,2,2,2,7996000.0
+Baguio,Apartment/Rowhouse,207,169,4,3,2,2,13320000.0
+Batangas,Condominium,0,87,2,1,1,1,4000000.0
+Laguna,Apartment/Rowhouse,353,390,11,8,2,2,15605000.0
+Laguna,Apartment/Rowhouse,121,189,5,4,2,1,7140000.0
+Cebu City,House & Lot,85,78,2,1,1,0,7728000.0
+Cebu City,Townhouse,383,599,17,13,1,1,39827000.0
+Batangas,Condominium,0,87,2,1,1,0,3758000.0
+Laguna,House & Lot,235,170,4,3,2,1,10050000.0
+Pampanga,Apartment/Rowhouse,232,133,3,2,2,2,7517000.0
+Cavite,Townhouse,46,26,1,1,1,0,1530000.0
+Davao City,House & Lot,65,45,1,1,1,1,4655000.0
+Metro Manila,House & Lot,78,92,2,1,1,0,13589000.0
+Cavite,Apartment/Rowhouse,214,296,8,6,1,1,11701000.0
+Baguio,House & Lot,60,100,2,1,1,0,7807000.0
+Pampanga,Apartment/Rowhouse,296,271,7,5,1,1,9923000.0
+Metro Manila,Townhouse,51,62,1,1,1,2,9130000.0
+Batangas,Apartment/Rowhouse,348,243,6,4,2,2,10511000.0
+Davao City,Apartment/Rowhouse,220,370,10,8,2,1,20357000.0
+Batangas,House & Lot,312,402,11,8,1,0,15887000.0
+Pampanga,Townhouse,156,197,5,4,2,2,7723000.0
+Laguna,House & Lot,359,364,10,8,2,2,19646000.0
+Batangas,Apartment/Rowhouse,141,236,6,4,2,2,6785000.0
+Metro Manila,House & Lot,85,58,1,1,1,1,10273000.0
+Cavite,House & Lot,281,259,7,5,2,1,14907000.0
+Metro Manila,Apartment/Rowhouse,193,196,5,4,2,1,21594000.0
+Bacolod,Apartment/Rowhouse,145,104,2,1,1,0,3961000.0
+Davao City,Apartment/Rowhouse,48,82,2,1,1,2,4860000.0
+Batangas,Apartment/Rowhouse,303,524,14,11,2,1,15443000.0
+Iloilo,Townhouse,247,299,8,6,2,1,15227000.0
+Batangas,House & Lot,53,32,1,1,1,1,1986000.0
+Batangas,Apartment/Rowhouse,161,149,4,3,1,1,5074000.0
+Iloilo,House & Lot,327,375,10,8,1,1,22268000.0
+Laguna,Condominium,0,83,2,1,1,1,4893000.0
+Davao City,House & Lot,246,205,5,4,2,0,17360000.0
+Baguio,House & Lot,43,62,1,1,1,1,5640000.0
+Baguio,Townhouse,135,170,4,3,2,1,12363000.0
+Cebu City,Townhouse,301,406,11,8,2,2,34063000.0
+Davao City,Townhouse,79,125,3,2,1,0,7887000.0
+Iloilo,Townhouse,53,93,2,1,1,2,4742000.0
+Pampanga,House & Lot,357,223,6,4,2,0,12331000.0
+Batangas,Townhouse,270,192,5,4,1,2,8570000.0
+Davao City,Townhouse,203,357,10,8,1,2,23033000.0
+Pampanga,House & Lot,132,123,3,2,1,1,6116000.0
+Baguio,Townhouse,40,33,1,1,1,1,2800000.0
+Batangas,Townhouse,214,291,8,6,2,0,10625000.0
+Baguio,Townhouse,246,301,8,6,1,2,20873000.0
+Cebu City,House & Lot,332,570,16,12,2,0,44035000.0
+Laguna,Condominium,0,93,2,1,1,0,5634000.0
+Bacolod,House & Lot,281,493,14,11,1,2,16348000.0
+Batangas,Townhouse,223,260,7,5,1,1,9743000.0
+Iloilo,House & Lot,340,233,6,4,1,1,16417000.0
+Cebu City,House & Lot,303,213,6,4,2,1,21055000.0
+Cebu City,Townhouse,158,273,7,5,1,1,18823000.0
+Bacolod,Apartment/Rowhouse,271,406,11,8,2,2,11733000.0
+Metro Manila,Townhouse,326,442,12,9,2,0,54185000.0
+Cebu City,Condominium,0,94,2,1,1,0,10095000.0
+Batangas,Apartment/Rowhouse,112,69,1,1,1,2,3559000.0
+Cavite,Townhouse,141,130,3,2,2,1,6992000.0
+Batangas,House & Lot,370,365,10,8,2,1,14293000.0
+Metro Manila,House & Lot,238,293,8,6,1,2,40971000.0
+Metro Manila,Townhouse,330,262,7,5,2,1,35236000.0
+Bacolod,Apartment/Rowhouse,304,302,8,6,2,1,10098000.0
+Laguna,Apartment/Rowhouse,192,190,5,4,2,1,8217000.0
+Cavite,Townhouse,382,594,16,12,2,1,24252000.0
+Laguna,House & Lot,375,503,14,11,1,2,28299000.0
+Cavite,Condominium,0,110,3,2,1,0,5637000.0
+Cavite,House & Lot,91,124,3,2,2,0,6049000.0
+Bacolod,Townhouse,185,188,5,4,2,0,6034000.0
+Iloilo,Townhouse,113,173,4,3,2,2,8117000.0
+Bacolod,House & Lot,75,78,2,1,1,1,3491000.0
+Metro Manila,House & Lot,212,280,8,6,1,2,40031000.0
+Laguna,Apartment/Rowhouse,65,50,1,1,1,1,2562000.0
+Batangas,Apartment/Rowhouse,111,166,4,3,1,0,5207000.0
+Cebu City,Apartment/Rowhouse,139,146,4,3,2,1,11448000.0
+Bacolod,House & Lot,281,196,5,4,2,0,9157000.0
+Iloilo,Townhouse,189,100,2,1,1,2,6959000.0
+Iloilo,Townhouse,177,147,4,3,2,0,8438000.0
+Cebu City,House & Lot,302,423,12,9,2,2,36254000.0
+Batangas,Townhouse,319,212,6,4,2,2,9629000.0
+Iloilo,Apartment/Rowhouse,75,45,1,1,1,0,2760000.0
+Batangas,House & Lot,109,104,2,1,1,0,4569000.0
+Cebu City,Townhouse,66,87,2,1,1,1,7155000.0
+Davao City,Townhouse,97,90,2,1,1,1,6008000.0
+Cebu City,House & Lot,330,478,13,10,1,1,41294000.0
+Bacolod,Condominium,0,101,2,1,1,1,4667000.0
+Iloilo,Townhouse,197,213,6,4,1,0,12107000.0
+Davao City,Condominium,0,47,1,1,1,0,3635000.0
+Laguna,Apartment/Rowhouse,287,344,9,7,2,0,12947000.0
+Pampanga,House & Lot,270,438,12,9,2,0,19263000.0
+Cebu City,House & Lot,331,295,8,6,1,1,27939000.0
+Cebu City,Condominium,0,97,2,1,1,0,10334000.0
+Iloilo,Condominium,0,106,3,2,1,0,7347000.0
+Pampanga,Townhouse,283,218,6,4,1,2,10540000.0
+Davao City,Townhouse,197,283,8,6,2,2,17255000.0
+Batangas,House & Lot,202,146,4,3,1,1,7827000.0
+Cebu City,Townhouse,64,79,2,1,1,0,6723000.0
+Cavite,Townhouse,360,463,13,10,2,1,19101000.0
+Davao City,House & Lot,64,87,2,1,1,1,5897000.0
+Cebu City,Townhouse,118,206,5,4,2,0,16035000.0
+Pampanga,House & Lot,82,107,3,2,1,2,4852000.0
+Davao City,Townhouse,305,236,6,4,2,1,16309000.0
+Baguio,House & Lot,122,88,2,1,1,0,7683000.0
+Davao City,House & Lot,291,379,10,8,1,2,25905000.0
+Cavite,House & Lot,163,261,7,5,1,1,13036000.0
+Davao City,House & Lot,131,147,4,3,2,2,12115000.0
+Iloilo,House & Lot,258,269,7,5,1,1,16832000.0
+Bacolod,House & Lot,104,95,2,1,1,1,3848000.0
+Laguna,House & Lot,212,117,3,2,1,0,7375000.0
+Laguna,Apartment/Rowhouse,222,154,4,3,1,1,7738000.0
+Cebu City,House & Lot,272,353,10,8,2,0,32437000.0
+Metro Manila,Condominium,0,41,1,1,1,1,7410000.0
+Cebu City,House & Lot,68,58,1,1,1,1,5463000.0
+Baguio,House & Lot,242,276,7,5,2,2,21858000.0
+Metro Manila,House & Lot,383,630,18,14,2,0,82730000.0
+Laguna,House & Lot,239,145,4,3,2,2,10728000.0
+Davao City,House & Lot,172,199,5,4,2,1,16420000.0
+Cavite,Apartment/Rowhouse,67,64,1,1,1,1,2702000.0
+Pampanga,Apartment/Rowhouse,359,377,10,8,1,2,15375000.0
+Baguio,Apartment/Rowhouse,368,366,10,8,1,1,23382000.0
+Cavite,Apartment/Rowhouse,208,363,10,8,1,2,13952000.0
+Laguna,House & Lot,386,684,19,15,2,1,35966000.0
+Cebu City,House & Lot,310,199,5,4,1,1,21156000.0
+Bacolod,Townhouse,317,271,7,5,2,0,9843000.0
+Metro Manila,Townhouse,161,251,7,5,2,2,28445000.0
+Cebu City,Townhouse,188,333,9,7,2,1,25434000.0
+Pampanga,Apartment/Rowhouse,384,659,18,14,2,0,18905000.0
+Laguna,Apartment/Rowhouse,322,565,16,12,2,2,22589000.0
+Pampanga,Townhouse,228,334,9,7,1,2,13157000.0
+Iloilo,Townhouse,320,476,13,10,1,2,23258000.0
+Baguio,House & Lot,300,493,14,11,2,2,39778000.0
+Batangas,Townhouse,341,443,12,9,2,2,15701000.0
+Batangas,Townhouse,125,200,5,4,1,1,7300000.0
+Batangas,Condominium,0,44,1,1,1,0,1934000.0
+Iloilo,House & Lot,250,448,12,9,2,2,24805000.0
+Baguio,House & Lot,193,194,5,4,1,0,15360000.0
+Bacolod,Townhouse,299,219,6,4,1,0,8526000.0
+Cavite,Townhouse,42,24,1,1,1,1,1727000.0
+Cavite,House & Lot,63,86,2,1,1,1,4475000.0
+Davao City,House & Lot,250,144,4,3,2,0,14667000.0
+Laguna,Apartment/Rowhouse,231,271,7,5,1,0,10740000.0
+Iloilo,House & Lot,358,281,8,6,2,2,19533000.0
+Batangas,Condominium,0,69,1,1,1,0,3293000.0
+Cavite,Apartment/Rowhouse,237,423,12,9,2,2,16127000.0
+Laguna,House & Lot,100,177,5,4,1,2,8213000.0
+Pampanga,House & Lot,376,642,18,14,2,2,25569000.0
+Bacolod,Apartment/Rowhouse,388,426,12,9,2,0,13549000.0
+Cavite,House & Lot,299,168,4,3,2,2,10945000.0
+Batangas,House & Lot,336,237,6,4,2,0,11711000.0
+Cavite,House & Lot,145,125,3,2,1,2,7799000.0
+Baguio,Condominium,0,40,1,1,1,1,3910000.0
+Pampanga,House & Lot,340,547,15,12,1,2,25022000.0
+Batangas,House & Lot,217,224,6,4,1,2,9415000.0
+Baguio,Townhouse,182,299,8,6,1,0,19433000.0
+Batangas,House & Lot,60,50,1,1,1,2,2947000.0
+Laguna,Townhouse,384,664,18,14,1,0,25438000.0
+Laguna,House & Lot,366,508,14,11,2,0,23752000.0
+Cebu City,House & Lot,82,48,1,1,1,1,5753000.0
+Cebu City,House & Lot,237,379,10,8,1,1,34471000.0
+Batangas,Townhouse,137,222,6,4,2,2,8078000.0
+Baguio,Apartment/Rowhouse,333,515,14,11,2,1,31867000.0
+Metro Manila,House & Lot,316,225,6,4,2,2,39581000.0
+Baguio,House & Lot,118,193,5,4,1,1,14673000.0
+Bacolod,Apartment/Rowhouse,105,61,1,1,1,1,2562000.0
+Metro Manila,House & Lot,266,169,4,3,2,2,28957000.0
+Davao City,House & Lot,306,234,6,4,1,1,19037000.0
+Batangas,Townhouse,124,112,3,2,1,0,4360000.0
+Baguio,Townhouse,355,498,14,11,1,1,36752000.0
+Davao City,Apartment/Rowhouse,79,91,2,1,1,0,4776000.0
+Baguio,Apartment/Rowhouse,215,150,4,3,2,1,10918000.0
+Batangas,Apartment/Rowhouse,341,312,8,6,2,0,11899000.0
+Laguna,Apartment/Rowhouse,201,143,4,3,2,1,7748000.0
+Laguna,Townhouse,392,210,6,4,1,1,13133000.0
+Davao City,House & Lot,304,475,13,10,1,1,34297000.0
+Batangas,House & Lot,252,209,5,4,2,1,9432000.0
+Bacolod,House & Lot,195,306,8,6,2,1,10669000.0
+Cebu City,House & Lot,377,555,15,12,2,0,47539000.0
+Metro Manila,Apartment/Rowhouse,178,284,8,6,2,2,26895000.0
+Cebu City,House & Lot,287,169,4,3,1,2,19964000.0
+Metro Manila,Apartment/Rowhouse,382,229,6,4,2,2,33681000.0
+Pampanga,House & Lot,60,32,1,1,1,0,1931000.0
+Cavite,Condominium,0,100,2,1,1,0,5838000.0
+Cebu City,Townhouse,173,237,6,4,1,2,18075000.0
+Pampanga,House & Lot,367,244,6,4,2,2,12567000.0
+Cavite,House & Lot,383,205,5,4,1,1,14196000.0
+Davao City,Condominium,0,27,1,1,1,1,2692000.0
+Cavite,Condominium,0,102,2,1,1,1,5629000.0
+Iloilo,Townhouse,314,513,14,11,1,1,22130000.0
+Cavite,House & Lot,325,181,5,4,2,0,10977000.0
+Laguna,House & Lot,373,546,15,12,2,2,29809000.0
+Batangas,House & Lot,125,207,5,4,2,2,8478000.0
+Metro Manila,House & Lot,307,386,11,8,2,1,54115000.0
+Laguna,House & Lot,396,506,14,11,2,0,26257000.0
+Batangas,Townhouse,255,444,12,9,2,0,13372000.0
+Pampanga,House & Lot,86,58,1,1,1,2,3949000.0
+Pampanga,Townhouse,346,373,10,8,2,0,14437000.0
+Iloilo,House & Lot,299,298,8,6,2,0,16936000.0
+Baguio,Townhouse,296,251,7,5,1,1,19284000.0
+Metro Manila,House & Lot,301,168,4,3,1,2,33836000.0
+Metro Manila,Townhouse,181,234,6,4,2,0,29228000.0
+Pampanga,Apartment/Rowhouse,229,362,10,8,1,0,12194000.0
+Metro Manila,House & Lot,145,127,3,2,1,1,21119000.0
+Metro Manila,Townhouse,383,456,13,10,2,2,61804000.0
+Davao City,House & Lot,166,142,4,3,1,0,11892000.0
+Baguio,Condominium,0,36,1,1,1,1,3444000.0
+Bacolod,Condominium,0,93,2,1,1,0,3972000.0
+Iloilo,Apartment/Rowhouse,254,140,4,3,1,1,9034000.0
+Metro Manila,House & Lot,121,75,2,1,1,2,13339000.0
+Cavite,Condominium,0,100,2,1,1,0,5340000.0
+Iloilo,House & Lot,324,447,12,9,2,1,25191000.0
+Cebu City,House & Lot,240,311,8,6,2,2,25478000.0
+Cebu City,Townhouse,389,266,7,5,2,0,25579000.0
+Metro Manila,House & Lot,396,261,7,5,1,0,43876000.0
+Baguio,Townhouse,323,324,9,7,2,2,25849000.0
+Iloilo,Townhouse,161,204,5,4,1,1,10236000.0
+Batangas,House & Lot,399,660,18,14,1,1,22607000.0
+Metro Manila,Townhouse,329,235,6,4,2,0,31876000.0
+Metro Manila,House & Lot,187,176,5,4,2,1,27528000.0
+Metro Manila,House & Lot,103,132,3,2,2,1,19000000.0
+Pampanga,House & Lot,152,103,2,1,1,0,5231000.0
+Baguio,Townhouse,114,77,2,1,1,1,6372000.0
+Pampanga,Condominium,0,115,3,2,1,0,5240000.0
+Laguna,House & Lot,161,104,2,1,1,1,6775000.0
+Davao City,Apartment/Rowhouse,235,421,12,9,2,0,20309000.0
+Cavite,House & Lot,263,247,7,5,1,0,12948000.0
+Cebu City,House & Lot,348,551,15,12,1,2,49180000.0
+Davao City,House & Lot,380,359,10,8,2,0,28124000.0
+Davao City,House & Lot,319,574,16,12,2,0,38006000.0
+Davao City,Apartment/Rowhouse,138,226,6,4,2,1,12298000.0
+Laguna,Apartment/Rowhouse,47,25,1,1,1,0,1606000.0
+Pampanga,House & Lot,103,130,3,2,2,1,6170000.0
+Pampanga,House & Lot,44,67,1,1,1,0,3125000.0
+Pampanga,House & Lot,186,217,6,4,2,1,9816000.0
+Pampanga,Townhouse,255,273,7,5,2,2,11727000.0
+Cebu City,Apartment/Rowhouse,258,265,7,5,2,2,20148000.0
+Iloilo,Condominium,0,72,2,1,1,1,4456000.0
+Metro Manila,Townhouse,264,438,12,9,1,2,48345000.0
+Laguna,Townhouse,228,388,11,8,2,1,17522000.0
+Davao City,Townhouse,337,445,12,9,1,0,29528000.0
+Baguio,Apartment/Rowhouse,325,567,16,12,2,2,30380000.0
+Bacolod,Apartment/Rowhouse,366,184,5,4,2,2,8676000.0
+Metro Manila,House & Lot,180,266,7,5,2,0,37931000.0
+Metro Manila,Apartment/Rowhouse,233,148,4,3,2,2,19568000.0
+Cavite,House & Lot,397,356,10,8,2,2,19547000.0
+Cebu City,House & Lot,122,143,4,3,1,1,13069000.0
+Bacolod,House & Lot,397,224,6,4,2,1,11157000.0
+Cebu City,House & Lot,254,433,12,9,1,1,32277000.0
+Iloilo,House & Lot,360,436,12,9,2,1,25363000.0
+Laguna,House & Lot,320,211,6,4,2,0,14412000.0
+Bacolod,Townhouse,93,55,1,1,1,1,2485000.0
+Cavite,House & Lot,374,455,13,10,1,2,24254000.0
+Baguio,House & Lot,158,111,3,2,1,1,10043000.0
+Cebu City,Apartment/Rowhouse,243,248,7,5,1,0,18042000.0
+Bacolod,Apartment/Rowhouse,253,359,10,8,2,2,10150000.0
+Pampanga,House & Lot,359,327,9,7,2,2,15032000.0
+Batangas,Apartment/Rowhouse,139,233,6,4,2,2,7866000.0
+Baguio,Condominium,0,61,1,1,1,0,5078000.0
+Metro Manila,Condominium,0,113,3,2,1,1,16349000.0
+Iloilo,House & Lot,274,374,10,8,1,0,18913000.0
+Cavite,Apartment/Rowhouse,133,113,3,2,1,2,5507000.0
+Laguna,House & Lot,140,160,4,3,2,2,9030000.0
+Cebu City,Townhouse,266,260,7,5,2,2,21984000.0
+Cavite,Apartment/Rowhouse,55,54,1,1,1,1,2490000.0
+Baguio,Townhouse,139,191,5,4,1,0,12949000.0
+Baguio,Townhouse,313,456,13,10,2,1,30584000.0
+Baguio,House & Lot,104,172,4,3,1,2,12250000.0
+Pampanga,Apartment/Rowhouse,92,78,2,1,1,0,3233000.0
+Laguna,Condominium,0,26,1,1,1,0,1499000.0
+Bacolod,House & Lot,150,139,3,2,1,1,5992000.0
+Batangas,Condominium,0,84,2,1,1,0,4084000.0
+Iloilo,Apartment/Rowhouse,214,168,4,3,2,1,9124000.0
+Bacolod,Apartment/Rowhouse,261,255,7,5,1,0,6996000.0
+Laguna,House & Lot,94,110,3,2,1,0,5717000.0
+Laguna,Townhouse,174,285,8,6,1,2,13811000.0
+Metro Manila,Townhouse,84,85,2,1,1,2,12250000.0
+Cebu City,Townhouse,244,359,10,8,2,2,27735000.0
+Baguio,Condominium,0,29,1,1,1,0,2792000.0
+Pampanga,House & Lot,98,141,4,3,1,2,6722000.0
+Bacolod,House & Lot,378,261,7,5,2,0,12257000.0
+Metro Manila,House & Lot,91,85,2,1,1,1,13061000.0
+Batangas,Townhouse,321,221,6,4,2,0,9188000.0
+Baguio,House & Lot,265,215,6,4,2,0,21314000.0
+Pampanga,House & Lot,125,186,5,4,2,1,8132000.0
+Davao City,House & Lot,132,148,4,3,1,0,11730000.0
+Cebu City,Apartment/Rowhouse,195,264,7,5,1,0,19049000.0
+Baguio,Apartment/Rowhouse,129,152,4,3,2,2,11040000.0
+Iloilo,House & Lot,193,100,2,1,1,2,8418000.0
+Cebu City,Townhouse,338,398,11,8,2,1,31028000.0
+Bacolod,House & Lot,391,353,10,8,2,1,14679000.0
+Cavite,Townhouse,381,614,17,13,2,0,25870000.0
+Bacolod,Apartment/Rowhouse,255,395,11,8,2,1,11335000.0
+Pampanga,House & Lot,388,436,12,9,1,0,21204000.0
+Pampanga,House & Lot,194,337,9,7,1,0,14529000.0
+Metro Manila,Townhouse,156,84,2,1,1,2,16030000.0
+Bacolod,House & Lot,313,560,16,12,2,0,18180000.0
+Cavite,Apartment/Rowhouse,296,221,6,4,2,0,9100000.0
+Batangas,House & Lot,232,168,4,3,2,1,7843000.0
+Cavite,Townhouse,178,219,6,4,2,0,9966000.0
+Davao City,House & Lot,238,395,11,8,2,2,26666000.0
+Cavite,Apartment/Rowhouse,123,141,4,3,2,0,5179000.0
+Davao City,Townhouse,85,65,1,1,1,0,4803000.0
+Bacolod,Condominium,0,61,1,1,1,0,2362000.0
+Baguio,House & Lot,203,284,8,6,2,1,22465000.0
+Metro Manila,Townhouse,287,251,7,5,1,0,32043000.0
+Batangas,House & Lot,288,166,4,3,1,1,9649000.0
+Iloilo,House & Lot,124,110,3,2,1,2,7907000.0
+Pampanga,Apartment/Rowhouse,371,293,8,6,2,2,12173000.0
+Iloilo,Townhouse,69,63,1,1,1,0,3358000.0
+Davao City,House & Lot,86,133,3,2,1,2,10156000.0
+Pampanga,Townhouse,280,278,7,5,2,2,12721000.0
+Cebu City,Apartment/Rowhouse,48,40,1,1,1,1,3488000.0
+Metro Manila,Townhouse,150,214,6,4,2,0,27066000.0
+Batangas,House & Lot,120,205,5,4,2,1,8401000.0
+Pampanga,Condominium,0,47,1,1,1,0,2597000.0
+Batangas,House & Lot,290,164,4,3,1,0,8237000.0
+Cavite,House & Lot,376,530,15,12,2,2,25469000.0
+Metro Manila,House & Lot,310,359,10,8,1,1,53968000.0
+Davao City,House & Lot,353,459,13,10,2,1,31126000.0
+Davao City,Apartment/Rowhouse,207,117,3,2,1,0,8665000.0
+Pampanga,House & Lot,279,429,12,9,2,2,17547000.0
+Bacolod,Apartment/Rowhouse,134,120,3,2,1,2,4608000.0
+Batangas,Apartment/Rowhouse,46,41,1,1,1,2,2057000.0
+Iloilo,Condominium,0,106,3,2,1,0,6321000.0
+Metro Manila,Townhouse,165,166,4,3,1,0,22403000.0
+Metro Manila,House & Lot,373,480,13,10,1,2,61129000.0
+Batangas,Townhouse,236,140,4,3,1,1,7356000.0
+Cavite,Townhouse,118,76,2,1,1,2,4574000.0
+Pampanga,Townhouse,68,62,1,1,1,2,3214000.0
+Batangas,House & Lot,101,118,3,2,1,0,4484000.0
+Bacolod,House & Lot,357,436,12,9,2,1,15837000.0
+Metro Manila,House & Lot,305,357,10,8,1,2,48773000.0
+Bacolod,Townhouse,193,247,7,5,1,2,9088000.0
+Cavite,House & Lot,187,239,6,4,2,2,11443000.0
+Cebu City,Apartment/Rowhouse,173,142,4,3,2,1,12020000.0
+Pampanga,House & Lot,139,114,3,2,1,1,6403000.0
+Metro Manila,House & Lot,305,395,11,8,2,2,59226000.0
+Baguio,Townhouse,137,135,3,2,2,0,9369000.0
+Cavite,Condominium,0,33,1,1,1,0,2054000.0
+Cavite,Apartment/Rowhouse,85,63,1,1,1,1,3472000.0
+Metro Manila,House & Lot,322,342,9,7,2,2,46014000.0
+Batangas,House & Lot,310,484,13,10,2,2,17090000.0
+Baguio,House & Lot,82,108,3,2,1,1,9212000.0
+Baguio,Townhouse,284,465,13,10,1,2,30282000.0
+Laguna,House & Lot,329,191,5,4,2,0,12063000.0
+Metro Manila,Townhouse,377,370,10,8,2,2,52667000.0
+Davao City,House & Lot,358,432,12,9,1,1,31512000.0
+Iloilo,Apartment/Rowhouse,277,243,6,4,1,1,13185000.0
+Pampanga,Apartment/Rowhouse,334,283,8,6,2,0,11535000.0
+Baguio,Apartment/Rowhouse,297,391,11,8,2,2,25906000.0
+Baguio,House & Lot,291,200,5,4,1,2,20864000.0
+Pampanga,Apartment/Rowhouse,225,118,3,2,1,1,6070000.0
+Pampanga,House & Lot,246,212,6,4,2,2,11313000.0
+Metro Manila,Condominium,0,109,3,2,1,0,15784000.0
+Bacolod,Condominium,0,95,2,1,1,1,4472000.0
+Davao City,House & Lot,108,55,1,1,1,2,5927000.0
+Iloilo,House & Lot,100,95,2,1,1,0,6193000.0
+Iloilo,Condominium,0,60,1,1,1,1,4026000.0
+Bacolod,Condominium,0,109,3,2,1,1,4362000.0
+Davao City,House & Lot,157,240,6,4,2,2,18313000.0
+Davao City,House & Lot,253,223,6,4,2,2,17081000.0
+Cavite,House & Lot,84,60,1,1,1,0,3623000.0
+Pampanga,Apartment/Rowhouse,133,94,2,1,1,0,3911000.0
+Bacolod,Apartment/Rowhouse,161,154,4,3,1,2,5282000.0
+Iloilo,House & Lot,285,241,6,4,1,1,16693000.0
+Baguio,Condominium,0,33,1,1,1,0,3026000.0
+Davao City,Townhouse,214,316,9,7,2,0,19016000.0
+Pampanga,Townhouse,132,157,4,3,2,0,6351000.0
+Iloilo,House & Lot,321,374,10,8,1,0,22891000.0
+Iloilo,Apartment/Rowhouse,142,148,4,3,2,0,7445000.0
+Davao City,Townhouse,156,123,3,2,1,1,8448000.0
+Batangas,Townhouse,360,397,11,8,2,1,14866000.0
+Davao City,House & Lot,238,258,7,5,2,2,19429000.0
+Davao City,House & Lot,69,92,2,1,1,1,7391000.0
+Cebu City,House & Lot,61,68,1,1,1,2,6788000.0
+Cavite,Apartment/Rowhouse,155,208,5,4,2,0,7698000.0
+Pampanga,House & Lot,260,318,9,7,2,0,12940000.0
+Baguio,House & Lot,101,99,2,1,1,2,9286000.0
+Cebu City,Townhouse,88,86,2,1,1,2,8261000.0
+Baguio,Townhouse,175,184,5,4,2,1,14764000.0
+Iloilo,Townhouse,248,128,3,2,2,2,9920000.0
+Iloilo,Townhouse,259,261,7,5,2,1,14852000.0
+Davao City,House & Lot,385,637,18,14,2,0,45160000.0
+Bacolod,House & Lot,306,260,7,5,1,2,11164000.0
+Cebu City,House & Lot,243,350,10,8,1,2,27587000.0
+Cebu City,House & Lot,385,418,11,8,2,1,36467000.0
+Pampanga,Townhouse,234,402,11,8,1,1,14818000.0
+Laguna,Townhouse,308,416,11,8,1,2,19822000.0
+Cavite,House & Lot,365,555,15,12,2,1,25037000.0
+Baguio,House & Lot,102,86,2,1,1,0,8293000.0
+Davao City,Apartment/Rowhouse,355,195,5,4,2,1,15287000.0
+Baguio,House & Lot,143,195,5,4,2,1,14826000.0
+Pampanga,Apartment/Rowhouse,77,48,1,1,1,2,2962000.0
+Bacolod,House & Lot,386,314,8,6,1,2,12770000.0
+Davao City,House & Lot,226,362,10,8,2,1,23973000.0
+Laguna,House & Lot,205,107,3,2,1,1,8042000.0
+Cavite,House & Lot,246,286,8,6,2,1,14667000.0
+Laguna,House & Lot,378,474,13,10,2,0,25748000.0
+Cebu City,Apartment/Rowhouse,192,153,4,3,2,2,12533000.0
+Cebu City,House & Lot,236,312,8,6,2,0,29639000.0
+Cavite,Apartment/Rowhouse,209,298,8,6,2,0,11704000.0
+Cebu City,House & Lot,221,217,6,4,2,2,21453000.0
+Iloilo,Townhouse,384,515,14,11,2,1,26570000.0
+Iloilo,Townhouse,182,139,3,2,2,1,8765000.0
+Cebu City,House & Lot,151,80,2,1,1,2,10288000.0
+Baguio,Apartment/Rowhouse,261,439,12,9,2,1,23423000.0
+Laguna,Apartment/Rowhouse,361,612,17,13,2,1,20965000.0
+Pampanga,Apartment/Rowhouse,68,71,2,1,1,1,3138000.0
+Cavite,Apartment/Rowhouse,183,255,7,5,1,2,10385000.0
+Baguio,House & Lot,220,338,9,7,1,2,24640000.0
+Laguna,Apartment/Rowhouse,278,356,10,8,2,0,15273000.0
+Cavite,House & Lot,348,615,17,13,2,0,29504000.0
+Davao City,Townhouse,137,81,2,1,1,1,6653000.0
+Cavite,House & Lot,255,160,4,3,1,2,11020000.0
+Batangas,Condominium,0,64,1,1,1,0,2775000.0
+Baguio,House & Lot,95,63,1,1,1,2,6511000.0
+Cavite,Townhouse,75,58,1,1,1,1,3461000.0
+Cebu City,House & Lot,383,268,7,5,1,2,30314000.0
+Laguna,House & Lot,305,352,10,8,1,1,16997000.0
+Iloilo,House & Lot,286,508,14,11,2,1,24271000.0
+Baguio,House & Lot,317,457,13,10,2,1,37461000.0
+Bacolod,House & Lot,358,237,6,4,2,0,11304000.0
+Cavite,House & Lot,121,134,3,2,2,0,6764000.0
+Davao City,Townhouse,288,465,13,10,1,1,29066000.0
+Batangas,Townhouse,376,587,16,12,2,1,20267000.0
+Bacolod,Apartment/Rowhouse,349,278,7,5,2,2,10209000.0
+Pampanga,House & Lot,159,117,3,2,1,1,6785000.0
+Davao City,House & Lot,265,443,12,9,2,0,30232000.0
+Batangas,Apartment/Rowhouse,71,109,3,2,1,2,4039000.0
+Metro Manila,Apartment/Rowhouse,388,595,17,13,2,1,54767000.0
+Laguna,Apartment/Rowhouse,52,68,1,1,1,1,3198000.0
+Cavite,House & Lot,376,262,7,5,2,0,14153000.0
+Baguio,House & Lot,258,142,4,3,2,1,16478000.0
+Iloilo,House & Lot,195,290,8,6,2,2,15942000.0
+Metro Manila,Apartment/Rowhouse,52,78,2,1,1,0,8352000.0
+Cebu City,House & Lot,133,101,2,1,1,2,11151000.0
+Davao City,Townhouse,240,266,7,5,1,2,18454000.0
+Metro Manila,Apartment/Rowhouse,176,280,8,6,2,0,29602000.0
+Batangas,House & Lot,179,258,7,5,2,1,9698000.0
+Metro Manila,Townhouse,81,81,2,1,1,2,11456000.0
+Metro Manila,House & Lot,260,419,11,8,2,2,54174000.0
+Pampanga,House & Lot,231,244,6,4,1,0,11050000.0
+Baguio,House & Lot,154,135,3,2,2,2,12789000.0
+Pampanga,Townhouse,67,107,3,2,1,2,4586000.0
+Cavite,Apartment/Rowhouse,257,433,12,9,2,1,15612000.0
+Metro Manila,Apartment/Rowhouse,286,304,8,6,1,2,33906000.0
+Baguio,House & Lot,323,271,7,5,2,1,24670000.0
+Baguio,Condominium,0,28,1,1,1,0,2444000.0
+Baguio,Townhouse,181,196,5,4,2,2,14283000.0
+Pampanga,Townhouse,321,430,12,9,1,1,15983000.0
+Davao City,Apartment/Rowhouse,152,77,2,1,1,0,6514000.0
+Bacolod,Apartment/Rowhouse,390,375,10,8,1,2,11437000.0
+Metro Manila,House & Lot,105,77,2,1,1,1,13187000.0
+Cavite,Apartment/Rowhouse,253,183,5,4,2,0,8109000.0
+Bacolod,House & Lot,341,450,12,9,1,0,15491000.0
+Iloilo,Townhouse,57,36,1,1,1,2,2893000.0
+Iloilo,Townhouse,79,80,2,1,1,0,4683000.0
+Baguio,Apartment/Rowhouse,100,151,4,3,2,1,9142000.0
+Baguio,House & Lot,397,309,8,6,2,0,29890000.0
+Baguio,House & Lot,69,111,3,2,1,2,8385000.0
+Baguio,House & Lot,259,460,13,10,1,0,35871000.0
+Baguio,House & Lot,286,186,5,4,2,0,18072000.0
+Baguio,Condominium,0,25,1,1,1,0,2386000.0
+Pampanga,Apartment/Rowhouse,374,586,16,12,2,1,20036000.0
+Metro Manila,House & Lot,129,90,2,1,1,1,15186000.0
+Pampanga,Townhouse,53,52,1,1,1,0,2314000.0
+Metro Manila,House & Lot,202,105,3,2,1,0,21356000.0
+Metro Manila,House & Lot,65,111,3,2,1,1,14534000.0
+Pampanga,Townhouse,281,495,14,11,2,0,19029000.0
+Iloilo,House & Lot,58,87,2,1,1,2,5412000.0
+Metro Manila,Townhouse,139,192,5,4,2,1,24957000.0
+Metro Manila,Apartment/Rowhouse,89,56,1,1,1,0,8060000.0
+Laguna,House & Lot,278,243,6,4,1,2,15591000.0
+Cavite,House & Lot,323,379,10,8,2,1,17742000.0
+Baguio,Condominium,0,55,1,1,1,1,5004000.0
+Baguio,House & Lot,142,188,5,4,1,0,13596000.0
+Pampanga,Townhouse,236,357,10,8,2,2,14744000.0
+Iloilo,Apartment/Rowhouse,161,130,3,2,2,0,6396000.0
+Cebu City,House & Lot,135,115,3,2,1,1,11716000.0
+Baguio,House & Lot,362,570,16,12,2,2,47706000.0
+Cavite,House & Lot,253,396,11,8,2,2,18240000.0
+Iloilo,House & Lot,290,439,12,9,2,0,24266000.0
+Metro Manila,House & Lot,290,498,14,11,1,2,70201000.0
+Laguna,House & Lot,295,499,14,11,1,0,22578000.0
+Batangas,Apartment/Rowhouse,353,332,9,7,1,2,12207000.0
+Cavite,House & Lot,305,245,7,5,2,2,15167000.0
+Iloilo,House & Lot,103,88,2,1,1,0,5466000.0
+Pampanga,House & Lot,311,387,11,8,2,1,18146000.0
+Pampanga,Apartment/Rowhouse,278,153,4,3,2,0,6684000.0
+Bacolod,House & Lot,322,397,11,8,1,2,14862000.0
+Baguio,House & Lot,180,284,8,6,1,0,20722000.0
+Cavite,Apartment/Rowhouse,364,224,6,4,1,1,12084000.0
+Iloilo,House & Lot,110,62,1,1,1,0,4513000.0
+Davao City,House & Lot,314,245,7,5,2,0,21280000.0
+Cavite,Townhouse,320,271,7,5,2,1,13848000.0
+Laguna,Apartment/Rowhouse,69,69,1,1,1,2,3795000.0
+Pampanga,House & Lot,61,57,1,1,1,2,3161000.0
+Iloilo,House & Lot,77,62,1,1,1,2,4785000.0
+Cavite,Townhouse,89,90,2,1,1,2,4870000.0
+Laguna,House & Lot,363,309,8,6,1,1,17872000.0
+Iloilo,House & Lot,198,268,7,5,2,0,15222000.0
+Laguna,Apartment/Rowhouse,226,233,6,4,2,1,10701000.0
+Iloilo,Condominium,0,112,3,2,1,1,7489000.0
+Cavite,Townhouse,345,286,8,6,2,0,15297000.0
+Metro Manila,Townhouse,220,328,9,7,2,1,39135000.0
+Davao City,House & Lot,335,208,5,4,2,2,18501000.0
+Bacolod,Apartment/Rowhouse,221,283,8,6,2,1,8084000.0
+Pampanga,House & Lot,135,107,3,2,1,1,5368000.0
+Baguio,Apartment/Rowhouse,81,66,1,1,1,1,4729000.0
+Pampanga,House & Lot,281,156,4,3,2,0,8513000.0
+Batangas,Condominium,0,64,1,1,1,0,2699000.0
+Bacolod,House & Lot,265,422,12,9,2,2,14751000.0
+Cavite,House & Lot,198,306,8,6,1,1,15341000.0
+Cavite,Townhouse,319,309,8,6,1,1,14719000.0
+Cebu City,Condominium,0,100,2,1,1,0,10703000.0
+Cavite,Apartment/Rowhouse,166,233,6,4,1,0,8942000.0
+Cavite,Condominium,0,91,2,1,1,0,5271000.0
+Laguna,Townhouse,143,95,2,1,1,2,5409000.0
+Pampanga,Townhouse,376,513,14,11,1,1,18232000.0
+Metro Manila,Apartment/Rowhouse,83,111,3,2,1,0,12719000.0
+Iloilo,Apartment/Rowhouse,245,160,4,3,1,0,8608000.0
+Davao City,House & Lot,229,275,7,5,2,0,20278000.0
+Batangas,Townhouse,134,133,3,2,2,0,4919000.0
+Baguio,House & Lot,251,170,4,3,2,2,18573000.0
+Pampanga,Apartment/Rowhouse,138,228,6,4,2,2,7539000.0
+Metro Manila,House & Lot,379,525,15,12,2,0,69378000.0
+Davao City,Townhouse,243,302,8,6,2,0,19043000.0
+Davao City,Apartment/Rowhouse,212,321,9,7,1,0,16091000.0
+Cavite,House & Lot,381,305,8,6,2,1,16203000.0
+Iloilo,Townhouse,176,107,3,2,1,2,7893000.0
+Davao City,Townhouse,306,406,11,8,2,2,26098000.0
+Davao City,Townhouse,269,362,10,8,2,0,22868000.0
+Cavite,Apartment/Rowhouse,302,402,11,8,2,0,15284000.0
+Pampanga,Townhouse,90,151,4,3,2,1,6391000.0
+Batangas,Apartment/Rowhouse,93,86,2,1,1,1,3368000.0
+Metro Manila,Townhouse,161,166,4,3,2,1,23380000.0
+Cebu City,Townhouse,352,348,9,7,2,1,26834000.0
+Davao City,Townhouse,312,199,5,4,1,1,15907000.0
+Baguio,Condominium,0,71,2,1,1,1,6683000.0
+Bacolod,House & Lot,126,130,3,2,2,2,6106000.0
+Batangas,House & Lot,345,352,10,8,1,0,14496000.0
+Cebu City,House & Lot,171,131,3,2,1,1,12328000.0
+Cebu City,Apartment/Rowhouse,330,214,6,4,1,2,19359000.0
+Batangas,House & Lot,55,67,1,1,1,2,3239000.0
+Cavite,Townhouse,78,134,3,2,2,1,5685000.0
+Pampanga,House & Lot,147,248,7,5,1,1,9852000.0
+Metro Manila,House & Lot,385,678,19,15,1,0,89316000.0
+Baguio,House & Lot,140,146,4,3,2,1,13060000.0
+Metro Manila,House & Lot,51,88,2,1,1,2,11656000.0
+Pampanga,House & Lot,286,227,6,4,1,2,11733000.0
+Cavite,House & Lot,211,120,3,2,1,2,7910000.0
+Pampanga,House & Lot,134,209,5,4,2,2,9120000.0
+Baguio,Townhouse,211,362,10,8,2,1,24452000.0
+Iloilo,House & Lot,390,469,13,10,2,2,27351000.0
+Pampanga,House & Lot,254,387,11,8,2,0,15435000.0
+Iloilo,House & Lot,162,115,3,2,1,2,8564000.0
+Davao City,House & Lot,150,241,6,4,2,0,16105000.0
+Iloilo,House & Lot,214,247,7,5,1,0,14248000.0
+Davao City,Apartment/Rowhouse,355,296,8,6,1,0,17454000.0
+Pampanga,Apartment/Rowhouse,317,381,10,8,2,0,12751000.0
+Baguio,House & Lot,345,248,7,5,2,0,24603000.0
+Batangas,House & Lot,318,568,16,12,2,2,19605000.0
+Cebu City,Townhouse,358,491,14,11,1,2,39597000.0
+Batangas,House & Lot,259,242,6,4,2,1,9837000.0
+Bacolod,Townhouse,319,290,8,6,2,1,9859000.0
+Cavite,House & Lot,377,520,14,11,1,2,23937000.0
+Cebu City,Townhouse,242,386,11,8,1,2,30815000.0
+Pampanga,Apartment/Rowhouse,255,259,7,5,2,2,10295000.0
+Baguio,Apartment/Rowhouse,377,585,16,12,1,2,34398000.0
+Cavite,Apartment/Rowhouse,216,376,10,8,1,2,12983000.0
+Pampanga,House & Lot,382,473,13,10,1,1,21750000.0
+Baguio,House & Lot,253,415,11,8,2,0,29399000.0
+Iloilo,House & Lot,382,431,12,9,2,2,27444000.0
+Cebu City,Townhouse,264,357,10,8,2,2,28093000.0
+Cebu City,House & Lot,342,182,5,4,2,1,19540000.0
+Pampanga,House & Lot,284,351,10,8,1,2,15990000.0
+Metro Manila,House & Lot,140,235,6,4,2,0,28900000.0
+Bacolod,House & Lot,173,290,8,6,2,0,8973000.0
+Cebu City,Condominium,0,48,1,1,1,0,5060000.0
+Cavite,House & Lot,276,228,6,4,1,0,11142000.0
+Cebu City,Apartment/Rowhouse,265,348,9,7,2,2,24985000.0
+Davao City,House & Lot,81,59,1,1,1,1,4976000.0
+Baguio,House & Lot,73,77,2,1,1,0,6639000.0
+Bacolod,House & Lot,87,63,1,1,1,2,3042000.0
+Batangas,House & Lot,127,129,3,2,2,0,5485000.0
+Baguio,Townhouse,176,155,4,3,1,0,11390000.0
+Cavite,Apartment/Rowhouse,300,370,10,8,2,1,14990000.0
+Cavite,Condominium,0,98,2,1,1,0,4996000.0
+Davao City,House & Lot,295,491,14,11,1,0,35684000.0
+Bacolod,Apartment/Rowhouse,180,247,7,5,2,1,6429000.0
+Iloilo,House & Lot,351,600,17,13,2,2,32750000.0
+Iloilo,House & Lot,218,360,10,8,2,2,21305000.0
+Iloilo,House & Lot,169,296,8,6,2,1,14821000.0
+Pampanga,House & Lot,138,145,4,3,1,1,7169000.0
+Pampanga,House & Lot,357,542,15,12,1,0,23842000.0
+Iloilo,Apartment/Rowhouse,309,227,6,4,2,1,11171000.0
+Metro Manila,House & Lot,150,127,3,2,1,2,19509000.0
+Cavite,House & Lot,312,278,7,5,2,0,15565000.0
+Cavite,House & Lot,254,408,11,8,1,1,18725000.0
+Baguio,House & Lot,154,138,3,2,1,2,11346000.0
+Davao City,Condominium,0,45,1,1,1,1,3784000.0
+Baguio,Apartment/Rowhouse,151,136,3,2,2,2,11055000.0
+Baguio,Townhouse,235,308,8,6,1,2,20009000.0
+Metro Manila,House & Lot,269,165,4,3,1,2,31226000.0
+Laguna,Townhouse,102,146,4,3,1,0,6519000.0
+Laguna,Condominium,0,27,1,1,1,1,1777000.0
+Cavite,House & Lot,292,496,14,11,2,2,23789000.0
+Iloilo,Townhouse,245,226,6,4,2,2,13359000.0
+Cavite,House & Lot,118,97,2,1,1,2,6219000.0
+Cebu City,Apartment/Rowhouse,391,491,14,11,2,1,31622000.0
+Cebu City,House & Lot,275,326,9,7,2,0,28639000.0
+Iloilo,Townhouse,292,303,8,6,2,1,15393000.0
+Metro Manila,House & Lot,128,163,4,3,2,0,22293000.0
+Pampanga,House & Lot,311,500,14,11,1,0,19796000.0
+Iloilo,Apartment/Rowhouse,124,168,4,3,2,1,8230000.0
+Laguna,House & Lot,55,54,1,1,1,0,2898000.0
+Laguna,Apartment/Rowhouse,361,180,5,4,2,1,11546000.0
+Iloilo,Apartment/Rowhouse,290,170,4,3,2,1,9780000.0
+Metro Manila,House & Lot,299,243,6,4,1,2,39680000.0
+Bacolod,House & Lot,267,452,12,9,1,1,14062000.0
+Bacolod,House & Lot,152,153,4,3,2,1,6532000.0
+Iloilo,Apartment/Rowhouse,118,177,5,4,1,1,7974000.0
+Bacolod,House & Lot,110,124,3,2,2,1,4769000.0
+Bacolod,Townhouse,344,555,15,12,1,2,17182000.0
+Batangas,House & Lot,371,645,18,14,1,2,26395000.0
+Pampanga,Condominium,0,78,2,1,1,0,3750000.0
+Iloilo,House & Lot,358,207,5,4,1,2,15145000.0
+Cavite,Apartment/Rowhouse,81,51,1,1,1,2,2972000.0
+Cebu City,House & Lot,312,283,8,6,1,2,29116000.0
+Pampanga,Apartment/Rowhouse,96,56,1,1,1,2,3345000.0
+Metro Manila,Apartment/Rowhouse,237,142,4,3,2,2,22132000.0
+Pampanga,House & Lot,375,243,6,4,2,1,12141000.0
+Iloilo,Condominium,0,77,2,1,1,0,4742000.0
+Cavite,Apartment/Rowhouse,55,38,1,1,1,2,2468000.0
+Cebu City,House & Lot,179,274,7,5,2,0,21477000.0
+Laguna,House & Lot,250,247,7,5,1,0,14890000.0
+Iloilo,House & Lot,66,63,1,1,1,2,4539000.0
+Iloilo,House & Lot,224,317,9,7,2,1,16178000.0
+Iloilo,Townhouse,247,372,10,8,2,1,18355000.0
+Cebu City,House & Lot,208,352,10,8,2,2,30589000.0
+Iloilo,Apartment/Rowhouse,100,90,2,1,1,1,4564000.0
+Iloilo,Apartment/Rowhouse,197,307,8,6,1,1,12499000.0
+Davao City,House & Lot,209,257,7,5,2,0,19605000.0
+Metro Manila,House & Lot,226,348,9,7,1,1,46576000.0
+Batangas,Townhouse,317,188,5,4,1,1,8160000.0
+Laguna,House & Lot,156,156,4,3,2,0,8223000.0
+Metro Manila,House & Lot,268,429,12,9,1,0,60009000.0
+Cavite,Condominium,0,74,2,1,1,1,4090000.0
+Laguna,Townhouse,222,192,5,4,2,1,9667000.0
+Cavite,Condominium,0,106,3,2,1,0,6279000.0
+Cavite,Condominium,0,44,1,1,1,0,2515000.0
+Batangas,House & Lot,194,214,6,4,2,0,8217000.0
+Bacolod,House & Lot,193,162,4,3,2,0,6648000.0
+Cebu City,Condominium,0,43,1,1,1,0,4585000.0
+Metro Manila,House & Lot,170,180,5,4,2,2,29435000.0
+Cavite,Condominium,0,31,1,1,1,0,1790000.0
+Baguio,Apartment/Rowhouse,357,385,11,8,2,0,25825000.0
+Bacolod,Townhouse,387,505,14,11,2,2,16620000.0
+Bacolod,Townhouse,200,294,8,6,1,0,8311000.0
+Cavite,Apartment/Rowhouse,41,43,1,1,1,1,1949000.0
+Bacolod,Townhouse,308,401,11,8,2,1,12014000.0
+Cavite,House & Lot,273,483,13,10,1,2,21439000.0
+Cebu City,House & Lot,226,388,11,8,2,2,34071000.0
+Cavite,House & Lot,378,356,10,8,2,0,18481000.0
+Cavite,House & Lot,51,81,2,1,1,1,4090000.0
+Davao City,House & Lot,87,109,3,2,1,2,8984000.0
+Laguna,Apartment/Rowhouse,108,79,2,1,1,2,4158000.0
+Iloilo,Apartment/Rowhouse,48,63,1,1,1,0,2659000.0
+Bacolod,House & Lot,188,298,8,6,2,1,10890000.0
+Davao City,House & Lot,53,74,2,1,1,1,5546000.0
+Cebu City,House & Lot,161,101,2,1,1,2,11108000.0
+Davao City,House & Lot,398,509,14,11,2,0,37861000.0
+Batangas,Condominium,0,93,2,1,1,0,3961000.0
+Bacolod,Townhouse,164,224,6,4,1,2,7138000.0
+Cebu City,Townhouse,178,120,3,2,2,1,11335000.0
+Cavite,House & Lot,292,395,11,8,2,1,20061000.0
+Cebu City,House & Lot,59,100,2,1,1,2,8403000.0
+Bacolod,Apartment/Rowhouse,285,462,13,10,1,1,13184000.0
+Bacolod,House & Lot,90,131,3,2,1,2,5611000.0
+Baguio,House & Lot,96,77,2,1,1,0,6956000.0
+Baguio,Apartment/Rowhouse,283,449,12,9,1,1,26051000.0
+Cavite,House & Lot,273,341,9,7,2,2,16584000.0
+Baguio,Apartment/Rowhouse,326,182,5,4,2,0,14929000.0
+Metro Manila,House & Lot,123,133,3,2,1,1,20113000.0
+Baguio,Townhouse,69,67,1,1,1,1,5339000.0
+Metro Manila,Condominium,0,82,2,1,1,0,13058000.0
+Baguio,Townhouse,81,106,3,2,1,0,7182000.0
+Bacolod,Apartment/Rowhouse,349,251,7,5,1,1,8847000.0
+Batangas,Townhouse,221,182,5,4,1,0,7422000.0
+Bacolod,Townhouse,115,192,5,4,1,1,6145000.0
+Cebu City,House & Lot,321,515,14,11,2,2,45506000.0
+Laguna,Townhouse,369,529,15,12,1,0,22519000.0
+Bacolod,House & Lot,302,449,12,9,1,2,14988000.0
+Laguna,House & Lot,50,70,2,1,1,0,3286000.0
+Laguna,House & Lot,276,296,8,6,1,2,15266000.0
+Cavite,Apartment/Rowhouse,198,104,2,1,1,0,5034000.0
+Bacolod,Apartment/Rowhouse,392,240,6,4,2,0,8772000.0
+Baguio,House & Lot,265,391,11,8,2,1,32189000.0
+Bacolod,House & Lot,220,205,5,4,2,0,8808000.0
+Bacolod,House & Lot,182,265,7,5,1,0,8764000.0
+Bacolod,House & Lot,43,72,2,1,1,0,2483000.0
+Cebu City,Apartment/Rowhouse,48,78,2,1,1,1,5485000.0
+Batangas,House & Lot,144,183,5,4,2,0,7336000.0
+Bacolod,Condominium,0,93,2,1,1,0,3765000.0
+Bacolod,House & Lot,290,166,4,3,2,2,8621000.0
+Bacolod,Townhouse,333,510,14,11,1,0,15686000.0
+Iloilo,House & Lot,271,368,10,8,2,2,21767000.0
+Davao City,Townhouse,255,282,8,6,2,1,20041000.0
+Cavite,Condominium,0,118,3,2,1,0,7076000.0
+Pampanga,Townhouse,153,248,7,5,2,2,8927000.0
+Laguna,House & Lot,390,638,18,14,2,1,31783000.0
+Iloilo,Condominium,0,61,1,1,1,0,3945000.0
+Laguna,Apartment/Rowhouse,84,63,1,1,1,1,3390000.0
+Cavite,Apartment/Rowhouse,339,269,7,5,1,0,12816000.0
+Laguna,House & Lot,81,75,2,1,1,2,5170000.0
+Bacolod,House & Lot,167,94,2,1,1,0,4649000.0
+Iloilo,Townhouse,69,38,1,1,1,0,2380000.0
+Bacolod,House & Lot,347,446,12,9,2,1,15580000.0
+Cebu City,House & Lot,373,482,13,10,2,1,42412000.0
+Bacolod,House & Lot,134,221,6,4,2,0,7611000.0
+Baguio,Condominium,0,44,1,1,1,0,4377000.0
+Laguna,House & Lot,57,52,1,1,1,0,2904000.0
+Metro Manila,Condominium,0,27,1,1,1,1,4503000.0
+Baguio,House & Lot,166,160,4,3,1,0,13193000.0
+Cebu City,House & Lot,237,221,6,4,1,0,22222000.0
+Cebu City,Condominium,0,31,1,1,1,0,3239000.0
+Cavite,Apartment/Rowhouse,322,268,7,5,2,2,12714000.0
+Laguna,Condominium,0,95,2,1,1,0,5551000.0
+Cavite,Condominium,0,93,2,1,1,0,5475000.0
+Batangas,House & Lot,191,268,7,5,1,1,11043000.0
+Cebu City,House & Lot,383,598,17,13,1,2,48668000.0
+Batangas,Apartment/Rowhouse,227,347,9,7,2,1,10139000.0
+Cavite,House & Lot,148,171,4,3,1,2,8330000.0
+Iloilo,Townhouse,185,295,8,6,2,2,14807000.0
+Metro Manila,Townhouse,111,139,3,2,2,1,17184000.0
+Pampanga,House & Lot,240,196,5,4,2,2,10444000.0
+Cavite,Apartment/Rowhouse,243,172,4,3,2,1,7914000.0
+Cavite,House & Lot,350,197,5,4,1,0,11796000.0
+Bacolod,House & Lot,217,110,3,2,1,2,5820000.0
+Bacolod,Townhouse,147,261,7,5,2,2,8645000.0
+Iloilo,House & Lot,201,117,3,2,1,1,9493000.0
+Davao City,House & Lot,83,115,3,2,1,1,8965000.0
+Cebu City,House & Lot,42,28,1,1,1,1,3073000.0
+Metro Manila,Townhouse,361,239,6,4,2,2,35530000.0
+Davao City,House & Lot,258,299,8,6,1,0,23943000.0
+Davao City,Apartment/Rowhouse,396,233,6,4,1,1,16889000.0
+Batangas,Apartment/Rowhouse,363,533,15,12,1,0,16253000.0
+Baguio,House & Lot,376,530,15,12,2,0,38827000.0
+Bacolod,House & Lot,146,227,6,4,2,2,9221000.0
+Laguna,Townhouse,78,44,1,1,1,0,2877000.0
+Baguio,House & Lot,96,141,4,3,1,0,10391000.0
+Bacolod,Townhouse,366,265,7,5,2,1,10544000.0
+Baguio,House & Lot,276,314,8,6,2,1,23998000.0
+Cavite,House & Lot,238,211,6,4,2,0,11696000.0
+Pampanga,House & Lot,253,333,9,7,2,2,16040000.0
+Laguna,Apartment/Rowhouse,328,359,10,8,1,2,16535000.0
+Pampanga,House & Lot,282,248,7,5,1,1,12099000.0
+Cebu City,House & Lot,55,34,1,1,1,2,4349000.0
+Cebu City,Townhouse,208,176,5,4,2,0,16725000.0
+Cavite,Townhouse,386,351,10,8,1,0,15616000.0
+Bacolod,Apartment/Rowhouse,226,226,6,4,2,2,8111000.0
+Bacolod,Townhouse,186,270,7,5,2,0,7872000.0
+Iloilo,Condominium,0,27,1,1,1,1,2093000.0
+Metro Manila,Condominium,0,99,2,1,1,1,17015000.0
+Pampanga,Condominium,0,115,3,2,1,0,6002000.0
+Metro Manila,Townhouse,330,443,12,9,2,2,56909000.0
+Cavite,House & Lot,90,56,1,1,1,1,3823000.0
+Bacolod,House & Lot,297,327,9,7,2,1,12853000.0
+Cavite,Townhouse,88,82,2,1,1,0,4273000.0
+Laguna,House & Lot,228,336,9,7,2,1,16323000.0
+Baguio,House & Lot,310,419,11,8,1,0,30335000.0
+Baguio,Condominium,0,45,1,1,1,1,4608000.0
+Bacolod,House & Lot,397,631,18,14,1,2,21700000.0
+Iloilo,House & Lot,60,49,1,1,1,1,3672000.0
+Baguio,House & Lot,97,124,3,2,1,1,10266000.0
+Bacolod,Apartment/Rowhouse,119,194,5,4,1,0,4605000.0
+Iloilo,House & Lot,132,69,1,1,1,1,5141000.0
+Laguna,House & Lot,112,97,2,1,1,2,5867000.0
+Bacolod,House & Lot,344,451,12,9,2,2,17920000.0
+Bacolod,House & Lot,322,451,12,9,2,1,17273000.0
+Metro Manila,House & Lot,192,122,3,2,2,2,20845000.0
+Laguna,Apartment/Rowhouse,121,191,5,4,2,1,8104000.0
+Cavite,Townhouse,248,263,7,5,1,0,11915000.0
+Davao City,Apartment/Rowhouse,370,289,8,6,2,0,18040000.0
+Bacolod,Apartment/Rowhouse,67,52,1,1,1,2,2390000.0
+Pampanga,Apartment/Rowhouse,310,430,12,9,2,2,14715000.0
+Cavite,House & Lot,114,100,2,1,1,2,6328000.0
+Cebu City,Townhouse,354,387,11,8,2,2,29866000.0
+Cebu City,Condominium,0,95,2,1,1,0,9592000.0
+Laguna,Condominium,0,52,1,1,1,0,3123000.0
+Davao City,House & Lot,349,326,9,7,1,2,25388000.0
+Metro Manila,House & Lot,346,231,6,4,2,2,42242000.0
+Cavite,House & Lot,331,267,7,5,1,1,15203000.0
+Pampanga,House & Lot,139,192,5,4,1,2,8100000.0
+Bacolod,House & Lot,375,436,12,9,2,2,18158000.0
+Laguna,House & Lot,215,295,8,6,2,2,14743000.0
+Bacolod,House & Lot,41,26,1,1,1,2,1875000.0
+Cebu City,House & Lot,179,203,5,4,2,1,17891000.0
+Metro Manila,House & Lot,71,122,3,2,2,0,15191000.0
+Metro Manila,House & Lot,139,227,6,4,2,1,31005000.0
+Batangas,House & Lot,159,243,6,4,1,2,10049000.0
+Batangas,House & Lot,270,217,6,4,2,1,10968000.0
+Bacolod,House & Lot,249,419,11,8,1,1,15255000.0
+Cavite,House & Lot,392,687,19,15,1,0,32160000.0
+Laguna,House & Lot,84,147,4,3,1,0,6583000.0
+Davao City,House & Lot,292,179,5,4,1,1,16088000.0
+Cavite,House & Lot,180,302,8,6,2,2,13546000.0
+Pampanga,House & Lot,103,148,4,3,2,2,6969000.0
+Laguna,House & Lot,339,438,12,9,1,2,24166000.0
+Iloilo,House & Lot,94,83,2,1,1,2,5663000.0
+Baguio,House & Lot,338,340,9,7,2,0,28230000.0
+Cebu City,House & Lot,393,409,11,8,2,0,34073000.0
+Pampanga,House & Lot,153,145,4,3,1,0,6919000.0
+Batangas,Condominium,0,44,1,1,1,1,2407000.0
+Baguio,Townhouse,79,104,2,1,1,2,7752000.0
+Cebu City,House & Lot,206,302,8,6,2,0,26820000.0
+Iloilo,House & Lot,391,302,8,6,2,0,17801000.0
+Metro Manila,House & Lot,61,89,2,1,1,0,12116000.0
+Metro Manila,House & Lot,281,160,4,3,1,1,31921000.0
+Bacolod,House & Lot,280,345,9,7,2,0,13582000.0
+Bacolod,Apartment/Rowhouse,111,144,4,3,2,0,3925000.0
+Pampanga,Apartment/Rowhouse,285,495,14,11,2,2,16340000.0
+Davao City,House & Lot,143,89,2,1,1,0,7979000.0
+Bacolod,Apartment/Rowhouse,290,164,4,3,2,1,7264000.0
+Bacolod,House & Lot,269,268,7,5,2,1,10947000.0
+Metro Manila,Apartment/Rowhouse,249,437,12,9,2,0,40986000.0
+Cavite,Apartment/Rowhouse,130,65,1,1,1,0,3916000.0
+Batangas,House & Lot,212,218,6,4,2,2,10759000.0
+Bacolod,House & Lot,182,188,5,4,2,1,7298000.0
+Metro Manila,Condominium,0,88,2,1,1,0,13315000.0
+Cebu City,Townhouse,271,187,5,4,2,2,19242000.0
+Metro Manila,House & Lot,385,642,18,14,2,1,89307000.0
+Laguna,Apartment/Rowhouse,237,278,7,5,2,0,11943000.0
+Bacolod,Condominium,0,100,2,1,1,1,4151000.0
+Pampanga,Condominium,0,93,2,1,1,0,5129000.0
+Davao City,Townhouse,255,447,12,9,2,2,24159000.0
+Iloilo,House & Lot,144,74,2,1,1,1,6102000.0
+Laguna,House & Lot,219,263,7,5,2,0,14790000.0
+Cavite,Townhouse,160,239,6,4,1,1,10609000.0
+Metro Manila,House & Lot,52,40,1,1,1,0,5983000.0
+Davao City,Townhouse,300,378,10,8,1,2,25920000.0
+Davao City,Townhouse,108,117,3,2,1,1,8686000.0
+Baguio,Townhouse,55,33,1,1,1,0,3371000.0
+Iloilo,Condominium,0,112,3,2,1,0,7081000.0
+Baguio,Apartment/Rowhouse,217,284,8,6,2,2,18550000.0
+Metro Manila,Townhouse,253,231,6,4,2,1,29391000.0
+Iloilo,House & Lot,99,86,2,1,1,2,5505000.0
+Cebu City,House & Lot,284,181,5,4,1,0,18342000.0
+Iloilo,Townhouse,225,269,7,5,2,1,13821000.0
+Cebu City,House & Lot,277,158,4,3,2,1,19805000.0
+Pampanga,Townhouse,258,433,12,9,2,0,15951000.0
+Bacolod,House & Lot,380,242,6,4,1,1,10886000.0
+Metro Manila,House & Lot,311,510,14,11,1,1,66277000.0
+Cebu City,House & Lot,312,230,6,4,2,1,25162000.0
+Cebu City,House & Lot,356,287,8,6,1,1,30034000.0
+Laguna,House & Lot,265,333,9,7,2,0,16293000.0
+Pampanga,House & Lot,294,423,12,9,2,2,17162000.0
+Metro Manila,Townhouse,295,194,5,4,2,0,31392000.0
+Cavite,Townhouse,76,107,3,2,1,2,5468000.0
+Cavite,Apartment/Rowhouse,125,70,2,1,1,0,3400000.0
+Metro Manila,Apartment/Rowhouse,139,200,5,4,1,2,20296000.0
+Laguna,House & Lot,68,81,2,1,1,1,4426000.0
+Cavite,House & Lot,253,433,12,9,2,2,20078000.0
+Baguio,Condominium,0,32,1,1,1,1,3413000.0
+Iloilo,House & Lot,157,160,4,3,2,0,9748000.0
+Davao City,House & Lot,117,135,3,2,1,2,10945000.0
+Davao City,Townhouse,188,131,3,2,2,1,11383000.0
+Baguio,House & Lot,140,188,5,4,1,1,15381000.0
+Metro Manila,Apartment/Rowhouse,265,437,12,9,2,1,40862000.0
+Cebu City,House & Lot,376,431,12,9,2,1,35168000.0
+Metro Manila,House & Lot,365,323,9,7,1,1,45604000.0
+Baguio,Townhouse,329,592,16,12,2,2,36125000.0
+Metro Manila,Condominium,0,100,2,1,1,0,14495000.0
+Iloilo,House & Lot,201,236,6,4,1,1,14898000.0
+Cebu City,House & Lot,259,146,4,3,2,1,17626000.0
+Cavite,House & Lot,300,190,5,4,1,1,11234000.0
+Bacolod,House & Lot,265,257,7,5,1,2,9583000.0
+Laguna,House & Lot,171,101,2,1,1,0,6818000.0
+Laguna,Townhouse,262,261,7,5,2,1,13594000.0
+Baguio,Apartment/Rowhouse,302,412,11,8,1,2,25391000.0
+Bacolod,Townhouse,154,198,5,4,2,0,6700000.0
+Batangas,House & Lot,158,137,3,2,1,2,6503000.0
+Davao City,House & Lot,323,440,12,9,2,2,33850000.0
+Davao City,Apartment/Rowhouse,298,222,6,4,2,1,15312000.0
+Pampanga,Apartment/Rowhouse,290,259,7,5,2,0,10359000.0
+Cebu City,House & Lot,241,305,8,6,2,2,27897000.0
+Metro Manila,Apartment/Rowhouse,275,330,9,7,2,0,37969000.0
+Cavite,House & Lot,79,54,1,1,1,0,3140000.0
+Batangas,House & Lot,176,120,3,2,2,2,6712000.0
+Pampanga,Apartment/Rowhouse,320,282,8,6,1,1,11591000.0
+Pampanga,Apartment/Rowhouse,47,24,1,1,1,2,1894000.0
+Pampanga,Townhouse,258,133,3,2,2,1,8071000.0
+Metro Manila,Apartment/Rowhouse,347,502,14,11,1,0,56049000.0
+Laguna,House & Lot,236,126,3,2,2,2,9420000.0
+Batangas,House & Lot,49,67,1,1,1,0,2652000.0
+Bacolod,House & Lot,216,382,10,8,2,1,13143000.0
+Bacolod,House & Lot,351,252,7,5,2,1,10580000.0
+Baguio,House & Lot,219,294,8,6,2,2,25184000.0
+Iloilo,House & Lot,370,520,14,11,2,1,25723000.0
+Iloilo,House & Lot,94,141,4,3,2,1,8050000.0
+Batangas,Condominium,0,101,2,1,1,1,4469000.0
+Baguio,Condominium,0,26,1,1,1,0,2418000.0
+Baguio,Townhouse,315,532,15,12,1,0,37854000.0
+Batangas,House & Lot,124,155,4,3,2,0,6856000.0
+Laguna,House & Lot,338,181,5,4,2,2,13648000.0
+Davao City,Condominium,0,63,1,1,1,0,5271000.0
+Baguio,House & Lot,130,172,4,3,2,0,13040000.0
+Baguio,House & Lot,103,169,4,3,2,0,14034000.0
+Davao City,Townhouse,205,212,6,4,2,0,13092000.0
+Iloilo,House & Lot,112,101,2,1,1,0,6529000.0
+Pampanga,Condominium,0,67,1,1,1,0,3305000.0
+Baguio,House & Lot,357,517,14,11,1,0,40430000.0
+Pampanga,Apartment/Rowhouse,223,253,7,5,2,0,9118000.0
+Laguna,House & Lot,353,234,6,4,1,1,13561000.0
+Cavite,House & Lot,78,53,1,1,1,1,3722000.0
+Baguio,House & Lot,162,197,5,4,1,1,14767000.0
+Pampanga,House & Lot,85,108,3,2,1,1,5182000.0
+Davao City,House & Lot,251,238,6,4,2,1,17897000.0
+Cavite,Apartment/Rowhouse,84,100,2,1,1,2,4141000.0
+Metro Manila,Apartment/Rowhouse,199,312,8,6,2,1,32086000.0
+Cebu City,Apartment/Rowhouse,184,120,3,2,2,1,11346000.0
+Davao City,House & Lot,359,184,5,4,1,1,17215000.0
+Cavite,House & Lot,334,238,6,4,2,0,13034000.0
+Iloilo,House & Lot,203,218,6,4,1,2,12457000.0
+Metro Manila,Condominium,0,95,2,1,1,0,14986000.0
+Batangas,House & Lot,267,327,9,7,2,0,13721000.0
+Iloilo,House & Lot,392,626,17,13,1,2,35892000.0
+Cebu City,House & Lot,352,247,7,5,2,2,26162000.0
+Iloilo,House & Lot,120,173,4,3,1,2,9639000.0
+Laguna,Townhouse,242,412,11,8,1,0,19038000.0
+Davao City,Townhouse,196,113,3,2,1,1,10009000.0
+Bacolod,Condominium,0,81,2,1,1,1,3462000.0
+Iloilo,Condominium,0,89,2,1,1,0,5301000.0
+Metro Manila,House & Lot,396,499,14,11,2,2,72752000.0
+Metro Manila,House & Lot,132,114,3,2,1,1,16995000.0
+Pampanga,Townhouse,41,51,1,1,1,0,1950000.0
+Pampanga,Townhouse,244,330,9,7,2,2,13343000.0
+Cavite,House & Lot,95,156,4,3,2,0,7665000.0
+Baguio,House & Lot,259,441,12,9,2,2,36335000.0
+Pampanga,House & Lot,189,195,5,4,2,2,9229000.0
+Batangas,House & Lot,191,268,7,5,2,2,11584000.0
+Metro Manila,House & Lot,380,484,13,10,2,2,67203000.0
+Bacolod,House & Lot,395,678,19,15,1,2,21267000.0
+Batangas,House & Lot,173,237,6,4,2,1,9080000.0
+Bacolod,House & Lot,255,165,4,3,2,0,7824000.0
+Metro Manila,Apartment/Rowhouse,75,65,1,1,1,1,8625000.0
+Bacolod,Apartment/Rowhouse,178,278,7,5,2,2,7920000.0
+Bacolod,House & Lot,240,402,11,8,1,2,13810000.0
+Cebu City,Apartment/Rowhouse,298,382,10,8,2,1,24768000.0
+Cavite,Apartment/Rowhouse,342,567,16,12,1,1,21010000.0
+Cavite,House & Lot,41,33,1,1,1,1,2147000.0
+Iloilo,House & Lot,337,488,13,10,2,0,26053000.0
+Cebu City,House & Lot,100,166,4,3,2,2,14005000.0
+Metro Manila,House & Lot,392,525,15,12,1,0,76473000.0
+Iloilo,Apartment/Rowhouse,319,376,10,8,2,1,16970000.0
+Metro Manila,House & Lot,202,182,5,4,2,0,27268000.0
+Bacolod,House & Lot,177,270,7,5,2,1,9242000.0
+Bacolod,Apartment/Rowhouse,95,122,3,2,1,1,3750000.0
+Iloilo,House & Lot,130,116,3,2,1,1,7934000.0
+Metro Manila,Condominium,0,77,2,1,1,0,11561000.0
+Cavite,House & Lot,189,148,4,3,2,1,8360000.0
+Davao City,Apartment/Rowhouse,278,222,6,4,2,0,15741000.0
+Iloilo,Apartment/Rowhouse,204,111,3,2,1,1,7454000.0
+Baguio,House & Lot,200,323,9,7,2,2,23506000.0
+Batangas,House & Lot,171,233,6,4,2,0,8330000.0
+Baguio,Condominium,0,57,1,1,1,1,5798000.0
+Davao City,Apartment/Rowhouse,164,239,6,4,2,1,11924000.0
+Davao City,House & Lot,144,93,2,1,1,0,8397000.0
+Baguio,House & Lot,320,233,6,4,2,1,24320000.0
+Metro Manila,Townhouse,227,161,4,3,2,2,24902000.0
+Bacolod,Condominium,0,60,1,1,1,1,2649000.0
+Cavite,House & Lot,67,103,2,1,1,1,5155000.0
+Davao City,House & Lot,140,152,4,3,2,1,10863000.0
+Metro Manila,House & Lot,104,132,3,2,2,0,19561000.0
+Cebu City,Apartment/Rowhouse,72,87,2,1,1,0,5843000.0
+Cavite,House & Lot,40,55,1,1,1,2,3048000.0
+Iloilo,House & Lot,146,101,2,1,1,1,6425000.0
+Bacolod,House & Lot,356,378,10,8,2,2,16117000.0
+Baguio,House & Lot,354,259,7,5,1,1,22047000.0
+Cavite,Apartment/Rowhouse,169,113,3,2,1,1,6129000.0
+Davao City,Apartment/Rowhouse,254,391,11,8,2,1,22655000.0
+Pampanga,House & Lot,389,294,8,6,1,1,16600000.0
+Baguio,Condominium,0,37,1,1,1,0,3309000.0
+Bacolod,Condominium,0,43,1,1,1,0,1885000.0
+Laguna,House & Lot,316,400,11,8,1,1,19181000.0
+Batangas,House & Lot,198,206,5,4,2,0,8010000.0
+Bacolod,House & Lot,398,669,19,15,2,0,20789000.0
+Batangas,Condominium,0,95,2,1,1,0,4733000.0
+Davao City,Apartment/Rowhouse,208,158,4,3,1,2,10365000.0
+Batangas,Condominium,0,59,1,1,1,0,2883000.0
+Pampanga,House & Lot,354,377,10,8,1,1,17415000.0
+Bacolod,House & Lot,144,73,2,1,1,1,3760000.0
+Davao City,Apartment/Rowhouse,370,635,18,14,2,0,32105000.0
+Batangas,Condominium,0,42,1,1,1,1,2355000.0
+Metro Manila,Apartment/Rowhouse,353,229,6,4,1,1,31540000.0
+Davao City,Apartment/Rowhouse,175,233,6,4,2,2,12937000.0
+Cavite,Apartment/Rowhouse,48,54,1,1,1,0,1970000.0
+Cavite,House & Lot,214,212,6,4,2,2,10518000.0
+Laguna,Apartment/Rowhouse,363,440,12,9,2,0,18430000.0
+Bacolod,House & Lot,372,433,12,9,1,1,17508000.0
+Bacolod,Townhouse,105,120,3,2,1,1,4328000.0
+Cavite,House & Lot,72,107,3,2,1,1,4884000.0
+Cebu City,House & Lot,82,88,2,1,1,2,8559000.0
+Cavite,House & Lot,98,135,3,2,1,2,6894000.0
+Pampanga,House & Lot,371,495,14,11,2,2,22778000.0
+Metro Manila,Apartment/Rowhouse,238,153,4,3,2,1,19837000.0
+Baguio,Apartment/Rowhouse,114,81,2,1,1,1,6950000.0
+Pampanga,House & Lot,378,284,8,6,2,0,15551000.0
+Cebu City,House & Lot,172,182,5,4,2,0,16315000.0
+Cavite,Apartment/Rowhouse,232,188,5,4,1,1,9106000.0
+Batangas,House & Lot,49,46,1,1,1,2,2447000.0
+Batangas,House & Lot,152,148,4,3,1,2,6720000.0
+Davao City,Apartment/Rowhouse,115,158,4,3,1,0,9102000.0
+Iloilo,Townhouse,62,71,2,1,1,0,3356000.0
+Davao City,Apartment/Rowhouse,248,301,8,6,1,0,18064000.0
+Baguio,House & Lot,246,135,3,2,2,1,13061000.0
+Davao City,Townhouse,49,41,1,1,1,1,3349000.0
+Cebu City,Condominium,0,87,2,1,1,1,9472000.0
+Batangas,Townhouse,240,166,4,3,1,1,7770000.0
+Metro Manila,Apartment/Rowhouse,248,281,8,6,2,0,33961000.0
+Iloilo,House & Lot,133,87,2,1,1,0,5943000.0
+Metro Manila,House & Lot,384,662,18,14,1,1,84991000.0
+Baguio,House & Lot,378,379,10,8,1,1,30162000.0
+Metro Manila,House & Lot,62,81,2,1,1,2,11079000.0
+Metro Manila,House & Lot,102,135,3,2,2,0,16876000.0
+Cavite,House & Lot,233,312,8,6,2,0,15168000.0
+Bacolod,House & Lot,112,190,5,4,1,0,6266000.0
+Laguna,Apartment/Rowhouse,249,336,9,7,2,2,12413000.0
+Laguna,Condominium,0,98,2,1,1,0,5615000.0
+Iloilo,House & Lot,305,361,10,8,2,0,21427000.0
+Iloilo,House & Lot,338,253,7,5,2,0,17511000.0
+Batangas,House & Lot,131,84,2,1,1,0,3897000.0
+Pampanga,Apartment/Rowhouse,257,289,8,6,1,1,10065000.0
+Cebu City,House & Lot,129,157,4,3,1,1,14107000.0
+Bacolod,Condominium,0,33,1,1,1,1,1766000.0
+Bacolod,Condominium,0,45,1,1,1,1,2070000.0
+Batangas,Apartment/Rowhouse,135,105,3,2,1,0,3611000.0
+Cavite,Townhouse,262,226,6,4,1,1,11769000.0
+Pampanga,House & Lot,396,577,16,12,2,1,25372000.0
+Iloilo,House & Lot,162,212,6,4,2,2,11758000.0
+Baguio,Condominium,0,67,1,1,1,1,6225000.0
+Bacolod,House & Lot,65,113,3,2,1,1,4347000.0
+Cavite,Townhouse,312,554,15,12,2,0,22822000.0
+Bacolod,House & Lot,362,459,13,10,1,0,15620000.0
+Baguio,Townhouse,128,190,5,4,1,0,13668000.0
+Iloilo,House & Lot,204,305,8,6,2,1,16258000.0
+Bacolod,Apartment/Rowhouse,141,91,2,1,1,0,3207000.0
+Laguna,House & Lot,238,354,10,8,2,1,19426000.0
+Iloilo,House & Lot,335,539,15,12,2,0,28863000.0
+Batangas,House & Lot,366,617,17,13,2,0,22820000.0
+Bacolod,Apartment/Rowhouse,319,515,14,11,1,1,14750000.0
+Cebu City,Townhouse,388,579,16,12,2,1,41818000.0
+Batangas,Townhouse,309,420,12,9,2,2,15974000.0
+Iloilo,Townhouse,319,277,7,5,1,1,15553000.0
+Bacolod,House & Lot,43,69,1,1,1,0,2595000.0
+Pampanga,Townhouse,226,275,7,5,2,2,12374000.0
+Batangas,House & Lot,109,170,4,3,1,1,7180000.0
+Pampanga,House & Lot,386,386,11,8,2,1,19759000.0
+Bacolod,Condominium,0,88,2,1,1,0,3613000.0
+Cebu City,Townhouse,99,147,4,3,2,0,11260000.0
+Bacolod,House & Lot,396,304,8,6,2,1,14070000.0
+Metro Manila,Condominium,0,89,2,1,1,0,15422000.0
+Pampanga,House & Lot,320,427,12,9,2,1,17496000.0
+Cebu City,Townhouse,184,194,5,4,2,0,14524000.0
+Cavite,House & Lot,82,72,2,1,1,0,3533000.0
+Bacolod,Townhouse,375,316,9,7,2,1,12868000.0
+Cebu City,House & Lot,127,206,5,4,2,0,16863000.0
+Davao City,House & Lot,113,153,4,3,1,2,11507000.0
+Batangas,House & Lot,266,312,8,6,2,1,13749000.0
+Cavite,House & Lot,286,500,14,11,2,2,22350000.0
+Pampanga,House & Lot,56,65,1,1,1,1,3000000.0
+Pampanga,House & Lot,82,123,3,2,1,2,5242000.0
+Cavite,House & Lot,267,369,10,8,2,0,16283000.0
+Bacolod,House & Lot,195,212,6,4,2,2,8511000.0
+Pampanga,House & Lot,176,220,6,4,1,0,10076000.0
+Bacolod,Townhouse,165,212,6,4,1,0,6295000.0
+Cavite,House & Lot,46,28,1,1,1,0,1783000.0
+Pampanga,Condominium,0,111,3,2,1,0,5728000.0
+Metro Manila,Apartment/Rowhouse,50,43,1,1,1,2,6082000.0
+Laguna,House & Lot,314,209,5,4,2,1,12842000.0
+Cebu City,Townhouse,307,381,10,8,2,1,30492000.0
+Cavite,House & Lot,255,185,5,4,1,0,10320000.0
+Metro Manila,Apartment/Rowhouse,60,83,2,1,1,2,8907000.0
+Metro Manila,House & Lot,305,396,11,8,2,2,53969000.0
+Laguna,House & Lot,220,215,6,4,2,0,10954000.0
+Bacolod,Townhouse,313,244,6,4,2,0,9774000.0
+Metro Manila,Apartment/Rowhouse,332,537,15,12,1,0,49562000.0
+Bacolod,Apartment/Rowhouse,280,188,5,4,2,2,7690000.0
+Iloilo,Townhouse,190,136,3,2,1,0,8226000.0
+Batangas,House & Lot,333,427,12,9,1,0,16226000.0
+Davao City,House & Lot,100,91,2,1,1,1,7429000.0
+Metro Manila,Condominium,0,38,1,1,1,1,6408000.0
+Pampanga,Apartment/Rowhouse,94,148,4,3,1,2,5614000.0
+Pampanga,House & Lot,70,81,2,1,1,1,4127000.0
+Cavite,Townhouse,113,136,3,2,2,0,5814000.0
+Cebu City,Apartment/Rowhouse,126,180,5,4,2,0,11671000.0
+Laguna,Condominium,0,85,2,1,1,1,4907000.0
+Pampanga,Townhouse,190,235,6,4,1,1,9664000.0
+Metro Manila,Apartment/Rowhouse,164,224,6,4,2,1,22777000.0
+Pampanga,Townhouse,321,444,12,9,1,2,17685000.0
+Metro Manila,House & Lot,55,98,2,1,1,2,14496000.0
+Bacolod,Townhouse,101,94,2,1,1,1,3429000.0
+Bacolod,Apartment/Rowhouse,154,221,6,4,2,1,6585000.0
+Davao City,Apartment/Rowhouse,281,340,9,7,2,0,18270000.0
+Laguna,House & Lot,342,237,6,4,2,0,15376000.0
+Iloilo,House & Lot,111,113,3,2,1,0,6468000.0
+Metro Manila,House & Lot,277,288,8,6,1,0,38263000.0
+Batangas,House & Lot,389,499,14,11,2,2,19992000.0
+Cavite,Apartment/Rowhouse,262,217,6,4,1,0,9379000.0
+Pampanga,Townhouse,149,203,5,4,2,2,8364000.0
+Baguio,Apartment/Rowhouse,96,150,4,3,1,1,9781000.0
+Baguio,House & Lot,49,43,1,1,1,1,3907000.0
+Cavite,Apartment/Rowhouse,314,317,9,7,2,0,13258000.0
+Batangas,House & Lot,247,358,10,8,2,2,14247000.0
+Batangas,Apartment/Rowhouse,119,197,5,4,2,1,6409000.0
+Baguio,House & Lot,64,93,2,1,1,2,7984000.0
+Cebu City,Apartment/Rowhouse,134,224,6,4,2,1,15357000.0
+Pampanga,Apartment/Rowhouse,373,338,9,7,2,2,14355000.0
+Pampanga,House & Lot,347,461,13,10,2,0,21859000.0
+Baguio,Townhouse,307,216,6,4,1,2,19685000.0
+Baguio,Apartment/Rowhouse,249,416,11,8,2,2,21939000.0
+Baguio,House & Lot,106,168,4,3,1,2,12792000.0
+Iloilo,Townhouse,177,192,5,4,2,0,9554000.0
+Pampanga,Townhouse,254,166,4,3,1,0,8275000.0
+Baguio,House & Lot,162,96,2,1,1,0,10383000.0
+Metro Manila,Apartment/Rowhouse,299,192,5,4,2,2,28173000.0
+Iloilo,Apartment/Rowhouse,108,95,2,1,1,1,4844000.0
+Batangas,House & Lot,252,352,10,8,1,0,14453000.0
+Baguio,Townhouse,193,330,9,7,2,0,19857000.0
+Iloilo,Condominium,0,91,2,1,1,0,5967000.0
+Baguio,Apartment/Rowhouse,69,103,2,1,1,2,6162000.0
+Pampanga,Apartment/Rowhouse,369,538,15,12,1,2,18248000.0
+Metro Manila,Townhouse,154,246,7,5,1,0,31369000.0
+Laguna,House & Lot,126,121,3,2,1,2,7371000.0
+Cavite,House & Lot,134,213,6,4,1,0,9592000.0
+Pampanga,Townhouse,390,678,19,15,2,2,23106000.0
+Davao City,Townhouse,58,42,1,1,1,1,3595000.0
+Cebu City,House & Lot,87,91,2,1,1,0,9144000.0
+Baguio,House & Lot,370,185,5,4,1,1,21878000.0
+Laguna,Condominium,0,83,2,1,1,1,5289000.0
+Baguio,Townhouse,95,138,3,2,2,2,10238000.0
+Batangas,House & Lot,228,203,5,4,1,0,8850000.0
+Cavite,House & Lot,333,273,7,5,2,0,16211000.0
+Cebu City,Apartment/Rowhouse,155,80,2,1,1,0,7736000.0
+Batangas,Condominium,0,74,2,1,1,0,3346000.0
+Batangas,Townhouse,126,145,4,3,2,0,5205000.0
+Laguna,House & Lot,241,227,6,4,2,2,13159000.0
+Bacolod,House & Lot,367,321,9,7,2,2,13303000.0
+Davao City,Apartment/Rowhouse,292,403,11,8,2,2,21017000.0
+Cavite,Townhouse,386,557,15,12,1,2,24882000.0
+Batangas,House & Lot,293,249,7,5,1,2,12716000.0
+Laguna,House & Lot,387,318,9,7,1,1,16992000.0
+Batangas,House & Lot,355,399,11,8,1,0,16399000.0
+Cebu City,Condominium,0,85,2,1,1,0,8738000.0
+Cebu City,House & Lot,206,294,8,6,2,1,27136000.0
+Davao City,House & Lot,339,416,11,8,2,0,27770000.0
+Cavite,House & Lot,230,312,8,6,2,2,15863000.0
+Metro Manila,House & Lot,144,178,5,4,2,1,23371000.0
+Baguio,Apartment/Rowhouse,295,466,13,10,1,1,24400000.0
+Bacolod,Townhouse,310,492,14,11,2,2,15100000.0
+Iloilo,House & Lot,146,150,4,3,1,2,8461000.0
+Batangas,House & Lot,327,241,6,4,1,1,11185000.0
+Iloilo,Townhouse,103,55,1,1,1,0,3691000.0
+Metro Manila,Townhouse,149,77,2,1,1,1,13922000.0
+Cavite,House & Lot,65,71,2,1,1,0,3606000.0
+Davao City,House & Lot,246,249,7,5,2,2,19738000.0
+Metro Manila,Townhouse,286,170,4,3,2,0,29386000.0
+Pampanga,House & Lot,60,99,2,1,1,1,4255000.0
+Davao City,House & Lot,372,417,11,8,2,0,28503000.0
+Batangas,Apartment/Rowhouse,131,149,4,3,2,2,5659000.0
+Metro Manila,Townhouse,88,72,2,1,1,0,10114000.0
+Cavite,House & Lot,366,521,14,11,1,1,26555000.0
+Cavite,Townhouse,194,255,7,5,1,0,11201000.0
+Iloilo,Townhouse,118,99,2,1,1,2,5652000.0
+Pampanga,Apartment/Rowhouse,319,310,8,6,2,1,11140000.0
+Metro Manila,House & Lot,275,483,13,10,2,1,64858000.0
+Cebu City,Condominium,0,31,1,1,1,0,3292000.0
+Pampanga,Apartment/Rowhouse,294,496,14,11,2,2,14922000.0
+Bacolod,Apartment/Rowhouse,260,218,6,4,2,2,7784000.0
+Laguna,House & Lot,197,253,7,5,2,2,14966000.0
+Davao City,House & Lot,298,499,14,11,2,2,33123000.0
+Batangas,Apartment/Rowhouse,116,164,4,3,2,2,5838000.0
+Baguio,House & Lot,359,544,15,12,2,2,40285000.0
+Baguio,Apartment/Rowhouse,80,111,3,2,1,0,6397000.0
+Cebu City,Townhouse,233,199,5,4,2,2,19501000.0
+Cavite,Apartment/Rowhouse,178,111,3,2,1,1,5259000.0
+Iloilo,House & Lot,343,537,15,12,2,1,26142000.0
+Batangas,Townhouse,280,371,10,8,2,2,13273000.0
+Baguio,House & Lot,70,59,1,1,1,0,5050000.0
+Iloilo,Apartment/Rowhouse,187,236,6,4,1,0,10010000.0
+Laguna,House & Lot,164,193,5,4,1,1,10699000.0
+Davao City,House & Lot,260,425,12,9,1,0,27384000.0
+Pampanga,House & Lot,51,28,1,1,1,0,1650000.0
+Cebu City,Apartment/Rowhouse,72,45,1,1,1,2,4389000.0
+Metro Manila,Apartment/Rowhouse,288,186,5,4,2,0,26988000.0
+Metro Manila,House & Lot,175,140,4,3,1,0,23840000.0
+Cavite,House & Lot,165,167,4,3,2,0,7774000.0
+Iloilo,House & Lot,184,142,4,3,2,2,9592000.0
+Bacolod,House & Lot,358,566,16,12,2,1,20524000.0
+Bacolod,House & Lot,132,229,6,4,1,2,7746000.0
+Cavite,Apartment/Rowhouse,331,449,12,9,2,0,17444000.0
+Cavite,House & Lot,116,124,3,2,2,1,6132000.0
+Baguio,Condominium,0,76,2,1,1,0,7285000.0
+Metro Manila,House & Lot,289,431,12,9,1,0,60973000.0
+Iloilo,Condominium,0,81,2,1,1,0,5455000.0
+Laguna,Townhouse,55,83,2,1,1,1,4114000.0
+Pampanga,House & Lot,105,152,4,3,1,2,7054000.0
+Cebu City,Condominium,0,109,3,2,1,0,11228000.0
+Batangas,House & Lot,162,277,7,5,1,0,10414000.0
+Cebu City,Townhouse,236,360,10,8,1,1,26251000.0
+Batangas,Townhouse,177,289,8,6,2,0,9999000.0
+Pampanga,Townhouse,230,206,5,4,1,2,8956000.0
+Davao City,Townhouse,171,108,3,2,1,2,8680000.0
+Bacolod,Apartment/Rowhouse,109,111,3,2,1,2,4244000.0
+Cebu City,House & Lot,336,577,16,12,1,1,43103000.0
+Davao City,House & Lot,388,292,8,6,1,1,23239000.0
+Iloilo,Townhouse,173,307,8,6,2,0,12787000.0
+Batangas,Apartment/Rowhouse,231,161,4,3,1,2,6546000.0
+Metro Manila,Townhouse,56,96,2,1,1,1,10900000.0
+Pampanga,House & Lot,332,217,6,4,1,1,11486000.0
+Baguio,Townhouse,255,315,9,7,1,1,24503000.0
+Laguna,House & Lot,268,402,11,8,1,0,18219000.0
+Cebu City,Apartment/Rowhouse,167,121,3,2,2,0,10685000.0
+Cavite,House & Lot,250,226,6,4,2,0,12855000.0
+Pampanga,House & Lot,74,69,1,1,1,1,3670000.0
+Bacolod,Condominium,0,103,2,1,1,0,4293000.0
+Baguio,House & Lot,160,147,4,3,2,1,12488000.0
+Laguna,House & Lot,125,87,2,1,1,0,5267000.0
+Baguio,House & Lot,357,333,9,7,1,0,29611000.0
+Davao City,Condominium,0,76,2,1,1,1,6900000.0
+Cebu City,House & Lot,193,122,3,2,2,0,13680000.0
+Laguna,House & Lot,198,221,6,4,2,2,11220000.0
+Iloilo,Townhouse,396,512,14,11,1,2,27172000.0
+Iloilo,House & Lot,132,155,4,3,2,1,9049000.0
+Batangas,Townhouse,304,161,4,3,1,2,8524000.0
+Bacolod,Townhouse,294,317,9,7,2,1,10033000.0
+Laguna,Apartment/Rowhouse,179,282,8,6,2,0,9699000.0
+Batangas,House & Lot,145,121,3,2,1,1,5203000.0
+Pampanga,House & Lot,314,466,13,10,2,2,20146000.0
+Cebu City,Townhouse,353,454,12,9,2,1,34413000.0
+Batangas,Apartment/Rowhouse,102,116,3,2,1,2,4004000.0
+Baguio,House & Lot,133,102,2,1,1,0,8762000.0
+Laguna,Apartment/Rowhouse,398,256,7,5,2,1,14487000.0
+Bacolod,Apartment/Rowhouse,299,515,14,11,1,2,13860000.0
+Bacolod,Apartment/Rowhouse,212,155,4,3,1,2,6272000.0
+Pampanga,House & Lot,366,229,6,4,2,0,11473000.0
+Batangas,House & Lot,120,90,2,1,1,1,4376000.0
+Batangas,Townhouse,98,69,1,1,1,0,2956000.0
+Pampanga,Townhouse,387,418,11,8,2,0,15730000.0
+Metro Manila,House & Lot,325,419,11,8,2,1,56822000.0
+Bacolod,House & Lot,266,188,5,4,2,2,8093000.0
+Davao City,House & Lot,216,180,5,4,2,1,14363000.0
+Batangas,House & Lot,277,356,10,8,2,1,15189000.0
+Davao City,Apartment/Rowhouse,290,362,10,8,1,2,21841000.0
+Laguna,House & Lot,209,335,9,7,2,0,16392000.0
+Cavite,Apartment/Rowhouse,76,61,1,1,1,2,2929000.0
+Metro Manila,House & Lot,339,323,9,7,2,2,53400000.0
+Baguio,Townhouse,247,363,10,8,2,0,25284000.0
+Bacolod,House & Lot,162,245,7,5,2,2,8184000.0
+Metro Manila,House & Lot,50,28,1,1,1,0,5513000.0
+Baguio,House & Lot,267,141,4,3,2,2,14245000.0
+Laguna,House & Lot,387,402,11,8,2,0,20902000.0
+Baguio,House & Lot,119,102,2,1,1,2,8871000.0
+Davao City,House & Lot,95,138,3,2,1,1,10799000.0
+Baguio,Apartment/Rowhouse,212,354,10,8,2,0,20735000.0
+Laguna,House & Lot,270,243,6,4,1,2,12918000.0
+Metro Manila,House & Lot,311,334,9,7,2,0,50564000.0
+Bacolod,Townhouse,342,345,9,7,1,0,12720000.0
+Cavite,Apartment/Rowhouse,211,143,4,3,1,0,7328000.0
+Cavite,Apartment/Rowhouse,284,488,13,10,1,2,16433000.0
+Baguio,Townhouse,298,313,8,6,2,2,25874000.0
+Pampanga,House & Lot,226,344,9,7,2,0,15752000.0
+Metro Manila,House & Lot,217,236,6,4,2,2,33347000.0
+Batangas,House & Lot,138,151,4,3,1,0,6274000.0
+Iloilo,House & Lot,173,110,3,2,1,1,7152000.0
+Batangas,Townhouse,60,83,2,1,1,0,3178000.0
+Laguna,House & Lot,82,124,3,2,1,0,5847000.0
+Cavite,Condominium,0,58,1,1,1,1,3542000.0
+Laguna,House & Lot,127,172,4,3,1,2,9890000.0
+Iloilo,House & Lot,279,471,13,10,1,0,22445000.0
+Bacolod,Townhouse,54,52,1,1,1,2,2262000.0
+Batangas,House & Lot,358,628,17,13,2,0,23276000.0
+Iloilo,House & Lot,299,499,14,11,1,2,29001000.0
+Batangas,House & Lot,294,249,7,5,2,2,11174000.0
+Laguna,House & Lot,251,195,5,4,2,1,12931000.0
+Metro Manila,Apartment/Rowhouse,350,572,16,12,2,0,57409000.0
+Davao City,Apartment/Rowhouse,298,434,12,9,2,2,21244000.0
+Laguna,House & Lot,104,140,4,3,2,1,7938000.0
+Bacolod,Apartment/Rowhouse,256,263,7,5,1,2,8330000.0
+Bacolod,Apartment/Rowhouse,86,79,2,1,1,0,2788000.0
+Bacolod,Condominium,0,102,2,1,1,1,4892000.0
+Laguna,House & Lot,99,72,2,1,1,0,4914000.0
+Cebu City,House & Lot,73,112,3,2,1,0,10130000.0
+Iloilo,House & Lot,285,392,11,8,2,1,21899000.0
+Davao City,Apartment/Rowhouse,234,405,11,8,2,2,21506000.0
+Baguio,House & Lot,140,169,4,3,2,0,13590000.0
+Laguna,Condominium,0,25,1,1,1,1,1709000.0
+Davao City,Condominium,0,68,1,1,1,0,5464000.0
+Cavite,Townhouse,183,318,9,7,2,1,12600000.0
+Laguna,House & Lot,303,530,15,12,2,2,24415000.0
+Iloilo,House & Lot,67,52,1,1,1,2,3939000.0
+Cebu City,House & Lot,94,86,2,1,1,1,8720000.0
+Metro Manila,Townhouse,126,64,1,1,1,0,12236000.0
+Metro Manila,House & Lot,67,69,1,1,1,1,9625000.0
+Laguna,Townhouse,392,414,11,8,1,0,17997000.0
+Bacolod,House & Lot,129,225,6,4,2,2,7948000.0
+Pampanga,House & Lot,253,372,10,8,2,0,15845000.0
+Baguio,Townhouse,99,141,4,3,2,0,10488000.0
+Iloilo,Townhouse,204,340,9,7,2,0,16430000.0
+Metro Manila,Condominium,0,68,1,1,1,1,10847000.0
+Cavite,House & Lot,227,238,6,4,2,2,11943000.0
+Cavite,House & Lot,110,123,3,2,1,1,5864000.0
+Laguna,House & Lot,330,344,9,7,1,1,19826000.0
+Batangas,House & Lot,364,240,6,4,2,2,12891000.0
+Pampanga,Apartment/Rowhouse,323,563,16,12,1,1,17230000.0
+Batangas,House & Lot,86,55,1,1,1,1,3067000.0
+Batangas,House & Lot,274,423,12,9,1,0,15322000.0
+Batangas,House & Lot,252,403,11,8,2,2,15542000.0
+Iloilo,Apartment/Rowhouse,183,323,9,7,1,0,13363000.0
+Bacolod,Apartment/Rowhouse,155,139,3,2,2,0,4472000.0
+Iloilo,House & Lot,348,225,6,4,2,1,14369000.0
+Pampanga,Townhouse,295,315,9,7,2,1,13142000.0
+Bacolod,House & Lot,250,285,8,6,2,1,11916000.0
+Baguio,Apartment/Rowhouse,53,79,2,1,1,1,4583000.0
+Iloilo,House & Lot,194,106,3,2,1,0,7498000.0
+Cavite,Townhouse,46,57,1,1,1,2,2863000.0
+Baguio,Condominium,0,112,3,2,1,0,10951000.0
+Bacolod,House & Lot,327,303,8,6,2,1,12375000.0
+Davao City,House & Lot,66,33,1,1,1,1,3915000.0
+Iloilo,House & Lot,372,468,13,10,2,1,25599000.0
+Cebu City,Townhouse,164,268,7,5,1,1,19808000.0
+Batangas,Townhouse,305,517,14,11,2,1,16070000.0
+Baguio,House & Lot,85,152,4,3,1,0,11452000.0
+Batangas,House & Lot,290,453,12,9,2,1,15814000.0
+Laguna,House & Lot,42,45,1,1,1,0,2461000.0
+Davao City,Apartment/Rowhouse,371,509,14,11,2,0,27798000.0
+Bacolod,Condominium,0,119,3,2,1,0,5003000.0
+Bacolod,Condominium,0,86,2,1,1,0,3480000.0
+Baguio,Apartment/Rowhouse,147,155,4,3,2,1,11517000.0
+Iloilo,Townhouse,230,211,6,4,2,1,11922000.0
+Batangas,House & Lot,165,249,7,5,2,1,10179000.0
+Baguio,House & Lot,321,339,9,7,2,2,30895000.0
+Bacolod,House & Lot,293,330,9,7,2,0,12541000.0
+Davao City,House & Lot,128,70,2,1,1,0,6868000.0
+Batangas,House & Lot,289,367,10,8,2,1,14516000.0
+Cavite,Apartment/Rowhouse,102,78,2,1,1,1,3901000.0
+Baguio,House & Lot,47,47,1,1,1,1,4536000.0
+Cavite,House & Lot,61,94,2,1,1,0,4709000.0
+Pampanga,Apartment/Rowhouse,52,42,1,1,1,0,1691000.0
+Iloilo,House & Lot,302,454,12,9,1,0,24973000.0
+Laguna,House & Lot,382,580,16,12,2,2,29021000.0
+Bacolod,Condominium,0,113,3,2,1,1,5017000.0
+Iloilo,House & Lot,189,110,3,2,1,0,8216000.0
+Metro Manila,House & Lot,388,410,11,8,2,0,61352000.0
+Iloilo,House & Lot,212,314,8,6,2,0,16801000.0
+Davao City,Condominium,0,74,2,1,1,0,6044000.0
+Davao City,Townhouse,171,191,5,4,2,2,12299000.0
+Metro Manila,House & Lot,219,374,10,8,1,0,46230000.0
+Metro Manila,House & Lot,73,89,2,1,1,0,12325000.0
+Batangas,House & Lot,254,378,10,8,2,1,15317000.0
+Metro Manila,House & Lot,226,294,8,6,1,1,42030000.0
+Davao City,Apartment/Rowhouse,126,150,4,3,2,2,8891000.0
+Cavite,Apartment/Rowhouse,101,181,5,4,1,0,5858000.0
+Bacolod,House & Lot,304,160,4,3,2,1,7436000.0
+Metro Manila,Apartment/Rowhouse,49,87,2,1,1,1,8495000.0
+Pampanga,House & Lot,211,287,8,6,1,1,12805000.0
+Cavite,Condominium,0,32,1,1,1,1,2098000.0
+Cebu City,Apartment/Rowhouse,207,258,7,5,1,0,19048000.0
+Iloilo,House & Lot,126,158,4,3,2,2,9980000.0
+Baguio,House & Lot,233,200,5,4,1,2,19502000.0
+Metro Manila,Apartment/Rowhouse,204,130,3,2,1,2,19651000.0
+Iloilo,House & Lot,392,300,8,6,2,2,21067000.0
+Davao City,Apartment/Rowhouse,353,513,14,11,1,0,29725000.0
+Davao City,Townhouse,167,91,2,1,1,0,7867000.0
+Baguio,Apartment/Rowhouse,155,135,3,2,2,2,10160000.0
+Cebu City,Townhouse,390,359,10,8,1,1,29891000.0
+Baguio,House & Lot,104,110,3,2,1,0,9628000.0
+Iloilo,Apartment/Rowhouse,307,369,10,8,1,2,17018000.0
+Baguio,Townhouse,175,212,6,4,2,2,15650000.0
+Metro Manila,Apartment/Rowhouse,199,201,5,4,2,0,23740000.0
+Bacolod,Apartment/Rowhouse,248,202,5,4,2,0,6953000.0
+Bacolod,Apartment/Rowhouse,136,208,5,4,1,2,5991000.0
+Cebu City,Condominium,0,98,2,1,1,0,10707000.0
+Cebu City,House & Lot,141,145,4,3,2,2,12820000.0
+Cebu City,Townhouse,275,364,10,8,2,0,26838000.0
+Bacolod,House & Lot,256,347,9,7,2,0,11379000.0
+Davao City,House & Lot,312,545,15,12,1,0,36543000.0
+Baguio,House & Lot,348,294,8,6,2,1,23982000.0
+Metro Manila,House & Lot,42,50,1,1,1,2,8158000.0
+Baguio,House & Lot,42,44,1,1,1,2,3990000.0
+Bacolod,Townhouse,73,80,2,1,1,2,3051000.0
+Batangas,Condominium,0,113,3,2,1,1,5402000.0
+Cavite,Apartment/Rowhouse,165,126,3,2,2,1,6234000.0
+Metro Manila,House & Lot,182,195,5,4,2,1,28723000.0
+Metro Manila,House & Lot,106,147,4,3,1,2,19494000.0
+Bacolod,Condominium,0,37,1,1,1,0,1641000.0
+Pampanga,Townhouse,378,310,8,6,1,1,12902000.0
+Davao City,House & Lot,244,206,5,4,2,1,16876000.0
+Pampanga,House & Lot,258,376,10,8,1,1,17000000.0
+Iloilo,House & Lot,146,102,2,1,1,2,7110000.0
+Laguna,House & Lot,52,82,2,1,1,2,4832000.0
+Laguna,House & Lot,198,224,6,4,1,1,12295000.0
+Baguio,House & Lot,318,261,7,5,2,0,22723000.0
+Cavite,House & Lot,66,99,2,1,1,1,4642000.0
+Davao City,House & Lot,159,247,7,5,1,2,16612000.0
+Bacolod,House & Lot,111,130,3,2,1,2,4879000.0
+Baguio,House & Lot,87,104,2,1,1,2,9862000.0
+Cavite,Condominium,0,86,2,1,1,0,5073000.0
+Cavite,Townhouse,43,67,1,1,1,1,3107000.0
+Cebu City,Townhouse,213,235,6,4,2,0,20767000.0
+Batangas,Townhouse,365,562,16,12,1,0,18812000.0
+Baguio,House & Lot,229,155,4,3,2,1,16463000.0
+Iloilo,House & Lot,167,158,4,3,2,2,11005000.0
+Baguio,House & Lot,358,351,10,8,1,2,28747000.0
+Pampanga,House & Lot,44,46,1,1,1,2,2485000.0
+Pampanga,Apartment/Rowhouse,345,323,9,7,2,2,13415000.0
+Batangas,House & Lot,260,343,9,7,2,0,14168000.0
+Cavite,Townhouse,128,142,4,3,1,2,7484000.0
+Cavite,Apartment/Rowhouse,96,129,3,2,1,2,5080000.0
+Iloilo,House & Lot,195,276,7,5,2,0,14063000.0
+Baguio,Apartment/Rowhouse,337,396,11,8,2,2,26499000.0
+Baguio,House & Lot,105,162,4,3,2,1,13432000.0
+Baguio,Apartment/Rowhouse,143,233,6,4,1,2,14397000.0
+Cebu City,House & Lot,358,184,5,4,2,2,23290000.0
+Iloilo,Townhouse,46,77,2,1,1,2,4278000.0
+Cebu City,Townhouse,220,275,7,5,1,2,22879000.0
+Pampanga,House & Lot,165,84,2,1,1,0,4690000.0
+Iloilo,House & Lot,298,262,7,5,1,2,15540000.0
+Pampanga,House & Lot,395,299,8,6,1,1,16074000.0
+Cavite,Apartment/Rowhouse,174,192,5,4,2,0,7973000.0
+Pampanga,Apartment/Rowhouse,366,622,17,13,2,2,19421000.0
+Batangas,Apartment/Rowhouse,98,128,3,2,1,1,4032000.0
+Iloilo,House & Lot,224,196,5,4,1,0,12306000.0
+Cavite,House & Lot,343,374,10,8,1,1,17802000.0
+Iloilo,Condominium,0,37,1,1,1,0,2660000.0
+Bacolod,House & Lot,53,48,1,1,1,1,2073000.0
+Baguio,Apartment/Rowhouse,99,136,3,2,2,2,9081000.0
+Cebu City,Townhouse,75,109,3,2,1,1,8987000.0
+Batangas,Apartment/Rowhouse,340,571,16,12,2,0,15693000.0
+Laguna,Townhouse,269,342,9,7,2,0,16937000.0
+Batangas,House & Lot,214,293,8,6,1,1,12322000.0
+Pampanga,Townhouse,277,205,5,4,1,0,9526000.0
+Baguio,Apartment/Rowhouse,340,249,7,5,2,2,19651000.0
+Pampanga,House & Lot,334,368,10,8,1,0,18182000.0
+Metro Manila,House & Lot,333,244,6,4,2,1,38378000.0
+Laguna,House & Lot,210,250,7,5,1,2,14518000.0
+Cavite,House & Lot,343,294,8,6,1,1,15330000.0
+Iloilo,Apartment/Rowhouse,92,89,2,1,1,0,4610000.0
+Cebu City,Condominium,0,81,2,1,1,1,9146000.0
+Cavite,House & Lot,74,58,1,1,1,0,3240000.0
+Batangas,Townhouse,304,165,4,3,1,2,7974000.0
+Iloilo,House & Lot,211,149,4,3,1,2,10238000.0
+Bacolod,House & Lot,335,210,6,4,2,0,9936000.0
+Cebu City,House & Lot,392,250,7,5,2,1,28896000.0
+Bacolod,Apartment/Rowhouse,47,59,1,1,1,0,1780000.0
+Bacolod,Townhouse,395,452,12,9,1,2,16380000.0
+Iloilo,House & Lot,211,209,5,4,2,1,11929000.0
+Bacolod,House & Lot,101,86,2,1,1,1,3654000.0
+Laguna,House & Lot,353,545,15,12,2,2,26690000.0
+Baguio,Townhouse,105,69,1,1,1,1,6305000.0
+Iloilo,House & Lot,188,177,5,4,1,2,10149000.0
+Iloilo,Apartment/Rowhouse,157,87,2,1,1,0,5158000.0
+Cebu City,House & Lot,91,69,1,1,1,1,7888000.0
+Baguio,House & Lot,146,257,7,5,2,1,20131000.0
+Pampanga,House & Lot,319,238,6,4,1,0,12110000.0
+Batangas,Apartment/Rowhouse,202,311,8,6,1,1,10245000.0
+Baguio,House & Lot,140,195,5,4,2,1,14863000.0
+Davao City,Apartment/Rowhouse,244,313,8,6,2,1,16484000.0
+Baguio,House & Lot,211,244,6,4,2,1,21343000.0
+Metro Manila,Condominium,0,117,3,2,1,0,17739000.0
+Baguio,Condominium,0,72,2,1,1,0,6606000.0
+Bacolod,House & Lot,291,492,14,11,2,2,17349000.0
+Bacolod,Apartment/Rowhouse,272,348,9,7,2,0,8840000.0
+Metro Manila,Apartment/Rowhouse,132,165,4,3,2,1,17725000.0
+Bacolod,House & Lot,267,334,9,7,2,2,12843000.0
+Cavite,House & Lot,318,457,13,10,2,0,19206000.0
+Davao City,House & Lot,263,233,6,4,1,2,18034000.0
+Davao City,House & Lot,345,516,14,11,2,1,33871000.0
+Cavite,House & Lot,296,459,13,10,1,0,20924000.0
+Baguio,Apartment/Rowhouse,181,131,3,2,2,1,11053000.0
+Baguio,Townhouse,57,44,1,1,1,0,3564000.0
+Baguio,House & Lot,217,249,7,5,2,0,18625000.0
+Batangas,Apartment/Rowhouse,53,35,1,1,1,1,1809000.0
+Laguna,House & Lot,236,414,11,8,2,0,18564000.0
+Cavite,House & Lot,42,66,1,1,1,1,3594000.0
+Davao City,Townhouse,254,295,8,6,1,0,19674000.0
+Baguio,House & Lot,243,390,11,8,2,0,30408000.0
+Pampanga,Townhouse,244,417,11,8,2,0,14647000.0
+Bacolod,Apartment/Rowhouse,235,418,11,8,1,2,12134000.0
+Batangas,Townhouse,240,120,3,2,2,0,6706000.0
+Cebu City,House & Lot,47,62,1,1,1,1,5990000.0
+Iloilo,House & Lot,152,142,4,3,1,0,8971000.0
+Iloilo,House & Lot,335,279,7,5,2,0,16178000.0
+Laguna,House & Lot,353,374,10,8,2,0,21406000.0
+Cavite,Townhouse,327,163,4,3,1,0,9861000.0
+Cebu City,House & Lot,304,355,10,8,2,1,34686000.0
+Laguna,House & Lot,203,164,4,3,1,0,8950000.0
+Batangas,Townhouse,241,215,6,4,2,2,9985000.0
+Batangas,House & Lot,181,98,2,1,1,2,5477000.0
+Laguna,Townhouse,243,128,3,2,1,1,8154000.0
+Bacolod,Apartment/Rowhouse,285,216,6,4,2,2,8461000.0
+Bacolod,Townhouse,55,53,1,1,1,1,2134000.0
+Iloilo,Apartment/Rowhouse,44,78,2,1,1,0,2876000.0
+Metro Manila,Apartment/Rowhouse,125,81,2,1,1,2,12538000.0
+Cavite,Apartment/Rowhouse,102,66,1,1,1,0,3444000.0
+Batangas,House & Lot,282,143,4,3,2,2,8435000.0
+Iloilo,Apartment/Rowhouse,118,132,3,2,2,1,6130000.0
+Iloilo,House & Lot,396,386,11,8,2,0,25302000.0
+Iloilo,House & Lot,181,169,4,3,2,2,10147000.0
+Bacolod,Townhouse,122,152,4,3,2,1,4844000.0
+Batangas,House & Lot,328,477,13,10,2,1,18946000.0
+Pampanga,Condominium,0,64,1,1,1,1,3426000.0
+Cavite,House & Lot,87,76,2,1,1,0,3877000.0
+Baguio,Apartment/Rowhouse,323,475,13,10,2,0,28936000.0
+Batangas,House & Lot,203,210,6,4,1,1,9217000.0
+Batangas,House & Lot,289,486,13,10,1,1,17780000.0
+Metro Manila,House & Lot,197,214,6,4,1,1,33894000.0
+Cebu City,House & Lot,244,397,11,8,2,0,33115000.0
+Davao City,Townhouse,393,707,20,16,2,0,39594000.0
+Metro Manila,House & Lot,167,278,7,5,1,2,38970000.0
+Batangas,Townhouse,78,122,3,2,2,1,4109000.0
+Baguio,Apartment/Rowhouse,308,269,7,5,2,2,18007000.0
+Cebu City,Townhouse,288,335,9,7,2,1,26107000.0
+Bacolod,House & Lot,251,229,6,4,2,1,9667000.0
+Cavite,Condominium,0,106,3,2,1,0,5806000.0
+Cebu City,House & Lot,67,82,2,1,1,0,7477000.0
+Cebu City,Apartment/Rowhouse,364,341,9,7,2,1,28192000.0
+Iloilo,Apartment/Rowhouse,238,176,5,4,1,2,9581000.0
+Iloilo,House & Lot,319,409,11,8,2,1,24722000.0
+Davao City,House & Lot,86,46,1,1,1,1,4334000.0
+Davao City,House & Lot,81,91,2,1,1,1,6516000.0
+Metro Manila,House & Lot,345,367,10,8,1,0,51865000.0
+Cavite,House & Lot,53,78,2,1,1,2,4486000.0
+Batangas,Condominium,0,107,3,2,1,1,5433000.0
+Pampanga,Apartment/Rowhouse,341,317,9,7,2,2,12338000.0
+Baguio,House & Lot,60,105,3,2,1,1,7587000.0
+Baguio,Condominium,0,84,2,1,1,0,8022000.0
+Batangas,House & Lot,243,328,9,7,1,1,13120000.0
+Cebu City,Apartment/Rowhouse,321,304,8,6,1,2,24386000.0
+Baguio,Townhouse,120,81,2,1,1,2,7353000.0
+Baguio,House & Lot,341,273,7,5,1,2,25907000.0
+Batangas,Apartment/Rowhouse,218,365,10,8,2,0,9722000.0
+Bacolod,House & Lot,279,437,12,9,1,2,14676000.0
+Iloilo,Townhouse,111,156,4,3,2,0,7944000.0
+Cavite,Townhouse,342,534,15,12,2,0,22074000.0
+Cavite,Condominium,0,79,2,1,1,0,4482000.0
+Iloilo,House & Lot,264,443,12,9,1,0,24195000.0
+Pampanga,Townhouse,120,125,3,2,1,2,5862000.0
+Iloilo,House & Lot,163,184,5,4,2,2,10932000.0
+Bacolod,House & Lot,88,74,2,1,1,1,3632000.0
+Cebu City,House & Lot,352,272,7,5,1,1,27870000.0
+Davao City,House & Lot,328,361,10,8,1,0,27781000.0
+Batangas,House & Lot,334,457,13,10,2,1,19848000.0
+Cebu City,House & Lot,334,446,12,9,1,2,41378000.0
+Baguio,Apartment/Rowhouse,95,121,3,2,1,2,7364000.0
+Iloilo,House & Lot,299,392,11,8,2,1,22194000.0
+Bacolod,House & Lot,175,297,8,6,2,0,10699000.0
+Cebu City,Townhouse,320,511,14,11,2,0,35406000.0
+Pampanga,House & Lot,255,391,11,8,1,0,15939000.0
+Davao City,Condominium,0,76,2,1,1,1,6933000.0
+Davao City,House & Lot,287,190,5,4,1,2,17073000.0
+Pampanga,House & Lot,295,201,5,4,2,0,10570000.0
+Davao City,House & Lot,217,303,8,6,2,2,22742000.0
+Davao City,House & Lot,312,308,8,6,2,2,25780000.0
+Cavite,House & Lot,52,68,1,1,1,0,2999000.0
+Baguio,House & Lot,380,649,18,14,2,0,49878000.0
+Iloilo,House & Lot,338,244,6,4,1,2,15426000.0
+Batangas,Apartment/Rowhouse,375,269,7,5,2,0,11334000.0
+Pampanga,Townhouse,302,374,10,8,2,0,15292000.0
+Laguna,House & Lot,68,42,1,1,1,2,3158000.0
+Laguna,Condominium,0,69,1,1,1,1,4501000.0
+Cebu City,Apartment/Rowhouse,290,373,10,8,1,0,25094000.0
+Laguna,Townhouse,214,238,6,4,2,1,10730000.0
+Cebu City,House & Lot,320,274,7,5,1,1,26765000.0
+Cavite,Apartment/Rowhouse,198,132,3,2,2,1,7280000.0
+Cebu City,Townhouse,319,176,5,4,2,1,19385000.0
+Iloilo,Townhouse,317,234,6,4,1,2,14814000.0
+Iloilo,Townhouse,84,144,4,3,1,1,7564000.0
+Laguna,House & Lot,289,279,7,5,1,1,15560000.0
+Laguna,Apartment/Rowhouse,194,107,3,2,1,2,6721000.0
+Bacolod,Townhouse,387,487,13,10,1,1,17063000.0
+Cavite,Townhouse,256,365,10,8,1,1,15579000.0
+Pampanga,House & Lot,173,285,8,6,2,2,12353000.0
+Davao City,Apartment/Rowhouse,67,46,1,1,1,1,3819000.0
+Baguio,House & Lot,325,584,16,12,2,1,38998000.0
+Davao City,House & Lot,52,46,1,1,1,1,3832000.0
+Laguna,House & Lot,348,494,14,11,2,2,25707000.0
+Laguna,Apartment/Rowhouse,62,65,1,1,1,0,2703000.0
+Metro Manila,Apartment/Rowhouse,398,229,6,4,1,0,33652000.0
+Laguna,House & Lot,355,445,12,9,2,1,21791000.0
+Batangas,House & Lot,173,262,7,5,2,2,9843000.0
+Batangas,House & Lot,203,340,9,7,2,1,12382000.0
+Baguio,Townhouse,105,125,3,2,2,0,8381000.0
+Baguio,House & Lot,64,38,1,1,1,1,4294000.0
+Baguio,House & Lot,302,496,14,11,2,2,40516000.0
+Metro Manila,House & Lot,67,65,1,1,1,1,10649000.0
+Laguna,House & Lot,136,166,4,3,2,2,10225000.0
+Davao City,House & Lot,196,159,4,3,2,2,14352000.0
+Bacolod,House & Lot,272,258,7,5,1,2,9740000.0
+Laguna,House & Lot,211,350,10,8,2,0,18223000.0
+Laguna,Townhouse,265,389,11,8,1,0,16877000.0
+Baguio,House & Lot,264,464,13,10,1,0,32226000.0
+Cebu City,House & Lot,249,211,6,4,1,1,19543000.0
+Batangas,Apartment/Rowhouse,59,102,2,1,1,0,2833000.0
+Baguio,House & Lot,84,118,3,2,1,1,8810000.0
+Cavite,Townhouse,398,430,12,9,1,1,20350000.0
+Pampanga,House & Lot,226,359,10,8,1,1,14575000.0
+Batangas,Townhouse,196,329,9,7,2,1,10951000.0
+Bacolod,House & Lot,228,319,9,7,2,1,11181000.0
+Baguio,House & Lot,322,267,7,5,2,0,23888000.0
+Batangas,House & Lot,51,88,2,1,1,0,3628000.0
+Bacolod,Apartment/Rowhouse,372,256,7,5,1,1,9251000.0
+Laguna,Townhouse,112,58,1,1,1,1,4193000.0
+Baguio,House & Lot,200,126,3,2,2,2,13300000.0
+Baguio,Townhouse,346,380,10,8,1,1,25544000.0
+Cavite,Apartment/Rowhouse,46,69,1,1,1,2,2751000.0
+Metro Manila,Apartment/Rowhouse,225,357,10,8,2,1,33546000.0
+Davao City,House & Lot,251,321,9,7,2,2,21908000.0
+Cebu City,Townhouse,318,173,4,3,1,0,16646000.0
+Batangas,House & Lot,99,148,4,3,2,0,5848000.0
+Baguio,House & Lot,320,391,11,8,2,2,33645000.0
+Metro Manila,House & Lot,48,57,1,1,1,0,8539000.0
+Baguio,Townhouse,66,107,3,2,1,2,7115000.0
+Cebu City,Apartment/Rowhouse,229,135,3,2,2,0,11369000.0
+Pampanga,Apartment/Rowhouse,219,195,5,4,2,1,7593000.0
+Davao City,Condominium,0,61,1,1,1,1,5635000.0
+Cavite,House & Lot,240,402,11,8,2,2,19104000.0
+Batangas,House & Lot,350,373,10,8,2,2,16361000.0
+Iloilo,House & Lot,66,93,2,1,1,0,4957000.0
+Cebu City,House & Lot,266,198,5,4,1,2,18864000.0
+Batangas,Townhouse,230,244,6,4,2,1,9698000.0
+Pampanga,House & Lot,316,269,7,5,2,2,14873000.0
+Pampanga,Apartment/Rowhouse,200,198,5,4,1,0,7586000.0
+Laguna,House & Lot,77,61,1,1,1,2,3879000.0
+Pampanga,Townhouse,396,408,11,8,2,0,15261000.0
+Pampanga,Townhouse,283,391,11,8,2,1,14244000.0
+Cebu City,Condominium,0,89,2,1,1,1,8985000.0
+Cebu City,House & Lot,390,636,18,14,1,2,54677000.0
+Davao City,House & Lot,140,178,5,4,2,0,13804000.0
+Cebu City,House & Lot,235,119,3,2,1,1,14771000.0
+Cavite,Condominium,0,41,1,1,1,1,2577000.0
+Cebu City,Townhouse,295,302,8,6,2,0,26716000.0
+Batangas,House & Lot,194,277,7,5,1,2,11084000.0
+Metro Manila,House & Lot,183,217,6,4,1,1,33261000.0
+Davao City,House & Lot,354,489,13,10,1,1,33188000.0
+Batangas,Townhouse,396,506,14,11,2,2,18180000.0
+Bacolod,Apartment/Rowhouse,49,71,2,1,1,1,2197000.0
+Batangas,Townhouse,241,197,5,4,2,0,8062000.0
+Batangas,House & Lot,388,231,6,4,1,2,12852000.0
+Davao City,Apartment/Rowhouse,339,252,7,5,2,2,15860000.0
+Iloilo,House & Lot,280,299,8,6,1,1,16685000.0
+Cebu City,House & Lot,355,512,14,11,1,1,41135000.0
+Iloilo,Apartment/Rowhouse,351,617,17,13,2,2,24101000.0
+Bacolod,House & Lot,296,249,7,5,1,1,10466000.0
+Iloilo,House & Lot,266,361,10,8,2,1,19266000.0
+Pampanga,House & Lot,384,677,19,15,1,1,30276000.0
+Cavite,House & Lot,327,567,16,12,1,1,25523000.0
+Bacolod,House & Lot,255,258,7,5,2,2,9755000.0
+Cavite,Townhouse,183,294,8,6,2,2,12005000.0
+Davao City,House & Lot,178,122,3,2,1,0,9857000.0
+Cavite,House & Lot,391,463,13,10,2,0,20338000.0
+Iloilo,House & Lot,188,97,2,1,1,1,7953000.0
+Bacolod,Townhouse,196,170,4,3,2,0,5836000.0
+Davao City,House & Lot,312,231,6,4,2,0,20235000.0
+Metro Manila,Apartment/Rowhouse,120,151,4,3,2,0,15485000.0
+Batangas,House & Lot,332,166,4,3,1,2,8644000.0
+Cavite,Apartment/Rowhouse,85,148,4,3,2,0,5379000.0
+Batangas,Townhouse,213,170,4,3,2,2,7375000.0
+Batangas,House & Lot,364,516,14,11,1,0,19333000.0
+Pampanga,House & Lot,341,480,13,10,1,1,22103000.0
+Bacolod,Townhouse,286,175,5,4,1,2,8153000.0
+Cebu City,Apartment/Rowhouse,320,209,5,4,1,1,20114000.0
+Davao City,House & Lot,156,118,3,2,1,1,10128000.0
+Cebu City,House & Lot,59,39,1,1,1,1,4511000.0
+Cavite,House & Lot,340,546,15,12,2,0,23282000.0
+Davao City,Condominium,0,70,2,1,1,1,5471000.0
+Iloilo,Apartment/Rowhouse,252,378,10,8,2,1,16770000.0
+Metro Manila,House & Lot,261,163,4,3,2,2,29835000.0
+Cebu City,House & Lot,53,69,1,1,1,0,5827000.0
+Laguna,Apartment/Rowhouse,391,455,13,10,2,2,20953000.0
+Metro Manila,House & Lot,56,59,1,1,1,2,10061000.0
+Davao City,House & Lot,117,187,5,4,1,1,13302000.0
+Metro Manila,Condominium,0,34,1,1,1,1,5417000.0
+Davao City,House & Lot,171,103,2,1,1,1,8830000.0
+Cavite,House & Lot,187,218,6,4,1,2,10673000.0
+Cebu City,Apartment/Rowhouse,228,165,4,3,2,1,13742000.0
+Metro Manila,House & Lot,369,288,8,6,2,2,49237000.0
+Batangas,Townhouse,219,296,8,6,1,1,9819000.0
+Iloilo,House & Lot,396,277,7,5,1,2,19462000.0
+Baguio,House & Lot,154,92,2,1,1,1,8744000.0
+Cebu City,Townhouse,310,443,12,9,2,1,30249000.0
+Cavite,House & Lot,74,125,3,2,2,0,6227000.0
+Cavite,House & Lot,47,59,1,1,1,0,2730000.0
+Laguna,Townhouse,279,148,4,3,2,0,9794000.0
+Iloilo,House & Lot,216,374,10,8,1,2,21672000.0
+Batangas,House & Lot,370,639,18,14,2,0,24803000.0
+Cebu City,Apartment/Rowhouse,57,57,1,1,1,0,4261000.0
+Bacolod,Condominium,0,62,1,1,1,1,2686000.0
+Iloilo,House & Lot,135,67,1,1,1,1,5952000.0
+Cavite,House & Lot,373,462,13,10,2,1,22748000.0
+Bacolod,House & Lot,335,562,16,12,1,2,20830000.0
+Laguna,Apartment/Rowhouse,154,200,5,4,1,0,8117000.0
+Iloilo,House & Lot,310,363,10,8,2,2,21323000.0
+Metro Manila,Townhouse,166,130,3,2,2,2,19910000.0
+Davao City,Townhouse,185,178,5,4,2,1,13795000.0
+Iloilo,Apartment/Rowhouse,286,337,9,7,2,0,14608000.0
+Iloilo,Apartment/Rowhouse,171,287,8,6,2,2,12173000.0
+Metro Manila,House & Lot,136,214,6,4,2,2,27190000.0
+Davao City,House & Lot,211,128,3,2,2,0,11977000.0
+Cavite,House & Lot,205,255,7,5,1,2,13881000.0
+Iloilo,Apartment/Rowhouse,204,204,5,4,1,2,10576000.0
+Metro Manila,Apartment/Rowhouse,369,400,11,8,2,0,42098000.0
+Baguio,House & Lot,110,67,1,1,1,1,7365000.0
+Laguna,Townhouse,192,116,3,2,1,2,7469000.0
+Metro Manila,House & Lot,122,213,6,4,1,1,28099000.0
+Cavite,Townhouse,238,159,4,3,1,2,8299000.0
+Baguio,Townhouse,285,287,8,6,2,2,21995000.0
+Baguio,Townhouse,243,134,3,2,1,1,13119000.0
+Baguio,Apartment/Rowhouse,47,24,1,1,1,2,3012000.0
+Cavite,House & Lot,158,153,4,3,1,1,8000000.0
+Davao City,House & Lot,392,460,13,10,1,2,30757000.0
+Laguna,House & Lot,339,555,15,12,2,0,28544000.0
+Laguna,House & Lot,188,144,4,3,2,2,8390000.0
+Laguna,Apartment/Rowhouse,115,124,3,2,2,1,6055000.0
+Davao City,Condominium,0,30,1,1,1,0,2359000.0
+Cebu City,House & Lot,129,179,5,4,2,1,14539000.0
+Metro Manila,House & Lot,117,61,1,1,1,0,11409000.0
+Davao City,Apartment/Rowhouse,144,76,2,1,1,2,6416000.0
+Cebu City,House & Lot,246,180,5,4,1,2,19597000.0
+Metro Manila,House & Lot,382,352,10,8,2,2,51896000.0
+Pampanga,Townhouse,376,290,8,6,1,2,14639000.0
+Baguio,House & Lot,371,519,14,11,2,1,39516000.0
+Pampanga,House & Lot,240,129,3,2,1,2,8260000.0
+Iloilo,Townhouse,47,43,1,1,1,2,2699000.0
+Bacolod,House & Lot,240,352,10,8,1,1,11723000.0
+Laguna,Townhouse,237,293,8,6,1,0,13505000.0
+Cebu City,House & Lot,300,386,11,8,2,1,30547000.0
+Pampanga,Apartment/Rowhouse,388,206,5,4,1,1,10673000.0
+Cebu City,House & Lot,231,366,10,8,1,2,28137000.0
+Cebu City,House & Lot,262,228,6,4,2,0,23366000.0
+Pampanga,Townhouse,94,98,2,1,1,0,4392000.0
+Pampanga,House & Lot,150,151,4,3,2,2,7091000.0
+Davao City,House & Lot,396,470,13,10,2,2,35839000.0
+Pampanga,House & Lot,172,217,6,4,2,2,9598000.0
+Pampanga,House & Lot,229,217,6,4,2,1,11120000.0
+Laguna,Townhouse,334,309,8,6,2,1,15498000.0
+Batangas,House & Lot,69,58,1,1,1,0,2723000.0
+Iloilo,House & Lot,75,124,3,2,1,2,7294000.0
+Iloilo,House & Lot,161,240,6,4,1,2,12426000.0
+Iloilo,House & Lot,46,68,1,1,1,1,3719000.0
+Cavite,Apartment/Rowhouse,228,374,10,8,1,1,13378000.0
+Cebu City,House & Lot,381,302,8,6,1,0,30430000.0
+Cebu City,House & Lot,359,322,9,7,1,0,31883000.0
+Metro Manila,House & Lot,373,282,8,6,2,1,47091000.0
+Cavite,House & Lot,88,60,1,1,1,2,4016000.0
+Iloilo,House & Lot,262,232,6,4,1,1,15488000.0
+Davao City,Townhouse,92,122,3,2,2,1,7277000.0
+Laguna,House & Lot,137,124,3,2,1,2,7992000.0
+Pampanga,Apartment/Rowhouse,151,249,7,5,1,0,7862000.0
+Bacolod,House & Lot,354,448,12,9,2,2,16299000.0
+Baguio,Townhouse,55,89,2,1,1,2,7088000.0
+Davao City,House & Lot,48,35,1,1,1,1,3428000.0
+Bacolod,House & Lot,231,236,6,4,2,2,8886000.0
+Iloilo,Apartment/Rowhouse,353,529,15,12,1,1,20503000.0
+Davao City,House & Lot,77,80,2,1,1,0,5927000.0
+Bacolod,House & Lot,333,194,5,4,2,0,9809000.0
+Metro Manila,House & Lot,202,223,6,4,1,1,31833000.0
+Metro Manila,House & Lot,317,442,12,9,1,0,57619000.0
+Batangas,Apartment/Rowhouse,198,351,10,8,1,1,9439000.0
+Pampanga,Townhouse,254,379,10,8,1,2,14438000.0
+Baguio,House & Lot,159,167,4,3,2,0,15006000.0
+Laguna,Townhouse,270,338,9,7,2,2,15493000.0
+Bacolod,House & Lot,63,98,2,1,1,0,3392000.0
+Baguio,Townhouse,368,363,10,8,1,1,26437000.0
+Laguna,House & Lot,341,368,10,8,2,1,19591000.0
+Metro Manila,Townhouse,290,147,4,3,2,0,24712000.0
+Batangas,Condominium,0,106,3,2,1,1,5258000.0
+Cebu City,House & Lot,76,47,1,1,1,1,5559000.0
+Cebu City,Condominium,0,105,3,2,1,0,11191000.0
+Iloilo,House & Lot,362,366,10,8,1,1,22337000.0
+Iloilo,Townhouse,283,504,14,11,2,1,23488000.0
+Metro Manila,House & Lot,323,295,8,6,1,0,48556000.0
+Laguna,House & Lot,350,468,13,10,2,1,22046000.0
+Davao City,House & Lot,208,221,6,4,1,0,16225000.0
+Metro Manila,Apartment/Rowhouse,141,175,5,4,2,0,18629000.0
+Laguna,Townhouse,390,645,18,14,1,1,27291000.0
+Cavite,House & Lot,348,485,13,10,2,0,24007000.0
+Bacolod,House & Lot,69,39,1,1,1,0,1758000.0
+Pampanga,Condominium,0,25,1,1,1,1,1532000.0
+Cavite,Apartment/Rowhouse,253,402,11,8,2,1,14215000.0
+Iloilo,Townhouse,222,283,8,6,1,1,13913000.0
+Davao City,House & Lot,203,312,8,6,2,0,22264000.0
+Cebu City,Apartment/Rowhouse,249,369,10,8,2,2,24609000.0
+Metro Manila,House & Lot,305,185,5,4,1,0,31713000.0
+Pampanga,House & Lot,147,170,4,3,2,2,7634000.0
+Bacolod,House & Lot,51,55,1,1,1,1,2450000.0
+Laguna,Condominium,0,30,1,1,1,1,2133000.0
+Iloilo,Apartment/Rowhouse,84,92,2,1,1,2,4758000.0
+Laguna,Apartment/Rowhouse,156,177,5,4,1,2,7622000.0
+Bacolod,House & Lot,45,69,1,1,1,0,2393000.0
+Metro Manila,House & Lot,310,512,14,11,1,1,66463000.0
+Baguio,House & Lot,291,441,12,9,1,2,37103000.0
+Cavite,House & Lot,195,224,6,4,2,1,11834000.0
