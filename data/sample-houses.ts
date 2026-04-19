@@ -18,6 +18,21 @@ export const houseAndLotImages = [
     "/house-and-lot/hal-3.jpg",
     "/house-and-lot/hal-4.jpg",
     "/house-and-lot/hal-5.jpg",
+    "/house-and-lot/hal-6.jpg",
+    "/house-and-lot/hal-7.jpg",
+    "/house-and-lot/hal-8.jpg",
+    "/house-and-lot/hal-9.jpg",
+    "/house-and-lot/hal-10.jpg",
+    "/house-and-lot/hal-11.jpg",
+    "/house-and-lot/hal-12.jpg",
+    "/house-and-lot/hal-13.jpg",
+    "/house-and-lot/hal-14.jpg",
+    "/house-and-lot/hal-15.jpg",
+    "/house-and-lot/hal-16.jpg",
+    "/house-and-lot/hal-17.jpg",
+    "/house-and-lot/hal-18.jpg",
+    "/house-and-lot/hal-19.jpg",
+    "/house-and-lot/hal-20.jpg",
 ];
 
 export const townhouseImages = [
@@ -26,6 +41,11 @@ export const townhouseImages = [
     "/townhouse/th-3.jpg",
     "/townhouse/th-4.jpg",
     "/townhouse/th-5.jpg",
+    "/townhouse/th-6.jpg",
+    "/townhouse/th-7.jpg",
+    "/townhouse/th-8.jpg",
+    "/townhouse/th-9.jpg",
+    "/townhouse/th-1.jpg",
 ];
 
 export const apartmentImages = [
@@ -34,6 +54,11 @@ export const apartmentImages = [
     "/apartment/ap-3.jpg",
     "/apartment/ap-4.jpg",
     "/apartment/ap-5.jpg",
+    "/apartment/ap-6.jpg",
+    "/apartment/ap-7.jpg",
+    "/apartment/ap-8.jpg",
+    "/apartment/ap-9.jpg",
+    "/apartment/ap-10.jpg",
 ];
 
 export const condominiumImages = [
@@ -42,6 +67,11 @@ export const condominiumImages = [
     "/condominium/cd-3.jpg",
     "/condominium/cd-4.jpg",
     "/condominium/cd-5.jpg",
+    "/condominium/cd-6.jpg",
+    "/condominium/cd-7.jpg",
+    "/condominium/cd-8.jpg",
+    "/condominium/cd-9.jpg",
+    "/condominium/cd-10.jpg",
 ];
 
 export const allPropertyImages = [
@@ -51,267 +81,195 @@ export const allPropertyImages = [
     ...condominiumImages,
 ];
 
+const houseAndLotLocations = [
+    "Iloilo",
+    "Batangas",
+    "Davao City",
+    "Cavite",
+    "Bacolod",
+    "Laguna",
+    "Pampanga",
+    "Metro Manila",
+    "Cagayan de Oro",
+    "Baguio",
+    "General Santos",
+    "Butuan",
+    "Dumaguete",
+    "Tagaytay",
+    "Antipolo",
+    "Lipa",
+    "Naga",
+    "Tarlac",
+    "Subic",
+    "Puerto Princesa",
+];
+
+const townhouseLocations = [
+    "Cebu City",
+    "Iloilo",
+    "Davao City",
+    "Cebu City",
+    "Baguio",
+    "Pasig",
+    "Taguig",
+    "Makati",
+    "Antipolo",
+    "Quezon City",
+];
+
+const apartmentLocations = [
+    "Iloilo",
+    "Cebu City",
+    "Cebu City",
+    "Metro Manila",
+    "Davao City",
+    "Quezon City",
+    "Pasay",
+    "Pasig",
+    "Taguig",
+    "Baguio",
+];
+
+const condominiumLocations = [
+    "Bacolod",
+    "Cavite",
+    "Cavite",
+    "Iloilo",
+    "Cebu City",
+    "Makati",
+    "Pasig",
+    "Taguig",
+    "Quezon City",
+    "Pasay",
+];
+
+function createSeedHouse(
+    id: number,
+    image: string,
+    location: string,
+    propertyType: string,
+    lotArea: number,
+    floorArea: number,
+    bedrooms: number,
+    bathrooms: number,
+    kitchens: number,
+    garages: number,
+    price: number
+): SampleHouse {
+    return {
+        id,
+        image,
+        Location: location,
+        PropertyType: propertyType,
+        LotArea: lotArea,
+        FloorArea: floorArea,
+        Bedrooms: bedrooms,
+        Bathrooms: bathrooms,
+        Kitchens: kitchens,
+        Garages: garages,
+        Price_PHP: price,
+    };
+}
+
+const houseAndLotSamples = houseAndLotImages.map((image, index) => {
+    const lotArea = 98 + index * 11;
+    const floorArea = 88 + index * 9;
+    const bedrooms = 2 + (index % 5);
+    const bathrooms = 1 + (index % 4);
+    const kitchens = index % 6 === 0 ? 2 : 1;
+    const garages = index % 5 === 0 ? 2 : 1;
+    const price = 4_732_000 + index * 685_000;
+
+    return createSeedHouse(
+        index + 1,
+        image,
+        houseAndLotLocations[index],
+        "House & Lot",
+        lotArea,
+        floorArea,
+        bedrooms,
+        bathrooms,
+        kitchens,
+        garages,
+        price
+    );
+});
+
+const townhouseSamples = townhouseImages.map((image, index) => {
+    const lotArea = 90 + index * 16;
+    const floorArea = 122 + index * 18;
+    const bedrooms = 3 + (index % 4);
+    const bathrooms = 2 + (index % 3);
+    const kitchens = index % 4 === 0 ? 2 : 1;
+    const garages = index % 3 === 0 ? 2 : 1;
+    const price = 8_950_000 + index * 1_140_000;
+
+    return createSeedHouse(
+        houseAndLotSamples.length + index + 1,
+        image,
+        townhouseLocations[index],
+        "Townhouse",
+        lotArea,
+        floorArea,
+        bedrooms,
+        bathrooms,
+        kitchens,
+        garages,
+        price
+    );
+});
+
+const apartmentSamples = apartmentImages.map((image, index) => {
+    const lotArea = 140 + index * 19;
+    const floorArea = 120 + index * 21;
+    const bedrooms = 3 + (index % 4);
+    const bathrooms = 2 + (index % 3);
+    const kitchens = 2;
+    const garages = index % 2;
+    const price = 11_850_000 + index * 1_320_000;
+
+    return createSeedHouse(
+        houseAndLotSamples.length + townhouseSamples.length + index + 1,
+        image,
+        apartmentLocations[index],
+        "Apartment/Rowhouse",
+        lotArea,
+        floorArea,
+        bedrooms,
+        bathrooms,
+        kitchens,
+        garages,
+        price
+    );
+});
+
+const condominiumSamples = condominiumImages.map((image, index) => {
+    const floorArea = 28 + index * 11;
+    const bedrooms = 1 + (index % 3);
+    const bathrooms = 1 + (index % 2);
+    const garages = index % 2;
+    const price = 2_016_000 + index * 960_000;
+
+    return createSeedHouse(
+        houseAndLotSamples.length + townhouseSamples.length + apartmentSamples.length + index + 1,
+        image,
+        condominiumLocations[index],
+        "Condominium",
+        0,
+        floorArea,
+        bedrooms,
+        bathrooms,
+        1,
+        garages,
+        price
+    );
+});
+
 export const sampleHouses: SampleHouse[] = [
-    {
-        id: 1,
-        image: houseAndLotImages[0],
-        Location: "Iloilo",
-        PropertyType: "House & Lot",
-        LotArea: 127,
-        FloorArea: 118,
-        Bedrooms: 3,
-        Bathrooms: 2,
-        Kitchens: 1,
-        Garages: 2,
-        Price_PHP: 6975000,
-    },
-    {
-        id: 2,
-        image: houseAndLotImages[1],
-        Location: "Batangas",
-        PropertyType: "House & Lot",
-        LotArea: 98,
-        FloorArea: 99,
-        Bedrooms: 2,
-        Bathrooms: 1,
-        Kitchens: 1,
-        Garages: 2,
-        Price_PHP: 4732000,
-    },
-    {
-        id: 3,
-        image: houseAndLotImages[2],
-        Location: "Davao City",
-        PropertyType: "House & Lot",
-        LotArea: 283,
-        FloorArea: 359,
-        Bedrooms: 10,
-        Bathrooms: 8,
-        Kitchens: 2,
-        Garages: 2,
-        Price_PHP: 27169000,
-    },
-    {
-        id: 4,
-        image: houseAndLotImages[3],
-        Location: "Cavite",
-        PropertyType: "House & Lot",
-        LotArea: 93,
-        FloorArea: 112,
-        Bedrooms: 3,
-        Bathrooms: 2,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 5204000,
-    },
-    {
-        id: 5,
-        image: houseAndLotImages[4],
-        Location: "Bacolod",
-        PropertyType: "House & Lot",
-        LotArea: 218,
-        FloorArea: 117,
-        Bedrooms: 3,
-        Bathrooms: 2,
-        Kitchens: 1,
-        Garages: 2,
-        Price_PHP: 6108000,
-    },
-    {
-        id: 6,
-        image: townhouseImages[0],
-        Location: "Cebu City",
-        PropertyType: "Townhouse",
-        LotArea: 303,
-        FloorArea: 165,
-        Bedrooms: 4,
-        Bathrooms: 3,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 16489000,
-    },
-    {
-        id: 7,
-        image: townhouseImages[1],
-        Location: "Iloilo",
-        PropertyType: "Townhouse",
-        LotArea: 229,
-        FloorArea: 211,
-        Bedrooms: 6,
-        Bathrooms: 4,
-        Kitchens: 1,
-        Garages: 0,
-        Price_PHP: 12248000,
-    },
-    {
-        id: 8,
-        image: townhouseImages[2],
-        Location: "Davao City",
-        PropertyType: "Townhouse",
-        LotArea: 253,
-        FloorArea: 418,
-        Bedrooms: 11,
-        Bathrooms: 8,
-        Kitchens: 1,
-        Garages: 0,
-        Price_PHP: 27101000,
-    },
-    {
-        id: 9,
-        image: townhouseImages[3],
-        Location: "Cebu City",
-        PropertyType: "Townhouse",
-        LotArea: 101,
-        FloorArea: 133,
-        Bedrooms: 3,
-        Bathrooms: 2,
-        Kitchens: 2,
-        Garages: 1,
-        Price_PHP: 10017000,
-    },
-    {
-        id: 10,
-        image: townhouseImages[4],
-        Location: "Baguio",
-        PropertyType: "Townhouse",
-        LotArea: 357,
-        FloorArea: 281,
-        Bedrooms: 8,
-        Bathrooms: 6,
-        Kitchens: 1,
-        Garages: 2,
-        Price_PHP: 22325000,
-    },
-    {
-        id: 11,
-        image: apartmentImages[0],
-        Location: "Iloilo",
-        PropertyType: "Apartment/Rowhouse",
-        LotArea: 310,
-        FloorArea: 449,
-        Bedrooms: 12,
-        Bathrooms: 9,
-        Kitchens: 2,
-        Garages: 0,
-        Price_PHP: 18436000,
-    },
-    {
-        id: 12,
-        image: apartmentImages[1],
-        Location: "Cebu City",
-        PropertyType: "Apartment/Rowhouse",
-        LotArea: 333,
-        FloorArea: 166,
-        Bedrooms: 4,
-        Bathrooms: 3,
-        Kitchens: 2,
-        Garages: 0,
-        Price_PHP: 17072000,
-    },
-    {
-        id: 13,
-        image: apartmentImages[2],
-        Location: "Cebu City",
-        PropertyType: "Apartment/Rowhouse",
-        LotArea: 201,
-        FloorArea: 203,
-        Bedrooms: 5,
-        Bathrooms: 4,
-        Kitchens: 2,
-        Garages: 1,
-        Price_PHP: 14644000,
-    },
-    {
-        id: 14,
-        image: apartmentImages[3],
-        Location: "Metro Manila",
-        PropertyType: "Apartment/Rowhouse",
-        LotArea: 328,
-        FloorArea: 422,
-        Bedrooms: 12,
-        Bathrooms: 9,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 41701000,
-    },
-    {
-        id: 15,
-        image: apartmentImages[4],
-        Location: "Davao City",
-        PropertyType: "Apartment/Rowhouse",
-        LotArea: 257,
-        FloorArea: 207,
-        Bedrooms: 5,
-        Bathrooms: 4,
-        Kitchens: 2,
-        Garages: 1,
-        Price_PHP: 13902000,
-    },
-    {
-        id: 16,
-        image: condominiumImages[0],
-        Location: "Bacolod",
-        PropertyType: "Condominium",
-        LotArea: 0,
-        FloorArea: 84,
-        Bedrooms: 2,
-        Bathrooms: 1,
-        Kitchens: 1,
-        Garages: 0,
-        Price_PHP: 3251000,
-    },
-    {
-        id: 17,
-        image: condominiumImages[1],
-        Location: "Cavite",
-        PropertyType: "Condominium",
-        LotArea: 0,
-        FloorArea: 47,
-        Bedrooms: 1,
-        Bathrooms: 1,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 2911000,
-    },
-    {
-        id: 18,
-        image: condominiumImages[2],
-        Location: "Cavite",
-        PropertyType: "Condominium",
-        LotArea: 0,
-        FloorArea: 95,
-        Bedrooms: 2,
-        Bathrooms: 1,
-        Kitchens: 1,
-        Garages: 0,
-        Price_PHP: 4876000,
-    },
-    {
-        id: 19,
-        image: condominiumImages[3],
-        Location: "Iloilo",
-        PropertyType: "Condominium",
-        LotArea: 0,
-        FloorArea: 25,
-        Bedrooms: 1,
-        Bathrooms: 1,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 2016000,
-    },
-    {
-        id: 20,
-        image: condominiumImages[4],
-        Location: "Cebu City",
-        PropertyType: "Condominium",
-        LotArea: 0,
-        FloorArea: 118,
-        Bedrooms: 3,
-        Bathrooms: 2,
-        Kitchens: 1,
-        Garages: 1,
-        Price_PHP: 11379000,
-    },
+    ...houseAndLotSamples,
+    ...townhouseSamples,
+    ...apartmentSamples,
+    ...condominiumSamples,
 ];
 
 export function getRandomHouseImage(seed: number) {

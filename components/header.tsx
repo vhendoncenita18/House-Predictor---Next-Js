@@ -8,10 +8,10 @@ import { cn } from '@/lib/utils'
 import { signOut, useSession } from 'next-auth/react'
 
 const menuItems = [
-    { name: 'Houses', href: '#link' },
-    { name: 'Prediction', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Dashboard', href: '/user/dashboard' },
+    { name: 'Houses', href: '/user/houses' },
+    { name: 'Prediction', href: '/user/predictions' },
+    { name: 'About', href: '/user/about' },
 ]
 
 export const HeroHeader = () => {
@@ -28,9 +28,12 @@ export const HeroHeader = () => {
         | undefined
 
     const isAuthenticated = status === 'authenticated'
-    const displayName = currentUser?.firstName || currentUser?.username || 'Profile'
     const dashboardHref =
         currentUser?.utype === 'Admin' ? '/admin/dashboard' : '/user/dashboard'
+    const getProtectedHref = React.useCallback(
+        (href: string) => (isAuthenticated ? href : `/login?callbackUrl=${encodeURIComponent(href)}`),
+        [isAuthenticated]
+    )
 
     const handleLogout = async () => {
         setMenuState(false)
@@ -73,7 +76,8 @@ export const HeroHeader = () => {
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
                                         <Link
-                                            href={item.href}
+                                            href={getProtectedHref(item.href)}
+                                            onClick={() => setMenuState(false)}
                                             className="text-muted-foreground hover:text-accent-foreground block duration-150">
                                             <span>{item.name}</span>
                                         </Link>
@@ -88,7 +92,8 @@ export const HeroHeader = () => {
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
                                             <Link
-                                                href={item.href}
+                                                href={getProtectedHref(item.href)}
+                                                onClick={() => setMenuState(false)}
                                                 className="text-muted-foreground hover:text-accent-foreground block duration-150">
                                                 <span>{item.name}</span>
                                             </Link>
@@ -127,7 +132,7 @@ export const HeroHeader = () => {
                                             variant="outline"
                                             size="sm"
                                             className={cn(isScrolled && 'lg:hidden')}>
-                                            <Link href="/login">
+                                            <Link href="/login" onClick={() => setMenuState(false)}>
                                                 <span>Login</span>
                                             </Link>
                                         </Button>
@@ -135,7 +140,7 @@ export const HeroHeader = () => {
                                             asChild
                                             size="sm"
                                             className={cn(isScrolled && 'lg:hidden')}>
-                                            <Link href="/register">
+                                            <Link href="/register" onClick={() => setMenuState(false)}>
                                                 <span>Sign Up</span>
                                             </Link>
                                         </Button>
@@ -143,7 +148,7 @@ export const HeroHeader = () => {
                                             asChild
                                             size="sm"
                                             className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                            <Link href="/register">
+                                            <Link href="/register" onClick={() => setMenuState(false)}>
                                                 <span>Get Started</span>
                                             </Link>
                                         </Button>

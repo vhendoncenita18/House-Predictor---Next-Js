@@ -43,6 +43,8 @@ model Prediction {
   floorArea       Decimal  @map("floor_area") @db.Decimal
   bedrooms        Int?
   bathrooms       Int?
+  kitchens        Int?
+  garages         Int?
   hasGarage       Boolean? @default(false) @map("has_garage")
   predictedPrice  Decimal  @map("predicted_price") @db.Decimal
 
