@@ -36,7 +36,6 @@ model Prediction {
   // This must match the User.id type
   userId          String   @map("user_id") 
   user            User     @relation(fields: [userId], references: [id])
-  
   location        String
   propertyType    String   @map("property_type")
   lotArea         Decimal? @map("lot_area") @db.Decimal
@@ -45,7 +44,6 @@ model Prediction {
   bathrooms       Int?
   kitchens        Int?
   garages         Int?
-  hasGarage       Boolean? @default(false) @map("has_garage")
   predictedPrice  Decimal  @map("predicted_price") @db.Decimal
 
   @@map("predictions")

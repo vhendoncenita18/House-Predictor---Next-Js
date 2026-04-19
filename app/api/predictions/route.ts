@@ -21,7 +21,6 @@ type PredictionSource = {
     bathrooms: number | null;
     kitchens: number | null;
     garages: number | null;
-    hasGarage: boolean | null;
     predictedPrice: unknown;
     user: {
         firstName: string | null;
@@ -95,7 +94,6 @@ function serializePrediction(
         bathrooms: prediction.bathrooms,
         kitchens: prediction.kitchens,
         garages: prediction.garages,
-        hasGarage: prediction.hasGarage ?? (prediction.garages ?? 0) > 0,
         predictedPrice: parseRequiredNumber(prediction.predictedPrice),
         image,
         ownerName:
@@ -204,7 +202,6 @@ export async function POST(request: Request) {
                 bathrooms: values.bathrooms,
                 kitchens: values.kitchens,
                 garages: values.garages,
-                hasGarage: values.garages > 0,
                 predictedPrice: estimation.predictedPrice,
             },
             include: {
@@ -275,7 +272,6 @@ export async function PATCH(request: Request) {
                 bathrooms: values.bathrooms,
                 kitchens: values.kitchens,
                 garages: values.garages,
-                hasGarage: values.garages > 0,
                 predictedPrice: estimation.predictedPrice,
             },
             include: {
