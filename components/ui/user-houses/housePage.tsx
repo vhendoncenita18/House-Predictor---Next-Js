@@ -293,10 +293,22 @@ export default function UserHousesPage() {
                                         </p>
                                     </div>
                                     <Link
-                                        href="/user/prediction"
+                                        href={{
+                                            pathname: "/user/prediction",
+                                            query: {
+                                                location: selectedHouse.Location,
+                                                propertyType: selectedHouse.PropertyType,
+                                                lotArea: String(selectedHouse.LotArea),
+                                                floorArea: String(selectedHouse.FloorArea),
+                                                bedrooms: String(selectedHouse.Bedrooms),
+                                                bathrooms: String(selectedHouse.Bathrooms),
+                                                kitchens: String(selectedHouse.Kitchens),
+                                                garages: String(selectedHouse.Garages),
+                                            }
+                                        }}
                                         className="inline-flex items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/12 px-4 py-2.5 text-sm font-medium text-emerald-100 transition hover:bg-emerald-400/18"
                                     >
-                                        Add Prediction
+                                        Use for Prediction
                                     </Link>
                                 </div>
 

@@ -14,6 +14,8 @@ import { Select } from "@/components/ui/select";
 import { emptyPredictionForm, estimatePrediction, normalizePropertyType, propertyTypeOptions, toPredictionFormValues, type PredictionFormValues } from "@/lib/prediction-utils";
 import { sampleHouses } from "@/data/sample-houses";
 import { PredictionRecord } from "@/data/predictions";
+import { register } from "node:module";
+import { useForm } from "react-hook-form";
 
 const pesoFormatter = new Intl.NumberFormat("en-PH", {
     style: "currency",
@@ -35,8 +37,29 @@ function PredictionForm() {
     const [serverError, setServerError] = useState<string | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isLoadingPrediction, setIsLoadingPrediction] = useState(Boolean(editId));
+    const { register, setValue } = useForm();
 
     useEffect(() => {
+        const lotArea = searchParams.get("lotArea");
+        const floorArea = searchParams.get("floorArea");
+
+        if (lotArea || floorArea) {
+            const sampleData = {
+                location: searchParams.get("location") ?? "",
+                propertyType: searchParams.get("propertyType") ?? "House & Lot",
+                lotArea: Number(lotArea ?? 0),
+                floorArea: Number(floorArea ?? 0),
+                bedrooms: Number(searchParams.get("bedrooms") ?? 0),
+                bathrooms: Number(searchParams.get("bathrooms") ?? 0),
+                kitchens: Number(searchParams.get("kitchens") ?? 0),
+                garages: Number(searchParams.get("garages") ?? 0),
+            };
+
+            setFormValues(sampleData);
+            setIsLoadingPrediction(false);
+            return;
+        }
+
         const predictionId = editId ?? "";
 
         if (!predictionId) {
@@ -98,7 +121,7 @@ function PredictionForm() {
         return () => {
             isMounted = false;
         };
-    }, [editId]);
+    }, [editId, searchParams, setValue]);
 
     const liveEstimate = useMemo(() => estimatePrediction(formValues), [formValues]);
 
@@ -290,11 +313,10 @@ function PredictionForm() {
                                 key={house.id}
                                 type="button"
                                 onClick={() => applyTemplate(house.id)}
-                                className={`group rounded-[1.5rem] border p-4 text-left transition hover:-translate-y-1 ${
-                                    selectedTemplateId === house.id
+                                className={`group rounded-[1.5rem] border p-4 text-left transition hover:-translate-y-1 ${selectedTemplateId === house.id
                                         ? "border-cyan-300/35 bg-cyan-300/10"
                                         : "border-white/10 bg-white/3 hover:border-white/20"
-                                }`}
+                                    }`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.2rem]">
                                     <Image
