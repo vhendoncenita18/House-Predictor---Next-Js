@@ -179,7 +179,7 @@ export default function RegisterPage() {
                                 {error}
                             </div>
                         )}
-                        <Button className="w-full" type="submit">Sign Up</Button>
+                        <Button className="w-full cursor-pointer" type="submit">Sign Up</Button>
                     </div>
 
                     <div className="my-6 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
@@ -190,6 +190,7 @@ export default function RegisterPage() {
 
                     <div className="grid grid-cols-2 gap-3">
                         <Button
+                            className='cursor-pointer'
                             type="button"
                             variant="outline">
                             <svg
@@ -213,6 +214,7 @@ export default function RegisterPage() {
                             <span>Google</span>
                         </Button>
                         <Button
+                            className='cursor-pointer'
                             type="button"
                             variant="outline">
                             <svg

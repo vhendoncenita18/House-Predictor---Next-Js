@@ -18,6 +18,7 @@ model User {
   gender        String
   birthdate     DateTime
   username      String    @unique
+  avatarUrl     String?
   password      String 
   utype         String    @default("user")
   createdAt     DateTime  @default(now())
@@ -33,9 +34,10 @@ model Prediction {
   id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
   
-  // This must match the User.id type
   userId          String   @map("user_id") 
-  user            User     @relation(fields: [userId], references: [id])
+  // ONLY KEEP THIS ONE LINE FOR THE RELATION:
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   location        String
   propertyType    String   @map("property_type")
   lotArea         Decimal? @map("lot_area") @db.Decimal

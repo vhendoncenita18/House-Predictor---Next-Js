@@ -5,52 +5,60 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import Link from 'next/link'
-import { signIn } from 'next-auth/react'
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
+
+function getErrorMessage(errorCode: string | null) {
+    switch (errorCode) {
+        case "CredentialsSignin":
+            return "Invalid username or password."
+        case "AccessDenied":
+            return "Access denied."
+        case "Configuration":
+            return "Login is temporarily unavailable. Please try again."
+        default:
+            return ""
+    }
+}
 
 export default function LoginPage() {
-    const[error, setError] = useState("");
-    const router = useRouter();
-    const [loading, setLoading] = useState(false);
+    const searchParams = useSearchParams()
+    const [csrfToken, setCsrfToken] = useState("")
+    const [loading, setLoading] = useState(false)
+    const callbackUrl = searchParams.get("callbackUrl") || "/dashboard"
+    const error = useMemo(
+        () => getErrorMessage(searchParams.get("error")),
+        [searchParams]
+    )
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setLoading(true);
-        setError("");
-
-        const formData = new FormData(e.currentTarget);
-        const username = formData.get("username") as string;
-        const password = formData.get("password") as string;
-
-        const res = await signIn("credentials", {
-            username,
-            password,
-            redirect: false
-        });
-
-        if (res?.error) {
-            setError(res.error);
-            setLoading(false);
-        } else {
-            const { getSession } = await import("next-auth/react");
-            const session = await getSession();
-            const role = (session?.user as any)?.utype;
-
-            if (role === "Admin") {
-                router.push("/admin/dashboard");
-            } else {
-                router.push("/user/dashboard");
+    useEffect(() => {
+        const fetchCsrfToken = async () => {
+            try {
+                const response = await fetch("/api/auth/csrf", { cache: "no-store" })
+                const data = await response.json()
+                if (data.csrfToken) {
+                    setCsrfToken(data.csrfToken)
+                }
+            } catch (err) {
+                console.error("Failed to fetch CSRF token:", err)
             }
-
-            router.refresh();
         }
+        fetchCsrfToken()
+    }, [])
+
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        setLoading(true)
     }
+
     return (
         <section className="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent">
             <form
                 onSubmit={handleSubmit}
+                method="post"
+                action="/api/auth/callback/credentials"
                 className="bg-muted m-auto h-fit w-full max-w-sm overflow-hidden rounded-[calc(var(--radius)+.125rem)] border shadow-md shadow-zinc-950/5 dark:[--color-muted:var(--color-zinc-900)]">
+                <input type="hidden" name="csrfToken" value={csrfToken} />
+                <input type="hidden" name="callbackUrl" value={callbackUrl} />
                 <div className="bg-card -m-px rounded-[calc(var(--radius)+.125rem)] border p-8 pb-6">
                     <div className="text-center">
                         <Link
@@ -110,7 +118,9 @@ export default function LoginPage() {
                             />
                         </div>
 
-                        <Button type="submit" className="w-full">Sign In</Button>
+                        <Button type="submit" disabled={loading || !csrfToken} className="w-full cursor-pointer">
+                            {loading ? "Signing In..." : !csrfToken ? "Preparing Login..." : "Sign In"}
+                        </Button>
                     </div>
 
                     <div className="my-6 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
@@ -121,6 +131,7 @@ export default function LoginPage() {
 
                     <div className="grid grid-cols-2 gap-3">
                         <Button
+                            className='cursor-pointer'
                             type="button"
                             variant="outline">
                             <svg
@@ -144,6 +155,7 @@ export default function LoginPage() {
                             <span>Google</span>
                         </Button>
                         <Button
+                            className='cursor-pointer'
                             type="button"
                             variant="outline">
                             <svg

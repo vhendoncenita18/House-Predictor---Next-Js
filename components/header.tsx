@@ -6,12 +6,20 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { signOut, useSession } from 'next-auth/react'
+import { isAdminRole } from '@/lib/auth-role'
 
 const menuItems = [
     { name: 'Dashboard', href: '/user/dashboard' },
     { name: 'Houses', href: '/user/houses' },
     { name: 'Prediction', href: '/user/predictions' },
     { name: 'About', href: '/user/about' },
+]
+
+const adminMenuItems = [
+    { name: 'Dashboard', href: '/admin/dashboard' },
+    { name: 'Manage Users', href: '/admin/manage-users' },
+    { name: 'Predictions', href: '/admin/predictions' },
+    { name: 'About', href: '/admin/about' },
 ]
 
 export const HeroHeader = () => {
@@ -29,7 +37,11 @@ export const HeroHeader = () => {
 
     const isAuthenticated = status === 'authenticated'
     const dashboardHref =
-        currentUser?.utype === 'Admin' ? '/admin/dashboard' : '/user/dashboard'
+        isAdminRole(currentUser?.utype) ? '/admin/dashboard' : '/user/dashboard'
+    const profileHref = isAdminRole(currentUser?.utype) ? '/admin/profile' : '/user/profile'
+    const navigationItems = isAdminRole(currentUser?.utype)
+        ? adminMenuItems
+        : menuItems
     const getProtectedHref = React.useCallback(
         (href: string) => (isAuthenticated ? href : `/login?callbackUrl=${encodeURIComponent(href)}`),
         [isAuthenticated]
@@ -73,7 +85,7 @@ export const HeroHeader = () => {
 
                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
                             <ul className="flex gap-8 text-sm">
-                                {menuItems.map((item, index) => (
+                                {navigationItems.map((item, index) => (
                                     <li key={index}>
                                         <Link
                                             href={getProtectedHref(item.href)}
@@ -89,7 +101,7 @@ export const HeroHeader = () => {
                         <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
                             <div className="lg:hidden">
                                 <ul className="space-y-6 text-base">
-                                    {menuItems.map((item, index) => (
+                                    {navigationItems.map((item, index) => (
                                         <li key={index}>
                                             <Link
                                                 href={getProtectedHref(item.href)}
@@ -104,15 +116,22 @@ export const HeroHeader = () => {
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 {isAuthenticated ? (
                                     <>
-                                        <Link
-                                            href={dashboardHref}
+                                        <Link   
+                                            href={profileHref}
                                             onClick={() => setMenuState(false)}
-                                            className="flex items-center justify-center gap-3 text-left transition hover:bg-muted/70 sm:justify-start"
+                                            className="flex items-center justify-center gap-3 rounded-2xl border border-transparent px-2 py-1.5 text-left transition hover:border-white/10 hover:bg-muted/70 sm:justify-start"
                                         >
                                         <span className="flex size-9 items-center justify-center rounded-full bg-primary/12 text-primary">
                                             <User className="size-4" />
                                         </span>
-                                        
+                                        <span className="hidden sm:flex sm:flex-col">
+                                            <span className="text-sm font-medium leading-none">
+                                                {currentUser?.firstName ?? currentUser?.username ?? 'Profile'}
+                                            </span>
+                                            <span className="text-xs text-muted-foreground">
+                                                View profile
+                                            </span>
+                                        </span>
                                         </Link>
                                         <Button
                                             type="button"

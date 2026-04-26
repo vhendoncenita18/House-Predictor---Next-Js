@@ -1,5 +1,6 @@
 import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
+import { isAdminRole } from "@/lib/auth-role";
 
 export default withAuth(
   function middleware(req) {
@@ -9,7 +10,7 @@ export default withAuth(
 
     // 1. Guard for Admin routes
     // If path starts with /admin and the user is NOT an Admin, kick them back to user dashboard
-    if (path.startsWith("/admin") && token?.utype !== "Admin") {
+    if (path.startsWith("/admin") && !isAdminRole(token?.utype as string | undefined)) {
       return NextResponse.redirect(new URL("/user/dashboard", req.url));
     }
 
