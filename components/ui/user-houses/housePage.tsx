@@ -247,7 +247,7 @@ export default function UserHousesPage() {
                                         src={house.image}
                                         alt={`${house.PropertyType} in ${house.Location}`}
                                         fill
-                                        className="object-cover transition duration-500 group-hover:scale-105"
+                                        className="cursor-pointer object-cover transition duration-500 group-hover:scale-105"
                                     />
                                 </div>
                                 <div className="mt-4 space-y-1.5">

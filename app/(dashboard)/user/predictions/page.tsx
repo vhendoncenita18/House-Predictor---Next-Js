@@ -214,7 +214,7 @@ export default function UserPredictionsPage() {
                     type="button"
                     onClick={() => toggleFavorite(prediction.id)}
                     aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
-                    className={`absolute right-7 top-7 z-10 inline-flex size-10 items-center justify-center rounded-full border transition ${
+                    className={`absolute right-7 cursor-pointer top-7 z-10 inline-flex size-10 items-center justify-center rounded-full border transition ${
                         isFavorite
                             ? "border-amber-300/40 bg-amber-300/20 text-amber-100"
                             : "border-white/15 bg-black/40 text-white/75 hover:bg-black/55 hover:text-white"
@@ -234,7 +234,7 @@ export default function UserPredictionsPage() {
                             alt={`${prediction.propertyType} in ${prediction.location}`}
                             fill
                             sizes="(max-width: 640px) 260px, (max-width: 1280px) 300px, 250px"
-                            className="object-cover transition duration-500 group-hover:scale-105"
+                            className="cursor-pointer object-cover transition duration-500 group-hover:scale-105"
                         />
                     </div>
 
@@ -386,7 +386,7 @@ export default function UserPredictionsPage() {
                                             <button
                                                 type="button"
                                                 onClick={() => toggleFavorite(selectedPrediction.id)}
-                                                className={`inline-flex items-center justify-center gap-2 rounded-2xl border px-4 py-2.5 text-sm font-medium transition ${
+                                                className={`cursor-pointer inline-flex items-center justify-center gap-2 rounded-2xl border px-4 py-2.5 text-sm font-medium transition ${
                                                     favoriteIds.includes(selectedPrediction.id)
                                                         ? "border-amber-300/35 bg-amber-300/14 text-amber-100"
                                                         : "border-white/15 bg-white/[0.05] text-white/85 hover:bg-white/[0.09]"
@@ -466,7 +466,7 @@ export default function UserPredictionsPage() {
                                                 type="button"
                                                 disabled={isDeleting}
                                                 onClick={() => deletePrediction(selectedPrediction.id)}
-                                                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-red-400/20 bg-red-400/10 px-4 py-2.5 text-sm font-medium text-red-100 transition hover:bg-red-400/16 disabled:cursor-not-allowed disabled:opacity-70"
+                                                className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-2xl border border-red-400/20 bg-red-400/10 px-4 py-2.5 text-sm font-medium text-red-100 transition hover:bg-red-400/16 disabled:cursor-not-allowed disabled:opacity-70"
                                             >
                                                 <Trash2 className="size-4" />
                                                 Delete Prediction

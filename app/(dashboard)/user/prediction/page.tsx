@@ -484,7 +484,7 @@ function PredictionForm() {
                                     <Button
                                         type="submit"
                                         disabled={isSubmitting || isLoadingPrediction}
-                                        className="h-11 rounded-2xl bg-emerald-500 px-5 text-black hover:bg-emerald-400"
+                                        className="cursor-pointer h-11 rounded-2xl bg-emerald-500 px-5 text-black hover:bg-emerald-400"
                                     >
                                         {editId ? (
                                             <>
