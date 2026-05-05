@@ -25,9 +25,9 @@ export function ProfileSummaryCard({
   onFileChange,
 }: ProfileSummaryCardProps) {
   return (
-    <div className="rounded-[28px] border border-white/10 bg-white/[0.03] p-6">
+    <div className="rounded-[28px] border border-white/10 bg-white/3 p-6">
       <div className="flex flex-col items-center text-center">
-        <div className="relative mb-5 flex size-28 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/[0.05]">
+        <div className="relative mb-5 flex size-28 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white/4">
           {form.avatarUrl ? (
             <Image
               src={form.avatarUrl}
@@ -41,7 +41,7 @@ export function ProfileSummaryCard({
           )}
         </div>
 
-        <label className="inline-flex cursor-pointer items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-2 text-sm text-white/80 transition hover:bg-white/[0.08] hover:text-white">
+        <label className="inline-flex cursor-pointer items-center gap-2 rounded-2xl border border-white/10 bg-white/4 px-4 py-2 text-sm text-white/80 transition hover:bg-white/9 hover:text-white">
           <Camera className="size-4" />
           <span>{isUploadingAvatar ? "Uploading..." : "Upload photo"}</span>
           <input
@@ -66,14 +66,14 @@ export function ProfileSummaryCard({
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+          <div className="rounded-2xl border border-white/10 bg-white/4 p-4">
             <p className="text-xs uppercase tracking-[0.24em] text-white/45">Member since</p>
             <p className="mt-2 text-sm font-medium text-white/80">
               {profile?.createdAt ? new Date(profile.createdAt).toLocaleDateString() : "Loading..."}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+          <div className="rounded-2xl border border-white/10 bg-white/4 p-4">
             <p className="text-xs uppercase tracking-[0.24em] text-white/45">Last updated</p>
             <p className="mt-2 text-sm font-medium text-white/80">
               {profile?.updatedAt ? new Date(profile.updatedAt).toLocaleString() : "Loading..."}

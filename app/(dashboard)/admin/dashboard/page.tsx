@@ -193,7 +193,7 @@ export default async function AdminDashboardPage() {
             {historyUsers.filter((user) => user.predictions.length > 0).map((user) => (
               <section
                 key={user.id}
-                className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-5"
+                className="rounded-[1.5rem] border border-white/10 bg-white/3 p-5"
               >
                 <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                   <div>
@@ -249,7 +249,7 @@ export default async function AdminDashboardPage() {
             ))}
 
             {historyUsers.every((user) => user.predictions.length === 0) ? (
-              <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55">
+              <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/2 px-5 py-10 text-center text-sm text-white/55">
                 No prediction history available yet.
               </div>
             ) : null}

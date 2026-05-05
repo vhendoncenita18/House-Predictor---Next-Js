@@ -32,7 +32,7 @@ function DeletePredictionSkeleton() {
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-[0.9fr_1.1fr]">
-                    <div className="h-56 animate-pulse rounded-[1.25rem] bg-white/[0.08]" />
+                    <div className="h-56 animate-pulse rounded-[1.25rem] bg-white/8" />
                     <div className="space-y-4">
                         <div className="h-5 w-40 animate-pulse rounded-full bg-white/12" />
                         <div className="h-4 w-52 animate-pulse rounded-full bg-white/10" />
@@ -242,7 +242,7 @@ export default function UserPredictionsPage() {
         return (
             <article
                 key={`${isFavoriteRail ? "favorite" : "prediction"}-${prediction.id}`}
-                className={`${itemCardClassName} relative ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                className={`${itemCardClassName} relative ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/8" : ""}`}
             >
                 <button
                     type="button"
@@ -327,7 +327,7 @@ export default function UserPredictionsPage() {
                             <button
                                 type="button"
                                 onClick={() => setPredictionToDelete(null)}
-                                className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/15 bg-white/[0.05] px-5 text-sm font-medium text-white transition hover:bg-white/[0.09]"
+                                className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-5 text-sm font-medium text-white transition hover:bg-white/9"
                             >
                                 Cancel
                             </button>
@@ -400,7 +400,7 @@ export default function UserPredictionsPage() {
                                 <button
                                     type="button"
                                     onClick={() => scrollCards(favoritesRailRef, "left")}
-                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                                     aria-label="Scroll favorite predictions left"
                                 >
                                     <ChevronLeft className="size-4" />
@@ -408,7 +408,7 @@ export default function UserPredictionsPage() {
                                 <button
                                     type="button"
                                     onClick={() => scrollCards(favoritesRailRef, "right")}
-                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                                     aria-label="Scroll favorite predictions right"
                                 >
                                     <ChevronRight className="size-4" />
@@ -441,7 +441,7 @@ export default function UserPredictionsPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(predictionsRailRef, "left")}
-                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                                 aria-label="Scroll predictions left"
                             >
                                 <ChevronLeft className="size-4" />
@@ -449,7 +449,7 @@ export default function UserPredictionsPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(predictionsRailRef, "right")}
-                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                                 aria-label="Scroll predictions right"
                             >
                                 <ChevronRight className="size-4" />
@@ -458,7 +458,7 @@ export default function UserPredictionsPage() {
                     </div>
 
                     {isPredictionsLoading ? (
-                        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55">
+                        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/2 px-5 py-10 text-center text-sm text-white/55">
                             Loading your saved predictions...
                         </div>
                     ) : predictionsError ? (
@@ -466,7 +466,7 @@ export default function UserPredictionsPage() {
                             {predictionsError}
                         </div>
                     ) : predictions.length === 0 ? (
-                        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center">
+                        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/2 px-5 py-10 text-center">
                             <p className="text-base font-medium text-white">No predictions yet</p>
                             <p className="mt-2 text-sm text-white/55">
                                 Add your first property prediction to start building your list.
@@ -485,8 +485,8 @@ export default function UserPredictionsPage() {
                             </div>
 
                             {selectedPrediction ? (
-                                <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
-                                    <div className="relative min-h-[260px] overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-[100%]">
+                                <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
+                                    <div className="relative min-h-65 overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-full">
                                         <Image
                                             src={selectedPrediction.image}
                                             alt={`${selectedPrediction.propertyType} in ${selectedPrediction.location}`}
@@ -518,7 +518,7 @@ export default function UserPredictionsPage() {
                                                 className={`cursor-pointer inline-flex items-center justify-center gap-2 rounded-2xl border px-4 py-2.5 text-sm font-medium transition ${
                                                     favoriteIds.includes(selectedPrediction.id)
                                                         ? "border-amber-300/35 bg-amber-300/14 text-amber-100"
-                                                        : "border-white/15 bg-white/[0.05] text-white/85 hover:bg-white/[0.09]"
+                                                        : "border-white/15 bg-white/5 text-white/85 hover:bg-white/9"
                                                 }`}
                                             >
                                                 <Star
@@ -586,7 +586,7 @@ export default function UserPredictionsPage() {
                                         <div className="flex flex-col gap-3 sm:flex-row">
                                             <Link
                                                 href={`/user/prediction?edit=${selectedPrediction.id}`}
-                                                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-white/[0.09]"
+                                                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-white/9"
                                             >
                                                 <Pencil className="size-4" />
                                                 Edit Prediction
@@ -636,7 +636,7 @@ export default function UserPredictionsPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(suggestionsRailRef, "left")}
-                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:bg-white/9"
                                 aria-label="Scroll suggested templates left"
                             >
                                 <ChevronLeft className="size-4" />
@@ -644,7 +644,7 @@ export default function UserPredictionsPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(suggestionsRailRef, "right")}
-                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                                 aria-label="Scroll suggested templates right"
                             >
                                 <ChevronRight className="size-4" />
@@ -672,7 +672,7 @@ export default function UserPredictionsPage() {
 
                     <div ref={suggestionsRailRef} className={railClassName}>
                         {suggestionTemplates.map((house) => (
-                            <article key={house.id} className={` ${itemCardClassName} min-w-[270px]`}>
+                            <article key={house.id} className={` ${itemCardClassName} min-w-67.5`}>
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image
                                         src={house.image}

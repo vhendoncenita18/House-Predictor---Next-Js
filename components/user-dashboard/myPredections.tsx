@@ -93,7 +93,7 @@ export default function MyPredictions() {
                     <button
                         type="button"
                         onClick={() => scrollCards(predictionRailRef, "left")}
-                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                         aria-label="Scroll predictions left"
                     >
                         <ChevronLeft className="size-4" />
@@ -101,7 +101,7 @@ export default function MyPredictions() {
                     <button
                         type="button"
                         onClick={() => scrollCards(predictionRailRef, "right")}
-                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                         aria-label="Scroll predictions right"
                     >
                         <ChevronRight className="size-4" />
@@ -110,7 +110,7 @@ export default function MyPredictions() {
             </div>
 
             {isPredictionsLoading ? (
-                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55">
+                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/3 px-5 py-10 text-center text-sm text-white/55">
                     Loading your saved predictions...
                 </div>
             ) : predictionsError ? (
@@ -118,7 +118,7 @@ export default function MyPredictions() {
                     {predictionsError}
                 </div>
             ) : predictions.length === 0 ? (
-                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center">
+                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/3 px-5 py-10 text-center">
                     <p className="text-base font-medium text-white">No predictions yet</p>
                     <p className="mt-2 text-sm text-white/55">
                         Add your first property prediction to see it here.
@@ -138,7 +138,7 @@ export default function MyPredictions() {
                                 key={prediction.id}
                                 type="button"
                                 onClick={() => setSelectedPrediction(prediction)}
-                                className={`cursor-pointer ${itemCardClassName} ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                                className={`cursor-pointer ${itemCardClassName} ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/8" : ""}`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image
@@ -168,8 +168,8 @@ export default function MyPredictions() {
                     </div>
 
                     {selectedPrediction ? (
-                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
-                            <div className="relative min-h-[260px] overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-[100%]">
+                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
+                            <div className="relative min-h-65 overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-full">
                                 <Image
                                     src={selectedPrediction.image}
                                     alt={`${selectedPrediction.propertyType} in ${selectedPrediction.location}`}

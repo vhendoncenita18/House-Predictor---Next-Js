@@ -13,7 +13,7 @@ export function ProfileHero() {
 
       <Link
         href="/user/dashboard"
-        className="inline-flex w-fit rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/80 transition hover:bg-white/[0.08] hover:text-white"
+        className="inline-flex w-fit rounded-2xl border border-white/10 bg-white/4 px-4 py-2 text-sm text-white/80 transition hover:bg-white/9 hover:text-white"
       >
         Back to dashboard
       </Link>

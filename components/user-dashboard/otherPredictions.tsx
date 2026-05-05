@@ -94,7 +94,7 @@ export default function OtherPredictions() {
                     <button
                         type="button"
                         onClick={() => scrollCards(otherPredictionRailRef, "left")}
-                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                         aria-label="Scroll other predictions left"
                     >
                         <ChevronLeft className="size-4" />
@@ -102,7 +102,7 @@ export default function OtherPredictions() {
                     <button
                         type="button"
                         onClick={() => scrollCards(otherPredictionRailRef, "right")}
-                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                        className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/8 hover:text-white"
                         aria-label="Scroll other predictions right"
                     >
                         <ChevronRight className="size-4" />
@@ -111,7 +111,7 @@ export default function OtherPredictions() {
             </div>
 
             {isOtherPredictionsLoading ? (
-                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55">
+                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/3 px-5 py-10 text-center text-sm text-white/55">
                     Loading other users&apos; predictions...
                 </div>
             ) : otherPredictionsError ? (
@@ -119,7 +119,7 @@ export default function OtherPredictions() {
                     {otherPredictionsError}
                 </div>
             ) : otherPredictions.length === 0 ? (
-                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center">
+                <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/3 px-5 py-10 text-center">
                     <p className="text-base font-medium text-white">No other predictions yet</p>
                     <p className="mt-2 text-sm text-white/55">
                         When other users add predictions, they&apos;ll appear here.
@@ -133,7 +133,7 @@ export default function OtherPredictions() {
                                 key={prediction.id}
                                 type="button"
                                 onClick={() => setSelectedOtherPrediction(prediction)}
-                                className={`cursor-pointer ${itemCardClassName} ${selectedOtherPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                                className={`cursor-pointer ${itemCardClassName} ${selectedOtherPrediction?.id === prediction.id ? "border-white/30 bg-white/8" : ""}`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image
@@ -163,8 +163,8 @@ export default function OtherPredictions() {
                     </div>
 
                     {selectedOtherPrediction ? (
-                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
-                            <div className="relative min-h-[260px] overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-[100%]">
+                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
+                            <div className="relative min-h-65 overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-full">
                                 <Image
                                     src={selectedOtherPrediction.image}
                                     alt={`${selectedOtherPrediction.propertyType} in ${selectedOtherPrediction.location}`}

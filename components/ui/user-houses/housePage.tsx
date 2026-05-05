@@ -148,11 +148,11 @@ export default function UserHousesPage() {
                                 <article
                                     key={category.key}
                                     className={`group relative overflow-hidden rounded-[1.65rem] border p-5 transition duration-300 hover:-translate-y-1 ${selectedCategory === category.key
-                                        ? "border-white/25 bg-white/[0.08]"
-                                        : "border-white/10 bg-white/[0.04]"
+                                        ? "border-white/25 bg-white/8"
+                                        : "border-white/10 bg-white/4"
                                         }`}
                                 >
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${category.accentClassName}`} />
+                                    <div className={`absolute inset-0 bg-linear-to-br ${category.accentClassName}`} />
                                     <div className="relative flex h-full flex-col">
                                         <div className="mb-4 flex items-start justify-between gap-4">
                                             <div>
@@ -191,7 +191,7 @@ export default function UserHousesPage() {
                                         <button
                                             type="button"
                                             onClick={() => handleSeeAll(category.key)}
-                                            className="cursor-pointer mt-6 inline-flex items-center justify-center self-center rounded-full border border-white/15 bg-white/[0.07] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-white/[0.12]"
+                                            className="cursor-pointer mt-6 inline-flex items-center justify-center self-center rounded-full border border-white/15 bg-white/7 px-6 py-2.5 text-sm font-medium text-white transition hover:bg-white/12"
                                         >
                                             See All
                                         </button>
@@ -219,7 +219,7 @@ export default function UserHousesPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(categoryRailRef, "left")}
-                                className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/9 hover:text-white"
                                 aria-label="Scroll category houses left"
                             >
                                 <ChevronLeft className="size-4" />
@@ -227,7 +227,7 @@ export default function UserHousesPage() {
                             <button
                                 type="button"
                                 onClick={() => scrollCards(categoryRailRef, "right")}
-                                className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                className="cursor-pointer inline-flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:bg-white/9 hover:text-white"
                                 aria-label="Scroll category houses right"
                             >
                                 <ChevronRight className="size-4" />
@@ -246,7 +246,7 @@ export default function UserHousesPage() {
                                         [selectedCategory]: house,
                                     }))
                                 }
-                                className={`${itemCardClassName} ${selectedHouse?.id === house.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                                className={`${itemCardClassName} ${selectedHouse?.id === house.id ? "border-white/30 bg-white/8" : ""}`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image
@@ -272,8 +272,8 @@ export default function UserHousesPage() {
                     </div>
 
                     {selectedHouse ? (
-                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
-                            <div className="relative min-h-[260px] overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-[100%]">
+                        <div className="mt-6 grid gap-6 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 sm:p-5 lg:grid-cols-[1.15fr_0.85fr] lg:p-6">
+                            <div className="relative min-h-65 overflow-hidden rounded-[1.25rem] bg-black/20 lg:min-h-full">
                                 <Image
                                     src={selectedHouse.image}
                                     alt={`${selectedHouse.PropertyType} in ${selectedHouse.Location}`}
