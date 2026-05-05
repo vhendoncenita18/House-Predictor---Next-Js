@@ -68,6 +68,7 @@ const categoryConfigs: CategoryConfig[] = [
 export default function UserHousesPage() {
     const [selectedCategory, setSelectedCategory] = useState<HouseCategory>("House & Lot");
     const categoryRailRef = useRef<HTMLDivElement>(null);
+    const categorySectionRef = useRef<HTMLElement>(null);
 
     const housesByCategory = useMemo(
         () =>
@@ -91,6 +92,11 @@ export default function UserHousesPage() {
     const activeCategory = categoryConfigs.find((category) => category.key === selectedCategory) ?? categoryConfigs[0];
     const activeHouses = housesByCategory[selectedCategory];
     const selectedHouse = selectedHouseByCategory[selectedCategory] ?? activeHouses[0];
+
+    const handleSeeAll = (category: HouseCategory) => {
+        setSelectedCategory(category);
+        categorySectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
 
     return (
         <div className="relative min-h-screen overflow-hidden bg-[#090909] text-white">
@@ -184,7 +190,7 @@ export default function UserHousesPage() {
 
                                         <button
                                             type="button"
-                                            onClick={() => setSelectedCategory(category.key)}
+                                            onClick={() => handleSeeAll(category.key)}
                                             className="cursor-pointer mt-6 inline-flex items-center justify-center self-center rounded-full border border-white/15 bg-white/[0.07] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-white/[0.12]"
                                         >
                                             See All
@@ -196,7 +202,7 @@ export default function UserHousesPage() {
                     </div>
                 </section>
 
-                <section className={sectionCardClassName}>
+                <section ref={categorySectionRef} className={sectionCardClassName}>
                     <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                         <div className="space-y-2">
                             <p className="text-xs uppercase tracking-[0.3em] text-white/45">

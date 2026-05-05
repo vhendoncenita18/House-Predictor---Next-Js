@@ -133,7 +133,7 @@ export default function OtherPredictions() {
                                 key={prediction.id}
                                 type="button"
                                 onClick={() => setSelectedOtherPrediction(prediction)}
-                                className={`${itemCardClassName} ${selectedOtherPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                                className={`cursor-pointer ${itemCardClassName} ${selectedOtherPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image

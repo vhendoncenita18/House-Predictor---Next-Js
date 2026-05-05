@@ -6,12 +6,19 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { signIn } from 'next-auth/react'
 
 function getErrorMessage(errorCode: string | null) {
     switch (errorCode) {
         case "CredentialsSignin":
             return "Invalid username or password."
+        case "No user found with that username":
+            return "No account found with that username."
+        case "Invalid password":
+            return "The password you entered is incorrect."
+        case "Please enter your username and password":
+            return "Please enter your username and password."
         case "AccessDenied":
             return "Access denied."
         case "Configuration":
@@ -22,14 +29,17 @@ function getErrorMessage(errorCode: string | null) {
 }
 
 export default function LoginPage() {
+    const router = useRouter()
     const searchParams = useSearchParams()
     const [csrfToken, setCsrfToken] = useState("")
     const [loading, setLoading] = useState(false)
+    const [formError, setFormError] = useState("")
     const callbackUrl = searchParams.get("callbackUrl") || "/dashboard"
-    const error = useMemo(
+    const routeError = useMemo(
         () => getErrorMessage(searchParams.get("error")),
         [searchParams]
     )
+    const error = formError || routeError
 
     useEffect(() => {
         const fetchCsrfToken = async () => {
@@ -46,16 +56,41 @@ export default function LoginPage() {
         fetchCsrfToken()
     }, [])
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
         setLoading(true)
+        setFormError("")
+
+        const formData = new FormData(event.currentTarget)
+        const username = String(formData.get("username") ?? "")
+        const password = String(formData.get("password") ?? "")
+
+        try {
+            const result = await signIn("credentials", {
+                username,
+                password,
+                redirect: false,
+                callbackUrl,
+            })
+
+            if (result?.error) {
+                setFormError(getErrorMessage(result.error) || result.error)
+                setLoading(false)
+                return
+            }
+
+            router.push(result?.url || callbackUrl)
+            router.refresh()
+        } catch {
+            setFormError("Login is temporarily unavailable. Please try again.")
+            setLoading(false)
+        }
     }
 
     return (
         <section className="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent">
             <form
                 onSubmit={handleSubmit}
-                method="post"
-                action="/api/auth/callback/credentials"
                 className="bg-muted m-auto h-fit w-full max-w-sm overflow-hidden rounded-[calc(var(--radius)+.125rem)] border shadow-md shadow-zinc-950/5 dark:[--color-muted:var(--color-zinc-900)]">
                 <input type="hidden" name="csrfToken" value={csrfToken} />
                 <input type="hidden" name="callbackUrl" value={callbackUrl} />
@@ -183,7 +218,7 @@ export default function LoginPage() {
 
                 <div className="p-3">
                     <p className="text-accent-foreground text-center text-sm">
-                        Don't have an account ?
+                        Don&apos;t have an account ?
                         <Button
                             asChild
                             variant="link"

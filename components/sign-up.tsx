@@ -64,6 +64,7 @@ export default function RegisterPage() {
                                     required
                                     name="firstName"
                                     id="firstName"
+                                    pattern="[A-Za-z\s]+"
                                 />
                             </div>
                             <div className="space-y-2">
@@ -77,6 +78,7 @@ export default function RegisterPage() {
                                     required
                                     name="lastName"
                                     id="lastName"
+                                    pattern="[A-Za-z\s]+"
                                 />
                             </div>
                         </div>
@@ -92,6 +94,7 @@ export default function RegisterPage() {
                                 required
                                 name="middleName"
                                 id="middleName"
+                                pattern="[A-Za-z\s]+"
                             />
                         </div>
                         
@@ -122,6 +125,8 @@ export default function RegisterPage() {
                                     required
                                     name="birthdate"
                                     id="birthdate"
+                                    min="1900-01-01"
+                                    max="2024-12-31"
                                 />
                             </div>
                         </div>
@@ -133,10 +138,11 @@ export default function RegisterPage() {
                                 Username
                             </Label>
                             <Input
-                                type="text"
+                                type="email"
                                 required
                                 name="username"
                                 id="username"
+                                placeholder="email@example.com"
                             />
                         </div>
 

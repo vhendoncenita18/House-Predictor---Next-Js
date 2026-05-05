@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
-import { ChevronLeft, ChevronRight, Pencil, Sparkles, Star, Trash2 } from "lucide-react";
+import { AlertTriangle, ChevronLeft, ChevronRight, Pencil, Sparkles, Star, Trash2 } from "lucide-react";
 import { HeroHeader } from "@/components/header";
 import { type PredictionRecord } from "@/data/predictions";
 import { sampleHouses } from "@/data/sample-houses";
@@ -19,6 +19,39 @@ import { normalizePropertyType } from "@/lib/prediction-utils";
 
 const FAVORITES_STORAGE_KEY = "user-prediction-favorites";
 
+function DeletePredictionSkeleton() {
+    return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-md">
+            <div className="w-full max-w-3xl overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#111111] p-6 shadow-2xl shadow-black/40 sm:p-8">
+                <div className="mb-6 flex items-center gap-3">
+                    <div className="size-11 animate-pulse rounded-2xl bg-red-300/20" />
+                    <div className="space-y-3">
+                        <div className="h-3 w-28 animate-pulse rounded-full bg-white/10" />
+                        <div className="h-7 w-56 animate-pulse rounded-full bg-white/15" />
+                    </div>
+                </div>
+
+                <div className="grid gap-5 sm:grid-cols-[0.9fr_1.1fr]">
+                    <div className="h-56 animate-pulse rounded-[1.25rem] bg-white/[0.08]" />
+                    <div className="space-y-4">
+                        <div className="h-5 w-40 animate-pulse rounded-full bg-white/12" />
+                        <div className="h-4 w-52 animate-pulse rounded-full bg-white/10" />
+                        <div className="grid grid-cols-2 gap-3">
+                            {Array.from({ length: 6 }).map((_, index) => (
+                                <div
+                                    key={index}
+                                    className="h-16 animate-pulse rounded-2xl border border-white/10 bg-black/20"
+                                />
+                            ))}
+                        </div>
+                        <div className="h-11 w-44 animate-pulse rounded-2xl bg-red-300/20" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function UserPredictionsPage() {
     const { status } = useSession();
     const predictionsRailRef = useRef<HTMLDivElement>(null);
@@ -30,6 +63,7 @@ export default function UserPredictionsPage() {
     const [isPredictionsLoading, setIsPredictionsLoading] = useState(true);
     const [predictionsError, setPredictionsError] = useState<string | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [predictionToDelete, setPredictionToDelete] = useState<PredictionRecord | null>(null);
 
     useEffect(() => {
         if (typeof window === "undefined") {
@@ -155,13 +189,12 @@ export default function UserPredictionsPage() {
         );
     }
 
-    async function deletePrediction(predictionId: string) {
-        const confirmed = window.confirm("Delete this prediction?");
-
-        if (!confirmed) {
+    async function deletePrediction() {
+        if (!predictionToDelete) {
             return;
         }
 
+        const predictionId = predictionToDelete.id;
         setIsDeleting(true);
         setPredictionsError(null);
 
@@ -193,6 +226,7 @@ export default function UserPredictionsPage() {
             setFavoriteIds((currentFavorites) =>
                 currentFavorites.filter((id) => id !== predictionId)
             );
+            setPredictionToDelete(null);
         } catch (error) {
             setPredictionsError(
                 error instanceof Error ? error.message : "Unable to delete prediction."
@@ -257,6 +291,59 @@ export default function UserPredictionsPage() {
 
     return (
         <div className="relative min-h-screen overflow-hidden bg-[#090909] text-white">
+            {isDeleting ? <DeletePredictionSkeleton /> : null}
+
+            {predictionToDelete && !isDeleting ? (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-md">
+                    <div className="w-full max-w-lg rounded-[1.5rem] border border-white/10 bg-[#111111] p-6 shadow-2xl shadow-black/40">
+                        <div className="flex items-start gap-4">
+                            <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl border border-red-300/20 bg-red-300/10 text-red-100">
+                                <AlertTriangle className="size-5" />
+                            </span>
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.3em] text-white/45">
+                                    Confirm Delete
+                                </p>
+                                <h2 className="mt-2 text-2xl font-semibold text-white">
+                                    Delete this prediction?
+                                </h2>
+                                <p className="mt-3 text-sm leading-6 text-white/65">
+                                    This will permanently remove the {normalizePropertyType(predictionToDelete.propertyType)} prediction for {predictionToDelete.location}.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-4">
+                            <p className="text-sm font-medium text-white">
+                                {normalizePropertyType(predictionToDelete.propertyType)}
+                            </p>
+                            <p className="mt-1 text-sm text-white/55">{predictionToDelete.location}</p>
+                            <p className="mt-2 text-sm text-emerald-200">
+                                {pesoFormatter.format(predictionToDelete.predictedPrice)}
+                            </p>
+                        </div>
+
+                        <div className="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+                            <button
+                                type="button"
+                                onClick={() => setPredictionToDelete(null)}
+                                className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/15 bg-white/[0.05] px-5 text-sm font-medium text-white transition hover:bg-white/[0.09]"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => void deletePrediction()}
+                                className="inline-flex h-11 items-center justify-center gap-2 rounded-2xl border border-red-400/20 bg-red-400/12 px-5 text-sm font-medium text-red-100 transition hover:bg-red-400/18"
+                            >
+                                <Trash2 className="size-4" />
+                                Delete Prediction
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            ) : null}
+
             <HeroHeader />
 
             <div
@@ -294,6 +381,48 @@ export default function UserPredictionsPage() {
                         Add Prediction
                     </Link>
                 </div>
+
+                {favoritePredictions.length > 0 ? (
+                    <section className={sectionCardClassName}>
+                        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                            <div className="space-y-2">
+                                <p className="text-xs uppercase tracking-[0.3em] text-white/45">
+                                    Favorites
+                                </p>
+                                <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                                    Favorite Predictions
+                                </h2>
+                                <p className="max-w-2xl text-sm text-white/65 sm:text-base">
+                                    Your starred prediction cards are collected here for quick access.
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-2 self-start sm:self-auto">
+                                <button
+                                    type="button"
+                                    onClick={() => scrollCards(favoritesRailRef, "left")}
+                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                    aria-label="Scroll favorite predictions left"
+                                >
+                                    <ChevronLeft className="size-4" />
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => scrollCards(favoritesRailRef, "right")}
+                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
+                                    aria-label="Scroll favorite predictions right"
+                                >
+                                    <ChevronRight className="size-4" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <div ref={favoritesRailRef} className={railClassName}>
+                            {favoritePredictions.map((prediction) =>
+                                renderPredictionCard(prediction, true)
+                            )}
+                        </div>
+                    </section>
+                ) : null}
 
                 <section className={sectionCardClassName}>
                     <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -465,7 +594,7 @@ export default function UserPredictionsPage() {
                                             <button
                                                 type="button"
                                                 disabled={isDeleting}
-                                                onClick={() => deletePrediction(selectedPrediction.id)}
+                                                onClick={() => setPredictionToDelete(selectedPrediction)}
                                                 className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-2xl border border-red-400/20 bg-red-400/10 px-4 py-2.5 text-sm font-medium text-red-100 transition hover:bg-red-400/16 disabled:cursor-not-allowed disabled:opacity-70"
                                             >
                                                 <Trash2 className="size-4" />
@@ -489,48 +618,6 @@ export default function UserPredictionsPage() {
                         </>
                     )}
                 </section>
-
-                {favoritePredictions.length > 0 ? (
-                    <section className={sectionCardClassName}>
-                        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                            <div className="space-y-2">
-                                <p className="text-xs uppercase tracking-[0.3em] text-white/45">
-                                    Favorites
-                                </p>
-                                <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                                    Favorite Predictions
-                                </h2>
-                                <p className="max-w-2xl text-sm text-white/65 sm:text-base">
-                                    Your starred prediction cards are collected here for quick access.
-                                </p>
-                            </div>
-                            <div className="flex items-center gap-2 self-start sm:self-auto">
-                                <button
-                                    type="button"
-                                    onClick={() => scrollCards(favoritesRailRef, "left")}
-                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
-                                    aria-label="Scroll favorite predictions left"
-                                >
-                                    <ChevronLeft className="size-4" />
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => scrollCards(favoritesRailRef, "right")}
-                                    className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition hover:bg-white/[0.08] hover:text-white"
-                                    aria-label="Scroll favorite predictions right"
-                                >
-                                    <ChevronRight className="size-4" />
-                                </button>
-                            </div>
-                        </div>
-
-                        <div ref={favoritesRailRef} className={railClassName}>
-                            {favoritePredictions.map((prediction) =>
-                                renderPredictionCard(prediction, true)
-                            )}
-                        </div>
-                    </section>
-                ) : null}
 
                 <section className={sectionCardClassName}>
                     <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -585,7 +672,7 @@ export default function UserPredictionsPage() {
 
                     <div ref={suggestionsRailRef} className={railClassName}>
                         {suggestionTemplates.map((house) => (
-                            <article key={house.id} className={`${itemCardClassName} min-w-[270px]`}>
+                            <article key={house.id} className={` ${itemCardClassName} min-w-[270px]`}>
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image
                                         src={house.image}

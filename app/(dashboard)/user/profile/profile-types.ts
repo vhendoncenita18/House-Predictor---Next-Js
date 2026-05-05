@@ -42,7 +42,6 @@ export type SessionUser = {
   gender?: string;
   birthdate?: string;
   username?: string;
-  avatarUrl?: string | null;
   utype?: string;
 };
 

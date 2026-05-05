@@ -22,11 +22,12 @@ import {
 } from "./profile-types";
 
 export default function UserProfilePage() {
-  const { data: session, status } = useSession();
+  const { data: session, status, update } = useSession();
   const [profile, setProfile] = useState<ProfileUser | null>(null);
   const [form, setForm] = useState<ProfileFormState>(emptyProfileForm);
   const [isLoading, setIsLoading] = useState(true);
   const [isSavingProfile, setIsSavingProfile] = useState(false);
+  const [isUploadingAvatar, setIsUploadingAvatar] = useState(false);
   const [isSavingPassword, setIsSavingPassword] = useState(false);
   const [profileMessage, setProfileMessage] = useState<string | null>(null);
   const [profileError, setProfileError] = useState<string | null>(null);
@@ -48,7 +49,6 @@ export default function UserProfilePage() {
       lastName: current.lastName || sessionUser?.lastName || "",
       gender: current.gender || sessionUser?.gender || "",
       birthdate: current.birthdate || sessionUser?.birthdate?.slice(0, 10) || "",
-      avatarUrl: current.avatarUrl || sessionUser?.avatarUrl || "",
     }));
   }, [profile, sessionUser, status]);
 
@@ -105,6 +105,32 @@ export default function UserProfilePage() {
     };
   }, [status]);
 
+  function syncProfileState(user: ProfileUser) {
+    setProfile(user);
+    setForm({
+      firstName: user.firstName ?? "",
+      middleName: user.middleName ?? "",
+      lastName: user.lastName ?? "",
+      gender: user.gender ?? "",
+      birthdate: user.birthdate.slice(0, 10),
+      avatarUrl: user.avatarUrl ?? "",
+    });
+  }
+
+  async function syncSessionUser(user: ProfileUser) {
+    await update({
+      user: {
+        firstName: user.firstName,
+        middleName: user.middleName,
+        lastName: user.lastName,
+        gender: user.gender,
+        birthdate: user.birthdate,
+        username: user.username,
+        utype: user.utype,
+      },
+    });
+  }
+
   function handleFileChange(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
 
@@ -123,10 +149,41 @@ export default function UserProfilePage() {
     }
 
     const reader = new FileReader();
-    reader.onload = () => {
+    reader.onload = async () => {
       const result = typeof reader.result === "string" ? reader.result : "";
-      setForm((current) => ({ ...current, avatarUrl: result }));
+      const nextForm = { ...form, avatarUrl: result };
+
+      setForm(nextForm);
+      setIsUploadingAvatar(true);
       setProfileError(null);
+
+      try {
+        const response = await fetch("/api/profile", {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(nextForm),
+        });
+
+        const data = (await response.json()) as ProfileResponse & { message?: string; error?: string };
+
+        if (!response.ok || !data.user) {
+          throw new Error(data.error || "Unable to update profile photo.");
+        }
+
+        syncProfileState(data.user);
+        await syncSessionUser(data.user);
+        window.dispatchEvent(
+          new CustomEvent("profile-avatar-updated", {
+            detail: { avatarUrl: data.user.avatarUrl ?? "" },
+          })
+        );
+        setProfileMessage("Profile photo updated successfully.");
+      } catch (error) {
+        setProfileError(error instanceof Error ? error.message : "Unable to update profile photo.");
+      } finally {
+        setIsUploadingAvatar(false);
+        event.target.value = "";
+      }
     };
     reader.readAsDataURL(file);
   }
@@ -150,15 +207,8 @@ export default function UserProfilePage() {
         throw new Error(data.error || "Unable to update profile.");
       }
 
-      setProfile(data.user);
-      setForm({
-        firstName: data.user.firstName ?? "",
-        middleName: data.user.middleName ?? "",
-        lastName: data.user.lastName ?? "",
-        gender: data.user.gender ?? "",
-        birthdate: data.user.birthdate.slice(0, 10),
-        avatarUrl: data.user.avatarUrl ?? "",
-      });
+      syncProfileState(data.user);
+      await syncSessionUser(data.user);
       setProfileMessage(data.message || "Profile updated successfully.");
     } catch (error) {
       setProfileError(error instanceof Error ? error.message : "Unable to update profile.");
@@ -245,6 +295,7 @@ export default function UserProfilePage() {
             form={form}
             profile={profile}
             sessionUser={sessionUser}
+            isUploadingAvatar={isUploadingAvatar}
             onFileChange={handleFileChange}
           />
 

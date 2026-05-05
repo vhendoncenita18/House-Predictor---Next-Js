@@ -138,7 +138,7 @@ export default function MyPredictions() {
                                 key={prediction.id}
                                 type="button"
                                 onClick={() => setSelectedPrediction(prediction)}
-                                className={`${itemCardClassName} ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
+                                className={`cursor-pointer ${itemCardClassName} ${selectedPrediction?.id === prediction.id ? "border-white/30 bg-white/[0.08]" : ""}`}
                             >
                                 <div className="relative h-40 overflow-hidden rounded-[1.25rem]">
                                     <Image

@@ -31,6 +31,17 @@ function getClientIp(headers: Record<string, string | string[] | undefined> | un
   return getHeaderValue(headers, "x-real-ip") || "unknown";
 }
 
+type SessionUserFields = {
+  id?: string;
+  utype?: string;
+  firstName?: string;
+  middleName?: string | null;
+  lastName?: string;
+  gender?: string;
+  birthdate?: string;
+  username?: string;
+};
+
 export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
@@ -98,7 +109,6 @@ export const authOptions: NextAuthOptions = {
           lastName: user.lastName,
           gender: user.gender,
           birthdate: user.birthdate.toISOString(),
-          avatarUrl: (user as any).avatarUrl,
           utype: user.utype, // Carrying over your 'User' or 'Admin' type
         };
       }
@@ -106,32 +116,45 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     // This adds your custom fields (utype, firstName) to the encrypted Token
-    async jwt({ token, user }) {
+    async jwt({ token, user, trigger, session }) {
       if (user) {
+        const authUser = user as SessionUserFields;
         token.id = user.id;
-        token.utype = (user as any).utype;
-        token.firstName = (user as any).firstName;
-        token.middleName = (user as any).middleName;
-        token.lastName = (user as any).lastName;
-        token.gender = (user as any).gender;
-        token.birthdate = (user as any).birthdate;
-        token.avatarUrl = (user as any).avatarUrl;
-        token.username = (user as any).username;
+        token.utype = authUser.utype;
+        token.firstName = authUser.firstName;
+        token.middleName = authUser.middleName;
+        token.lastName = authUser.lastName;
+        token.gender = authUser.gender;
+        token.birthdate = authUser.birthdate;
+        token.username = authUser.username;
       }
+
+      if (trigger === "update" && session?.user) {
+        const updatedUser = session.user as SessionUserFields;
+        token.firstName = updatedUser.firstName ?? token.firstName;
+        token.middleName = updatedUser.middleName ?? token.middleName;
+        token.lastName = updatedUser.lastName ?? token.lastName;
+        token.gender = updatedUser.gender ?? token.gender;
+        token.birthdate = updatedUser.birthdate ?? token.birthdate;
+        token.username = updatedUser.username ?? token.username;
+        token.utype = updatedUser.utype ?? token.utype;
+      }
+
       return token;
     },
     // This makes those fields accessible in the browser/frontend session
     async session({ session, token }) {
       if (session.user) {
-        (session.user as any).id = token.id;
-        (session.user as any).utype = token.utype;
-        (session.user as any).firstName = token.firstName;
-        (session.user as any).middleName = token.middleName;
-        (session.user as any).lastName = token.lastName;
-        (session.user as any).gender = token.gender;
-        (session.user as any).birthdate = token.birthdate;
-        (session.user as any).avatarUrl = token.avatarUrl;
-        (session.user as any).username = token.username;
+        const sessionUser = session.user as SessionUserFields;
+        sessionUser.id = typeof token.id === "string" ? token.id : undefined;
+        sessionUser.utype = typeof token.utype === "string" ? token.utype : undefined;
+        sessionUser.firstName = typeof token.firstName === "string" ? token.firstName : undefined;
+        sessionUser.middleName =
+          typeof token.middleName === "string" ? token.middleName : null;
+        sessionUser.lastName = typeof token.lastName === "string" ? token.lastName : undefined;
+        sessionUser.gender = typeof token.gender === "string" ? token.gender : undefined;
+        sessionUser.birthdate = typeof token.birthdate === "string" ? token.birthdate : undefined;
+        sessionUser.username = typeof token.username === "string" ? token.username : undefined;
       }
       return session;
     }

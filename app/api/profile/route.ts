@@ -4,7 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import prisma from "@/lib/prisma";
 
-const MAX_AVATAR_LENGTH = 2_000_000;
+const MAX_AVATAR_LENGTH = 2_200_000;
 
 function serializeUser(user: {
   id: string;

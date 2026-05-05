@@ -5,7 +5,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Pencil, Save, Sparkles, Trash2 } from "lucide-react";
+import { AlertTriangle, ArrowLeft, Pencil, Save, Sparkles, Trash2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,8 +14,6 @@ import { Select } from "@/components/ui/select";
 import { emptyPredictionForm, estimatePrediction, normalizePropertyType, propertyTypeOptions, toPredictionFormValues, type PredictionFormValues } from "@/lib/prediction-utils";
 import { sampleHouses } from "@/data/sample-houses";
 import { PredictionRecord } from "@/data/predictions";
-import { register } from "node:module";
-import { useForm } from "react-hook-form";
 
 const pesoFormatter = new Intl.NumberFormat("en-PH", {
     style: "currency",
@@ -27,6 +25,54 @@ type FormErrors = Partial<Record<keyof PredictionFormValues, string>>;
 const sectionCardClassName =
     "rounded-[1.5rem] border border-white/10 bg-white/3 p-6";
 
+function PredictionSaveSkeleton({ action }: { action: "Saving" | "Updating" | "Deleting" }) {
+    return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-md">
+            <div className="w-full max-w-4xl overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#111111] shadow-2xl shadow-black/40">
+                <div className="grid gap-0 lg:grid-cols-[1fr_0.8fr]">
+                    <div className="space-y-5 p-6 sm:p-8">
+                        <div>
+                            <div className="h-3 w-28 animate-pulse rounded-full bg-white/10" />
+                            <div className="mt-4 h-8 w-64 max-w-full animate-pulse rounded-full bg-white/15" />
+                            <p className="mt-3 text-sm text-white/60">
+                                {action} prediction...
+                            </p>
+                        </div>
+
+                        <div className="grid gap-4 md:grid-cols-2">
+                            {Array.from({ length: 8 }).map((_, index) => (
+                                <div key={index} className="space-y-2">
+                                    <div className="h-3 w-20 animate-pulse rounded-full bg-white/10" />
+                                    <div className="h-11 animate-pulse rounded-2xl border border-white/10 bg-white/[0.06]" />
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="h-11 w-44 animate-pulse rounded-2xl bg-emerald-300/25" />
+                    </div>
+
+                    <div className="border-t border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:border-l lg:border-t-0">
+                        <div className="h-52 animate-pulse rounded-[1.25rem] bg-white/[0.08]" />
+                        <div className="mt-5 space-y-3">
+                            <div className="h-4 w-32 animate-pulse rounded-full bg-white/10" />
+                            <div className="h-7 w-44 animate-pulse rounded-full bg-white/15" />
+                            <div className="grid grid-cols-2 gap-3 pt-2">
+                                {Array.from({ length: 6 }).map((_, index) => (
+                                    <div
+                                        key={index}
+                                        className="h-16 animate-pulse rounded-2xl border border-white/10 bg-black/20"
+                                    />
+                                ))}
+                            </div>
+                            <div className="h-20 animate-pulse rounded-[1.25rem] border border-cyan-400/15 bg-cyan-400/10" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function PredictionForm() {
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -36,8 +82,9 @@ function PredictionForm() {
     const [errors, setErrors] = useState<FormErrors>({});
     const [serverError, setServerError] = useState<string | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitAction, setSubmitAction] = useState<"Saving" | "Updating" | "Deleting">("Saving");
     const [isLoadingPrediction, setIsLoadingPrediction] = useState(Boolean(editId));
-    const { register, setValue } = useForm();
+    const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] = useState(false);
 
     useEffect(() => {
         const lotArea = searchParams.get("lotArea");
@@ -121,7 +168,7 @@ function PredictionForm() {
         return () => {
             isMounted = false;
         };
-    }, [editId, searchParams, setValue]);
+    }, [editId, searchParams]);
 
     const liveEstimate = useMemo(() => estimatePrediction(formValues), [formValues]);
 
@@ -190,6 +237,7 @@ function PredictionForm() {
             return;
         }
 
+        setSubmitAction(editId ? "Updating" : "Saving");
         setIsSubmitting(true);
         setServerError(null);
 
@@ -224,13 +272,9 @@ function PredictionForm() {
             return;
         }
 
-        const confirmed = window.confirm("Delete this prediction?");
-
-        if (!confirmed) {
-            return;
-        }
-
+        setSubmitAction("Deleting");
         setIsSubmitting(true);
+        setIsDeleteConfirmOpen(false);
         setServerError(null);
 
         try {
@@ -256,6 +300,61 @@ function PredictionForm() {
 
     return (
         <div className="relative min-h-screen overflow-hidden bg-[#090909] text-white">
+            {isSubmitting ? <PredictionSaveSkeleton action={submitAction} /> : null}
+
+            {isDeleteConfirmOpen && !isSubmitting ? (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-md">
+                    <div className="w-full max-w-lg rounded-[1.5rem] border border-white/10 bg-[#111111] p-6 shadow-2xl shadow-black/40">
+                        <div className="flex items-start gap-4">
+                            <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl border border-red-300/20 bg-red-300/10 text-red-100">
+                                <AlertTriangle className="size-5" />
+                            </span>
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.3em] text-white/45">
+                                    Confirm Delete
+                                </p>
+                                <h2 className="mt-2 text-2xl font-semibold text-white">
+                                    Delete this prediction?
+                                </h2>
+                                <p className="mt-3 text-sm leading-6 text-white/65">
+                                    This will permanently remove this saved property prediction.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-4">
+                            <p className="text-sm font-medium text-white">
+                                {formValues.propertyType}
+                            </p>
+                            <p className="mt-1 text-sm text-white/55">
+                                {formValues.location || "No location set"}
+                            </p>
+                            <p className="mt-2 text-sm text-emerald-200">
+                                {pesoFormatter.format(liveEstimate.predictedPrice)}
+                            </p>
+                        </div>
+
+                        <div className="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+                            <button
+                                type="button"
+                                onClick={() => setIsDeleteConfirmOpen(false)}
+                                className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/15 bg-white/[0.05] px-5 text-sm font-medium text-white transition hover:bg-white/[0.09]"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => void handleDelete()}
+                                className="inline-flex h-11 items-center justify-center gap-2 rounded-2xl border border-red-400/20 bg-red-400/12 px-5 text-sm font-medium text-red-100 transition hover:bg-red-400/18"
+                            >
+                                <Trash2 className="size-4" />
+                                Delete Prediction
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            ) : null}
+
             <div
                 aria-hidden
                 className="absolute inset-0 isolate hidden opacity-90 contain-strict lg:block"
@@ -312,6 +411,7 @@ function PredictionForm() {
                             <button
                                 key={house.id}
                                 type="button"
+                                disabled={isSubmitting}
                                 onClick={() => applyTemplate(house.id)}
                                 className={`group rounded-[1.5rem] border p-4 text-left transition hover:-translate-y-1 ${selectedTemplateId === house.id
                                         ? "border-cyan-300/35 bg-cyan-300/10"
@@ -504,7 +604,7 @@ function PredictionForm() {
                                             type="button"
                                             variant="destructive"
                                             disabled={isSubmitting}
-                                            onClick={handleDelete}
+                                            onClick={() => setIsDeleteConfirmOpen(true)}
                                             className="h-11 rounded-2xl px-5"
                                         >
                                             <Trash2 className="size-4" />

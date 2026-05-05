@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
 import { LogOut, Menu, User, X } from 'lucide-react'
@@ -25,6 +26,7 @@ const adminMenuItems = [
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
     const [isScrolled, setIsScrolled] = React.useState(false)
+    const [avatarUrl, setAvatarUrl] = React.useState('')
     const { data: session, status } = useSession()
 
     const currentUser = session?.user as
@@ -36,8 +38,6 @@ export const HeroHeader = () => {
         | undefined
 
     const isAuthenticated = status === 'authenticated'
-    const dashboardHref =
-        isAdminRole(currentUser?.utype) ? '/admin/dashboard' : '/user/dashboard'
     const profileHref = isAdminRole(currentUser?.utype) ? '/admin/profile' : '/user/profile'
     const navigationItems = isAdminRole(currentUser?.utype)
         ? adminMenuItems
@@ -59,6 +59,44 @@ export const HeroHeader = () => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+    React.useEffect(() => {
+        if (!isAuthenticated) {
+            setAvatarUrl('')
+            return
+        }
+
+        let isMounted = true
+
+        async function loadAvatar() {
+            try {
+                const response = await fetch('/api/profile', { cache: 'no-store' })
+                const data = (await response.json()) as { user?: { avatarUrl?: string | null } }
+
+                if (isMounted && response.ok) {
+                    setAvatarUrl(data.user?.avatarUrl ?? '')
+                }
+            } catch {
+                if (isMounted) {
+                    setAvatarUrl('')
+                }
+            }
+        }
+
+        function handleAvatarUpdate(event: Event) {
+            const avatarEvent = event as CustomEvent<{ avatarUrl?: string }>
+            setAvatarUrl(avatarEvent.detail?.avatarUrl ?? '')
+        }
+
+        void loadAvatar()
+        window.addEventListener('profile-avatar-updated', handleAvatarUpdate)
+
+        return () => {
+            isMounted = false
+            window.removeEventListener('profile-avatar-updated', handleAvatarUpdate)
+        }
+    }, [isAuthenticated])
+
     return (
         <header>
             <nav
@@ -121,8 +159,19 @@ export const HeroHeader = () => {
                                             onClick={() => setMenuState(false)}
                                             className="flex items-center justify-center gap-3 rounded-2xl border border-transparent px-2 py-1.5 text-left transition hover:border-white/10 hover:bg-muted/70 sm:justify-start"
                                         >
-                                        <span className="flex size-9 items-center justify-center rounded-full bg-primary/12 text-primary">
-                                            <User className="size-4" />
+                                        <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-full bg-primary/12 text-primary">
+                                            {avatarUrl ? (
+                                                <Image
+                                                    src={avatarUrl}
+                                                    alt={`${currentUser?.firstName ?? currentUser?.username ?? 'Profile'} avatar`}
+                                                    fill
+                                                    sizes="36px"
+                                                    className="object-cover"
+                                                    unoptimized
+                                                />
+                                            ) : (
+                                                <User className="size-4" />
+                                            )}
                                         </span>
                                         <span className="hidden sm:flex sm:flex-col">
                                             <span className="text-sm font-medium leading-none">
@@ -138,7 +187,7 @@ export const HeroHeader = () => {
                                             variant="outline"
                                             size="sm"
                                             onClick={handleLogout}
-                                            className="w-full justify-center gap-2 self-center sm:w-auto sm:justify-start"
+                                            className="cursor-pointer w-full justify-center gap-2 self-center sm:w-auto sm:justify-start"
                                         >
                                             <LogOut className="size-4" />
                                             <span>Logout</span>

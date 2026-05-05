@@ -120,7 +120,7 @@ export function UsersTable({ users, currentUserId }: UsersTableProps) {
                       type="button"
                       onClick={() => void handleDeleteUser(user)}
                       disabled={isCurrentAdmin || isDeleting}
-                      className="inline-flex items-center gap-2 rounded-xl border border-red-400/20 bg-red-400/10 px-3 py-2 text-xs font-medium uppercase tracking-[0.18em] text-red-100 transition hover:bg-red-400/16 disabled:cursor-not-allowed disabled:opacity-40"
+                      className="cursor-pointer inline-flex items-center gap-2 rounded-xl border border-red-400/20 bg-red-400/10 px-3 py-2 text-xs font-medium uppercase tracking-[0.18em] text-red-100 transition hover:bg-red-400/16 disabled:cursor-not-allowed disabled:opacity-40"
                     >
                       <Trash2 className="size-3.5" />
                       <span>{isDeleting ? "Deleting..." : "Delete"}</span>
