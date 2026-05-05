@@ -13,7 +13,11 @@ import { AdminDashboardHero } from "./admin-dashboard-hero";
 import { AdminRecentPredictions } from "./admin-recent-predictions";
 import { AdminRecentUsers } from "./admin-recent-users";
 import { AdminStatGrid } from "./admin-stat-grid";
-import type { AdminDashboardStat } from "./dashboard-types";
+import type { AdminDashboardStat, AdminRecentPrediction } from "./dashboard-types";
+
+type RawAdminRecentPrediction = Omit<AdminRecentPrediction, "predictedPrice"> & {
+  predictedPrice: unknown;
+};
 
 function toCurrency(value: number) {
   return new Intl.NumberFormat("en-PH", {
@@ -173,7 +177,7 @@ export default async function AdminDashboardPage() {
         <section className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
           <AdminRecentUsers users={latestUsers} />
           <AdminRecentPredictions
-            predictions={latestPredictions.map((prediction) => ({
+            predictions={(latestPredictions as RawAdminRecentPrediction[]).map((prediction) => ({
               ...prediction,
               predictedPrice: Number(prediction.predictedPrice),
             }))}
