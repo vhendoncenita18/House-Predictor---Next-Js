@@ -32,7 +32,7 @@ export function AdminRecentPredictions({ predictions }: AdminRecentPredictionsPr
           predictions.map((prediction) => (
             <article
               key={prediction.id}
-              className="grid gap-3 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 lg:grid-cols-[1.2fr_0.8fr_auto]"
+              className="grid gap-3 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 lg:grid-cols-[1.2fr_0.8fr_auto]"
             >
               <div>
                 <p className="text-base font-medium text-white">{prediction.propertyType}</p>

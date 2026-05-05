@@ -70,7 +70,7 @@ export function PredictionsBoard({ users }: PredictionsBoardProps) {
   if (users.length === 0) {
     return (
       <section className={sectionCardClassName}>
-        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55">
+        <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/2 px-5 py-10 text-center text-sm text-white/55">
           No user predictions available yet.
         </div>
       </section>
@@ -101,7 +101,7 @@ export function PredictionsBoard({ users }: PredictionsBoardProps) {
               return (
                 <article
                   key={prediction.id}
-                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03]"
+                  className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/3"
                 >
                   <div className="relative h-44">
                     <Image

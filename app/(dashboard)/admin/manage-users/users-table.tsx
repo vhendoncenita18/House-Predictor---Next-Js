@@ -57,10 +57,10 @@ export function UsersTable({ users, currentUserId }: UsersTableProps) {
   }
 
   return (
-    <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03]">
+    <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/3">
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse text-left">
-          <thead className="bg-white/[0.04]">
+          <thead className="bg-white/4">
             <tr className="border-b border-white/10">
               <th className="px-5 py-4 text-xs font-medium uppercase tracking-[0.24em] text-white/45">
                 User
@@ -91,7 +91,7 @@ export function UsersTable({ users, currentUserId }: UsersTableProps) {
               return (
                 <tr
                   key={user.id}
-                  className="border-b border-white/10 transition last:border-b-0 hover:bg-white/[0.03]"
+                  className="border-b border-white/10 transition last:border-b-0 hover:bg-white/3"
                 >
                   <td className="px-5 py-4 align-middle">
                     <p className="text-sm font-semibold text-white">
