@@ -194,7 +194,7 @@ export default async function AdminDashboardPage() {
           </div>
 
           <div className="grid gap-6">
-            {historyUsers.filter((user: any) => user.predictions.length > 0).map((user: any) => (
+            {historyUsers.filter((user: any) => user.predictions.length > 0).map((user:any) => (
               <section
                 key={user.id}
                 className="rounded-[1.5rem] border border-white/10 bg-white/3 p-5"
@@ -212,7 +212,7 @@ export default async function AdminDashboardPage() {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-3">
-                  {user.predictions.map((prediction) => {
+                  {user.predictions.map((prediction: any) => {
                     const image = getPredictionImageFromRecord({
                       ...prediction,
                       user: {
