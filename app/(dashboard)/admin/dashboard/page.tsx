@@ -194,7 +194,7 @@ export default async function AdminDashboardPage() {
           </div>
 
           <div className="grid gap-6">
-            {historyUsers.filter((user) => user.predictions.length > 0).map((user) => (
+            {historyUsers.filter((user: any) => user.predictions.length > 0).map((user) => (
               <section
                 key={user.id}
                 className="rounded-[1.5rem] border border-white/10 bg-white/3 p-5"
