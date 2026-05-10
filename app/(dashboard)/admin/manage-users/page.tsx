@@ -10,6 +10,18 @@ import { AdminPageIntro } from "../admin-page-intro";
 import { AdminShell } from "../admin-shell";
 import { UsersTable } from "./users-table";
 
+type ManageUsersQueryUser = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  username: string;
+  utype: string;
+  createdAt: Date;
+  _count: {
+    predictions: number;
+  };
+};
+
 export default async function AdminManageUsersPage() {
   const session = await getServerSession(authOptions);
   const role = (session?.user as { utype?: string } | undefined)?.utype;
@@ -46,7 +58,7 @@ export default async function AdminManageUsersPage() {
 
       <section className={sectionCardClassName}>
         <UsersTable
-          users={users.map((user:any) => ({
+          users={(users as ManageUsersQueryUser[]).map((user) => ({
             id: user.id,
             firstName: user.firstName,
             lastName: user.lastName,

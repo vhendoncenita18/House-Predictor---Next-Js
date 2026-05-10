@@ -10,6 +10,26 @@ import { AdminPageIntro } from "../admin-page-intro";
 import { AdminShell } from "../admin-shell";
 import { PredictionsBoard } from "./predictions-board";
 
+type AdminPredictionUser = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  username: string;
+  predictions: {
+    id: string;
+    createdAt: Date;
+    location: string;
+    propertyType: string;
+    lotArea: unknown;
+    floorArea: unknown;
+    bedrooms: number | null;
+    bathrooms: number | null;
+    kitchens: number | null;
+    garages: number | null;
+    predictedPrice: unknown;
+  }[];
+};
+
 export default async function AdminPredictionsPage() {
   const session = await getServerSession(authOptions);
   const role = (session?.user as { utype?: string } | undefined)?.utype;
@@ -45,7 +65,8 @@ export default async function AdminPredictionsPage() {
     },
   });
 
-  const usersWithPredictions = users.filter((user) => user.predictions.length > 0);
+  const typedUsers = users as AdminPredictionUser[];
+  const usersWithPredictions = typedUsers.filter((user) => user.predictions.length > 0);
 
   return (
     <AdminShell>
