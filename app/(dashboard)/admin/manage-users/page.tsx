@@ -46,7 +46,7 @@ export default async function AdminManageUsersPage() {
 
       <section className={sectionCardClassName}>
         <UsersTable
-          users={users.map((user) => ({
+          users={users.map((user:any) => ({
             id: user.id,
             firstName: user.firstName,
             lastName: user.lastName,
