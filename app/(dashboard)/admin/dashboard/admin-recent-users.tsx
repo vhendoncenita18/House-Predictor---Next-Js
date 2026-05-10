@@ -9,13 +9,17 @@ type AdminRecentUsersProps = {
 
 export function AdminRecentUsers({ users }: AdminRecentUsersProps) {
   return (
-    <section className={sectionCardClassName}>
-      <div className="flex items-center justify-between gap-4">
-        <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-white/45">Members</p>
+    <section className={`${sectionCardClassName} min-w-0`}>
+      <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+        <div className="min-w-0">
+          <p className="text-xs uppercase tracking-[0.24em] text-white/45 sm:tracking-[0.3em]">
+            Members
+          </p>
           <h2 className="mt-2 text-2xl font-semibold text-white">Recent users</h2>
         </div>
-        <p className="text-sm text-white/55">Newest accounts on the platform.</p>
+        <p className="max-w-full text-sm leading-6 text-white/55 sm:max-w-48 sm:text-right">
+          Newest accounts on the platform.
+        </p>
       </div>
 
       <div className="mt-6 space-y-3">
@@ -27,16 +31,18 @@ export function AdminRecentUsers({ users }: AdminRecentUsersProps) {
           users.map((user) => (
             <article
               key={user.id}
-              className="flex flex-col gap-3 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between"
+              className="flex min-w-0 flex-col gap-3 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <div>
-                <p className="text-base font-medium text-white">
+              <div className="min-w-0">
+                <p className="[overflow-wrap:anywhere] break-words text-base font-medium text-white">
                   {user.firstName} {user.lastName}
                 </p>
-                <p className="mt-1 text-sm text-white/55">@{user.username}</p>
+                <p className="mt-1 [overflow-wrap:anywhere] break-words text-sm text-white/55">
+                  @{user.username}
+                </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-3 text-sm">
+              <div className="flex shrink-0 flex-wrap items-center gap-3 text-sm">
                 <span
                   className={`rounded-full px-3 py-1 ${
                     isAdminRole(user.utype)

@@ -8,6 +8,7 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 import { signOut, useSession } from 'next-auth/react'
 import { isAdminRole } from '@/lib/auth-role'
+import { usePathname } from 'next/navigation'
 
 const menuItems = [
     { name: 'Dashboard', href: '/user/dashboard' },
@@ -28,6 +29,7 @@ export const HeroHeader = () => {
     const [isScrolled, setIsScrolled] = React.useState(false)
     const [avatarUrl, setAvatarUrl] = React.useState('')
     const { data: session, status } = useSession()
+    const pathname = usePathname()
 
     const currentUser = session?.user as
         | {
@@ -37,14 +39,20 @@ export const HeroHeader = () => {
           }
         | undefined
 
+    const isDashboardRoute =
+        pathname?.startsWith('/admin') ||
+        pathname?.startsWith('/user') ||
+        pathname?.startsWith('/dashboard')
     const isAuthenticated = status === 'authenticated'
-    const profileHref = isAdminRole(currentUser?.utype) ? '/admin/profile' : '/user/profile'
-    const navigationItems = isAdminRole(currentUser?.utype)
+    const shouldShowAuthenticatedNav = isAuthenticated || (status === 'loading' && isDashboardRoute)
+    const isAdminUser = isAdminRole(currentUser?.utype) || pathname?.startsWith('/admin')
+    const profileHref = isAdminUser ? '/admin/profile' : '/user/profile'
+    const navigationItems = isAdminUser
         ? adminMenuItems
         : menuItems
     const getProtectedHref = React.useCallback(
-        (href: string) => (isAuthenticated ? href : `/login?callbackUrl=${encodeURIComponent(href)}`),
-        [isAuthenticated]
+        (href: string) => (shouldShowAuthenticatedNav ? href : `/login?callbackUrl=${encodeURIComponent(href)}`),
+        [shouldShowAuthenticatedNav]
     )
 
     const handleLogout = async () => {
@@ -152,7 +160,7 @@ export const HeroHeader = () => {
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                {isAuthenticated ? (
+                                {shouldShowAuthenticatedNav ? (
                                     <>
                                         <Link   
                                             href={profileHref}

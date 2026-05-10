@@ -179,7 +179,7 @@ export default async function AdminDashboardPage() {
         <AdminDashboardHero />
         <AdminStatGrid stats={stats} />
 
-        <section className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
+        <section className="grid min-w-0 gap-6 lg:gap-8 xl:grid-cols-[0.9fr_1.1fr]">
           <AdminRecentUsers users={latestUsers} />
           <AdminRecentPredictions
             predictions={(latestPredictions as RawAdminRecentPrediction[]).map((prediction) => ({
@@ -189,34 +189,38 @@ export default async function AdminDashboardPage() {
           />
         </section>
 
-        <section className={sectionCardClassName}>
-          <div className="mb-6">
-            <p className="text-xs uppercase tracking-[0.3em] text-white/45">Dashboard history</p>
+        <section className={`${sectionCardClassName} min-w-0`}>
+          <div className="mb-6 min-w-0">
+            <p className="text-xs uppercase tracking-[0.22em] text-white/45 sm:tracking-[0.3em]">
+              Dashboard history
+            </p>
             <h2 className="mt-2 text-2xl font-semibold text-white">User prediction history</h2>
-            <p className="mt-2 max-w-3xl text-sm text-white/60">
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-white/60">
               Recent prediction activity is grouped by user so the admin dashboard reads like a live history board.
             </p>
           </div>
 
-          <div className="grid gap-6">
+          <div className="grid min-w-0 gap-6">
             {typedHistoryUsers.filter((user) => user.predictions.length > 0).map((user) => (
               <section
                 key={user.id}
-                className="rounded-[1.5rem] border border-white/10 bg-white/3 p-5"
+                className="min-w-0 rounded-[1.5rem] border border-white/10 bg-white/3 p-4 sm:p-5"
               >
                 <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">
+                  <div className="min-w-0">
+                    <h3 className="[overflow-wrap:anywhere] break-words text-xl font-semibold text-white">
                       {user.firstName} {user.lastName}
                     </h3>
-                    <p className="text-sm text-white/55">@{user.username}</p>
+                    <p className="[overflow-wrap:anywhere] break-words text-sm text-white/55">
+                      @{user.username}
+                    </p>
                   </div>
-                  <p className="text-sm text-white/50">
+                  <p className="shrink-0 text-sm text-white/50">
                     {user.predictions.length} latest prediction{user.predictions.length === 1 ? "" : "s"}
                   </p>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-3">
+                <div className="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {user.predictions.map((prediction) => {
                     const image = getPredictionImageFromRecord({
                       ...prediction,
@@ -230,7 +234,7 @@ export default async function AdminDashboardPage() {
                     return (
                       <article
                         key={prediction.id}
-                        className="overflow-hidden rounded-[1.25rem] border border-white/10 bg-black/20"
+                        className="min-w-0 overflow-hidden rounded-[1.25rem] border border-white/10 bg-black/20"
                       >
                         <div className="relative h-40">
                           <Image
@@ -240,9 +244,13 @@ export default async function AdminDashboardPage() {
                             className="object-cover"
                           />
                         </div>
-                        <div className="space-y-2 p-4">
-                          <p className="text-base font-semibold text-white">{prediction.propertyType}</p>
-                          <p className="text-sm text-white/60">{prediction.location}</p>
+                        <div className="min-w-0 space-y-2 p-4">
+                          <p className="[overflow-wrap:anywhere] break-words text-base font-semibold text-white">
+                            {prediction.propertyType}
+                          </p>
+                          <p className="[overflow-wrap:anywhere] break-words text-sm text-white/60">
+                            {prediction.location}
+                          </p>
                           <p className="text-sm text-emerald-200">
                             {toCurrency(Number(prediction.predictedPrice))}
                           </p>
