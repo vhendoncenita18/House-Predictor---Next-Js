@@ -13,7 +13,11 @@ import { AdminDashboardHero } from "./admin-dashboard-hero";
 import { AdminRecentPredictions } from "./admin-recent-predictions";
 import { AdminRecentUsers } from "./admin-recent-users";
 import { AdminStatGrid } from "./admin-stat-grid";
-import type { AdminDashboardStat, AdminRecentPrediction } from "./dashboard-types";
+import type {
+  AdminDashboardStat,
+  AdminHistoryUser,
+  AdminRecentPrediction,
+} from "./dashboard-types";
 
 type RawAdminRecentPrediction = Omit<AdminRecentPrediction, "predictedPrice"> & {
   predictedPrice: unknown;
@@ -139,6 +143,7 @@ export default async function AdminDashboardPage() {
   const averagePredictionValue = Number(predictionAggregate._avg.predictedPrice ?? 0);
   const leadingPropertyType = groupedPropertyTypes[0];
   const leadingLocation = groupedLocations[0];
+  const typedHistoryUsers = historyUsers as AdminHistoryUser[];
 
   const stats: AdminDashboardStat[] = [
     {
@@ -194,7 +199,7 @@ export default async function AdminDashboardPage() {
           </div>
 
           <div className="grid gap-6">
-            {historyUsers.filter((user: any) => user.predictions.length > 0).map((user:any) => (
+            {typedHistoryUsers.filter((user) => user.predictions.length > 0).map((user) => (
               <section
                 key={user.id}
                 className="rounded-[1.5rem] border border-white/10 bg-white/3 p-5"
@@ -212,7 +217,7 @@ export default async function AdminDashboardPage() {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-3">
-                  {user.predictions.map((prediction: any) => {
+                  {user.predictions.map((prediction) => {
                     const image = getPredictionImageFromRecord({
                       ...prediction,
                       user: {
@@ -252,7 +257,7 @@ export default async function AdminDashboardPage() {
               </section>
             ))}
 
-            {historyUsers.every((user) => user.predictions.length === 0) ? (
+            {typedHistoryUsers.every((user) => user.predictions.length === 0) ? (
               <div className="rounded-[1.5rem] border border-dashed border-white/10 bg-white/2 px-5 py-10 text-center text-sm text-white/55">
                 No prediction history available yet.
               </div>

@@ -25,3 +25,25 @@ export type AdminRecentPrediction = {
     username: string;
   };
 };
+
+export type AdminHistoryPrediction = {
+  id: string;
+  createdAt: Date;
+  location: string;
+  propertyType: string;
+  lotArea: unknown;
+  floorArea: unknown;
+  bedrooms: number | null;
+  bathrooms: number | null;
+  kitchens: number | null;
+  garages: number | null;
+  predictedPrice: unknown;
+};
+
+export type AdminHistoryUser = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  username: string;
+  predictions: AdminHistoryPrediction[];
+};
