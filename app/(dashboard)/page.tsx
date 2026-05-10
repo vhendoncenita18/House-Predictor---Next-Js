@@ -6,7 +6,7 @@ import { isAdminRole } from "@/lib/auth-role";
 export default async function DashboardRoot() {
   const session = await getServerSession(authOptions);
   
-  const role = (session?.user as any).utype;
+  const role = (session?.user as { utype?: string } | undefined)?.utype;
 
   if (isAdminRole(role)) {
     redirect("/admin/dashboard");

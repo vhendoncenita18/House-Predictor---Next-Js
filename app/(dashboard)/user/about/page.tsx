@@ -1,21 +1,9 @@
 "use client";
 
-import {
-    BadgeCheck,
-} from "lucide-react";
 import { HeroHeader } from "@/components/header";
-import {
-    sectionCardClassName,
-} from "@/components/user-dashboard/containerCards";
 import StrengthCard from "./strengths";
 import AboutPart from "./aboutPart";
 import GuidelinesCard from "./guidelines";
-
-const teamPrinciples = [
-    "Make pricing tools approachable for everyday property decisions.",
-    "Turn complex house attributes into a clean prediction workflow.",
-    "Keep results reviewable so users can compare, revisit, and refine estimates.",
-];
 
 export default function UserAboutPage() {
     return (

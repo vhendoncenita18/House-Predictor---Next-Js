@@ -7,8 +7,6 @@ import {
     type PredictionSource,
     validatePredictionInput,
     serializePrediction,
-    parseOptionalNumber,
-    parseRequiredNumber,
 } from "./utils";
 import { getPredictionImageFromRecord } from "./image";
 import { getMLPrediction } from "./ml";

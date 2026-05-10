@@ -27,6 +27,14 @@ export type AnimatedGroupProps = {
   asChild?: React.ElementType;
 };
 
+type MotionElementProps = {
+  children?: ReactNode;
+  className?: string;
+  initial?: string;
+  animate?: string;
+  variants?: Variants;
+};
+
 const defaultContainerVariants: Variants = {
   visible: {
     transition: {
@@ -116,11 +124,13 @@ function AnimatedGroup({
   const itemVariants = variants?.item || selectedVariants.item;
 
   const MotionComponent = React.useMemo(
-    () => motion.create(as as React.ElementType) as React.ComponentType<any>,
+    () =>
+      motion.create(as as React.ElementType) as React.ComponentType<MotionElementProps>,
     [as]
   );
   const MotionChild = React.useMemo(
-    () => motion.create(asChild as React.ElementType) as React.ComponentType<any>,
+    () =>
+      motion.create(asChild as React.ElementType) as React.ComponentType<MotionElementProps>,
     [asChild]
   );
 
